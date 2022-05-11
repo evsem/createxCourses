@@ -1,0 +1,401 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+[class*=__container] {
+  padding: 0px 5px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+body .wrapper {
+  overflow: hidden;
+  height: 100%;
+}
+body .wrapper #header .header__container {
+  padding: 20px 0px 80px 0px;
+}
+body .wrapper #header .header__container .header__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .header__container .header__header .header__header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .header__container .header__header .header__header-left .header__logo-img {
+  cursor: pointer;
+  margin-right: 60px;
+}
+body .wrapper #header .header__container .header__header .header__header-left .header__menu .menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .header__container .header__header .header__header-left .header__menu .menu__list .menu__item:not(:last-child) {
+  margin-right: 40px;
+}
+body .wrapper #header .header__container .header__header .header__header-left .header__menu .menu__list .menu__item .menu__item-link {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #424551;
+  cursor: pointer;
+}
+body .wrapper #header .header__container .header__header .header__header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .header__container .header__header .header__header-right .header__header-right__button {
+  padding: 0px 40px;
+  margin-right: 36px;
+  min-height: 52px;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login .header__login-img {
+  margin-right: 8px;
+}
+body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login .header__login-info__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  color: #424551;
+  text-align: center;
+}
+body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login .header__login-info__box .header__login-info__login {
+  cursor: pointer;
+}
+body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login .header__login-info__box .header__login-info__register {
+  cursor: pointer;
+}
+body .wrapper #main {
+  font-family: "Lato";
+}
+body .wrapper #main .heading {
+  color: #1e212c;
+  margin-bottom: 60px;
+  text-align: center;
+}
+body .wrapper #main .heading .heading__text {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+body .wrapper #main .heading .heading__title {
+  font-weight: 900;
+  font-size: 46px;
+  letter-spacing: 1px;
+}
+body .wrapper #main .toolbar {
+  margin-bottom: 60px;
+}
+body .wrapper #main .toolbar .toolbar__container {
+  min-width: 1230px;
+  min-height: 44px;
+  border: 3px solid lightgrey;
+  border-radius: 4px;
+}
+body .wrapper #main .events {
+  margin-bottom: 120px;
+}
+body .wrapper #main .events .events__container .events__list {
+  margin-bottom: 60px;
+}
+body .wrapper #main .events .events__container .events__list .events__list-item {
+  padding: 32px 40px;
+  min-width: 100%;
+  min-height: 126px;
+  background-color: #fff;
+  border: 1px solid #e5e8ed;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .wrapper #main .events .events__container .events__list .events__list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+body .wrapper #main .events .events__container .events__list .events__list-item .events__list-item__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+body .wrapper #main .events .events__container .events__list .events__list-item .events__list-item__info .events__item-info__number {
+  font-weight: 900;
+  font-size: 48px;
+  letter-spacing: 1px;
+  color: #ff3f3a;
+  margin-right: 20px;
+}
+body .wrapper #main .events .events__container .events__list .events__list-item .events__list-item__info .events__item-info__right {
+  color: #1e212c;
+}
+body .wrapper #main .events .events__container .events__list .events__list-item .events__list-item__info .events__item-info__right .events__info-right__month {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+body .wrapper #main .events .events__container .events__list .events__list-item .events__list-item__info .events__item-info__right .events__info-right__time {
+  font-weight: 400;
+  font-size: 16px;
+}
+body .wrapper #main .events .events__container .events__list .events__list-item .events__list-item__content {
+  color: #1e212c;
+}
+body .wrapper #main .events .events__container .events__list .events__list-item .events__list-item__content .events__item-content__heading {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+body .wrapper #main .events .events__container .events__list .events__list-item .events__list-item__content .events__item-content__online {
+  font-weight: 400;
+  font-size: 16px;
+}
+body .wrapper #main .events .events__container .events__list .events__list-item .events__list-item__button {
+  padding: 0px 32px;
+  min-height: 44px;
+  border: 1px solid #ff3f3a;
+  border-radius: 4px;
+  background-color: transparent;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #ff3f3a;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+body .wrapper #main .events .events__container .events__list .events__list-item .events__list-item__button:hover {
+  background-color: #ff3f3a;
+  color: #fff;
+}
+body .wrapper #main .events .events__container .events__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .wrapper #main .events .events__container .events__pagination .events__pagination-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 23px;
+}
+body .wrapper #main .events .events__container .events__pagination .events__pagination-numbers .events__pagination-numbers__number {
+  font-weight: 700;
+  font-size: 16px;
+  color: #424551;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+body .wrapper #main .events .events__container .events__pagination .events__pagination-numbers .events__pagination-numbers__number:not(:last-child) {
+  margin-right: 20px;
+}
+body .wrapper #main .events .events__container .events__pagination .events__pagination-numbers .events__pagination-numbers__number:hover {
+  color: #ff3f3a;
+}
+body .wrapper #main .events .events__container .events__pagination .events__pagination-arrow {
+  cursor: pointer;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer {
+  padding: 120px 0px 0px 0px;
+  margin: 0 auto;
+  max-width: 1920px;
+  min-height: 564px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center {
+  margin: 0px 0px 180px 0px;
+  min-width: 810px;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__prevtext {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__title {
+  max-width: 810px;
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  text-align: center;
+  color: #1e212c;
+  margin-bottom: 60px;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form {
+  max-width: 606px;
+  margin: 0 auto;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail {
+  min-width: 422px;
+  min-height: 52px;
+  padding: 13px 16px;
+  margin-right: 24px;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+  border: 1px solid #9a9ca5;
+  border-radius: 4px;
+  background-color: #fff;
+  outline: none;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::-webkit-input-placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::-moz-placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail:-ms-input-placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::-ms-input-placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__button {
+  padding: 0px 40px;
+  min-height: 52px;
+  border: 1px solid #ff3f3a;
+  border-radius: 4px;
+  background-color: transparent;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #ff4242;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__button:hover {
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  color: #ffffff;
+}
+body .wrapper #footer {
+  padding-top: 60px;
+}

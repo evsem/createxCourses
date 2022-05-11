@@ -1,0 +1,1182 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+[class*=__container] {
+  padding: 0px 5px;
+  max-width: 1241px;
+  margin: 0 auto;
+}
+
+body .wrapper {
+  overflow: hidden;
+  height: 100%;
+}
+body .wrapper #header .btn__homepage {
+  padding: 0px 40px;
+  min-height: 52px;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+body .wrapper #header .header__container .header__top {
+  padding-top: 20px;
+  margin-bottom: 128px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .header__container .header__top .header__top-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .header__container .header__top .header__top-left .header__top-left__img {
+  cursor: pointer;
+  margin-right: 60px;
+}
+body .wrapper #header .header__container .header__top .header__top-left .header__top-left__menu .header__left-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .header__container .header__top .header__top-left .header__top-left__menu .header__left-menu__list .header__menu-list__item:not(:last-child) {
+  margin-right: 40px;
+}
+body .wrapper #header .header__container .header__top .header__top-left .header__top-left__menu .header__left-menu__list .header__menu-list__item .header__list-item__link {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #424551;
+  cursor: pointer;
+}
+body .wrapper #header .header__container .header__top .header__top-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .header__container .header__top .header__top-right .header__top-right__button {
+  margin-right: 36px;
+}
+body .wrapper #header .header__container .header__top .header__top-right .header__top-right__login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .header__container .header__top .header__top-right .header__top-right__login .header__right-login__img {
+  margin-right: 8px;
+}
+body .wrapper #header .header__container .header__top .header__top-right .header__top-right__login .header__right-login__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  color: #424551;
+  text-align: center;
+}
+body .wrapper #header .header__container .header__top .header__top-right .header__top-right__login .header__right-login__text .header__login-text__login {
+  cursor: pointer;
+}
+body .wrapper #header .header__container .header__top .header__top-right .header__top-right__login .header__right-login__text .header__login-text__register {
+  cursor: pointer;
+}
+body .wrapper #header .header__container .header__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 189px;
+}
+body .wrapper #header .header__container .header__center .center__left {
+  padding: 12px 0px 0px 0px;
+}
+body .wrapper #header .header__container .header__center .center__left .left__playBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+body .wrapper #header .header__container .header__center .center__left .left__playBox .play__circleBox {
+  margin-right: 16px;
+  cursor: pointer;
+}
+body .wrapper #header .header__container .header__center .center__left .left__playBox .play__circleBox .play__firstCircle {
+  width: 52px;
+  height: 52px;
+  background-color: #ff3f3a;
+  border: none;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 32px #ff3f3a;
+          box-shadow: 0px 0px 32px #ff3f3a;
+}
+body .wrapper #header .header__container .header__center .center__left .center__title {
+  margin-bottom: 60px;
+  max-width: 496px;
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 1px;
+  color: #1e212c;
+}
+body .wrapper #header .header__container .header__center .center__left .center__buttons .left__button {
+  margin-right: 24px;
+}
+body .wrapper #header .header__container .header__bottom .header__statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .header__container .header__bottom .header__statistics .statistics__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .header__container .header__bottom .header__statistics .statistics__item .statistic__number {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  text-align: center;
+  color: #1e212c;
+  margin-right: 12px;
+}
+body .wrapper #header .header__container .header__bottom .header__statistics .statistics__item .statistic__text {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #1e212c;
+}
+body .wrapper #header .header__container .header__bottom .header__statistics .statistic__circle {
+  margin: 0px 66px;
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ff3f3a;
+}
+body .wrapper #main .btn__homepage {
+  padding: 0px 40px;
+  min-height: 52px;
+  border: 1px solid #ff3f3a;
+  border-radius: 4px;
+  background-color: transparent;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #ff4242;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+  cursor: pointer;
+}
+body .wrapper #main .btn__homepage:hover {
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  color: #ffffff;
+}
+body .wrapper #main .about .about__container {
+  padding: 180px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #main .about .about__container .about__imgBox {
+  margin-right: 135px;
+}
+body .wrapper #main .about .about__container .about__right .about__prevtitle {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+body .wrapper #main .about .about__container .about__right .about__title {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  color: #1e212c;
+  margin-bottom: 40px;
+}
+body .wrapper #main .about .about__container .about__right .about__list {
+  margin-bottom: 48px;
+}
+body .wrapper #main .about .about__container .about__right .about__list .about__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+body .wrapper #main .about .about__container .about__right .about__list .about__list-item .list__item-imgBox {
+  margin-right: 16px;
+}
+body .wrapper #main .about .about__container .about__right .about__list .about__list-item .list__item-text {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+}
+body .wrapper #main .about .about__container .about__right .about__list .about__list-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+body .wrapper #main .about .about__container .about__right .about__list .about__list-item::before {
+  content: "";
+  background: url("/pages/homepage/src/icons/list-item.svg");
+}
+body .wrapper #main .courses {
+  margin-bottom: 180px;
+}
+body .wrapper #main .courses .courses__container .courses__header {
+  margin-bottom: 60px;
+}
+body .wrapper #main .courses .courses__container .courses__header .courses__prevtitle {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+body .wrapper #main .courses .courses__container .courses__header .courses__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #main .courses .courses__container .courses__header .courses__bottom .courses__title {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  color: #1e212c;
+}
+body .wrapper #main .courses .courses__container .courses__cardsBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+}
+body .wrapper #main .courses .courses__container .courses__cardsBox .courses__card {
+  margin: 0px 14px 14px 0px;
+  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #e5e8ed;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body .wrapper #main .courses .courses__container .courses__cardsBox .courses__card .courses__card-content {
+  padding: 32px;
+}
+body .wrapper #main .courses .courses__container .courses__cardsBox .courses__card .courses__card-content .courses__card-direction {
+  display: inline-block;
+  padding: 1px 8px;
+  background: #03cea4;
+  border: none;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+body .wrapper #main .courses .courses__container .courses__cardsBox .courses__card .courses__card-content .courses__card-title {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1e212c;
+  margin-bottom: 20px;
+}
+body .wrapper #main .courses .courses__container .courses__cardsBox .courses__card .courses__card-content .courses__card-infoBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 18px;
+  color: #787a80;
+}
+body .wrapper #main .courses .courses__container .courses__cardsBox .courses__card .courses__card-content .courses__card-infoBox .courses__card-price {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 18px;
+  color: #ff4242;
+  margin-right: 8px;
+}
+body .wrapper #main .courses .courses__container .courses__cardsBox .courses__card .courses__card-content .courses__card-infoBox .courses__card-name {
+  margin-left: 8px;
+}
+body .wrapper #main .benefits .benefits__container .benefits__header {
+  margin-bottom: 60px;
+}
+body .wrapper #main .benefits .benefits__container .benefits__header .benefits__header-prevtitle {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 6px;
+}
+body .wrapper #main .benefits .benefits__container .benefits__header .benefits__header-title {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  text-align: center;
+  color: #1e212c;
+}
+body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-navbar .navbar__item {
+  padding: 10px 0px;
+  min-width: 307px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-navbar .navbar__item:hover {
+  border: 1px solid #ff3f3a;
+  color: #ff3f3a;
+}
+body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-navbar .navbar__item .navbar__imgBox {
+  margin-right: 8px;
+}
+body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-navbar .navbar__item .navbar__text {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #9a9ca5;
+}
+body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-main .benefits__body-left {
+  max-width: 495px;
+  margin-right: 135px;
+}
+body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-main .benefits__body-left .benefits__body-title {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 32px;
+  color: #1e212c;
+  margin-bottom: 24px;
+}
+body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-main .benefits__body-left .benefits__body-descr {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+}
+body .wrapper #main .events {
+  padding: 120px 0px 80px 0px;
+}
+body .wrapper #main .events .events__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .wrapper #main .events .events__container .events__header {
+  margin-bottom: 60px;
+  opacity: 0.8;
+}
+body .wrapper #main .events .events__container .events__header .events__prevtitle {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+body .wrapper #main .events .events__container .events__header .events__title {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  text-align: center;
+  color: #1e212c;
+}
+body .wrapper #main .events .events__container .events__cards {
+  max-width: 100%;
+  margin-bottom: 60px;
+}
+body .wrapper #main .events .events__container .events__cards .events__card {
+  padding: 32px 40px;
+  border: none;
+  border-radius: 4px;
+  min-width: 100%;
+  background-color: #fff;
+  border: 2px solid lightgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #main .events .events__container .events__cards .events__card:not(:last-child) {
+  margin-bottom: 24px;
+}
+body .wrapper #main .events .events__container .events__cards .events__card .events__flexBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #main .events .events__container .events__cards .events__card .events__flexBox .events__card-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 40px;
+}
+body .wrapper #main .events .events__container .events__cards .events__card .events__flexBox .events__card-left .left__number {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 48px;
+  letter-spacing: 1px;
+  color: #ff3f3a;
+  margin-right: 20px;
+}
+body .wrapper #main .events .events__container .events__cards .events__card .events__flexBox .events__card-left .card__left-right .left__month {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 20px;
+  color: #1e212c;
+  margin-bottom: 4px;
+}
+body .wrapper #main .events .events__container .events__cards .events__card .events__flexBox .events__card-left .card__left-right .left__time {
+  min-width: 100px;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #787a80;
+}
+body .wrapper #main .events .events__container .events__cards .events__card .events__flexBox .events__card-center .center__descr {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 20px;
+  color: #1e212c;
+  margin-bottom: 4px;
+}
+body .wrapper #main .events .events__container .events__cards .events__card .events__flexBox .events__card-center .center__text {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #787a80;
+}
+body .wrapper #main .events .events__container .events__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+body .wrapper #main .events .events__container .events__footer .events__footer-text {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 28px;
+  color: #1e212c;
+  margin-right: 40px;
+}
+body .wrapper #main .sertificate {
+  padding: 120px 0px;
+}
+body .wrapper #main .sertificate .sertificate__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .wrapper #main .sertificate .sertificate__container .sertificate__left {
+  margin-right: 130px;
+  max-width: 397px;
+}
+body .wrapper #main .sertificate .sertificate__container .sertificate__left .sertificate__prevtext {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+body .wrapper #main .sertificate .sertificate__container .sertificate__left .sertificate__title {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: #1e212c;
+  margin-bottom: 48px;
+}
+body .wrapper #main .sertificate .sertificate__container .sertificate__left .sertificate__descr {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+  margin-bottom: 32px;
+}
+body .wrapper #main .sertificate .sertificate__container .sertificate__left .sertificate__logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #main .sertificate .sertificate__container .sertificate__left .sertificate__logos .sertificate__logo-imgBox:not(:last-child) {
+  margin-right: 40px;
+}
+body .wrapper #main .sertificate .sertificate__container .sertificate__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+body .wrapper #main .team {
+  background: #f4f5f7;
+}
+body .wrapper #main .team .team__container {
+  padding: 166px 0px 180px 0px;
+}
+body .wrapper #main .team .team__container .team__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 60px;
+}
+body .wrapper #main .team .team__container .team__header .team__header-left .team__header-prevtext {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+}
+body .wrapper #main .team .team__container .team__header .team__header-left .team__header-title {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  color: #1e212c;
+}
+body .wrapper #main .team .team__container .team__header .team__header-right .team__circles-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 6px;
+}
+body .wrapper #main .team .team__container .team__header .team__header-right .team__circles-box .team__circle-icon {
+  cursor: pointer;
+}
+body .wrapper #main .team .team__container .team__header .team__header-right .team__circles-box .team__circle-icon:not(:last-child) {
+  margin-right: 26px;
+}
+body .wrapper #main .team .team__container .team__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+body .wrapper #main .team .team__container .team__cards .team__card {
+  max-width: 285px;
+}
+body .wrapper #main .team .team__container .team__cards .team__card .team__card-imgBox {
+  max-width: 285px;
+  max-height: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+body .wrapper #main .team .team__container .team__cards .team__card .team__card-content .team__card-name {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: #424551;
+  margin-bottom: 4px;
+}
+body .wrapper #main .team .team__container .team__cards .team__card .team__card-content .team__card-position {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #787a80;
+}
+body .wrapper #main .testimonials {
+  background: #f4f5f7;
+}
+body .wrapper #main .testimonials .testimonials__container {
+  padding: 180px 0px 100px 0px;
+}
+body .wrapper #main .testimonials .testimonials__container .testimonials__header {
+  margin-bottom: 60px;
+}
+body .wrapper #main .testimonials .testimonials__container .testimonials__header .testimonials__prevtext {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+body .wrapper #main .testimonials .testimonials__container .testimonials__header .testimonials__title {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  text-align: center;
+  color: #1e212c;
+}
+body .wrapper #main .testimonials .testimonials__container .testimonials__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px;
+}
+body .wrapper #main .testimonials .testimonials__container .testimonials__body .testimonials__body-left .testimonials__body-leftArrow {
+  cursor: pointer;
+}
+body .wrapper #main .testimonials .testimonials__container .testimonials__body .testimonials__body-center {
+  padding: 64px 105px;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  max-width: 1020px;
+}
+body .wrapper #main .testimonials .testimonials__container .testimonials__body .testimonials__body-center .testimonials__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+body .wrapper #main .testimonials .testimonials__container .testimonials__body .testimonials__body-center .testimonials__cards .testimonials__cards-left {
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #main .testimonials .testimonials__container .testimonials__body .testimonials__body-center .testimonials__cards .testimonials__cards-left .testimonials__cards-leftIcon:not(:last-child) {
+  margin-right: 8px;
+}
+body .wrapper #main .testimonials .testimonials__container .testimonials__body .testimonials__body-center .testimonials__cards .testimonials__card .testimonials__card-descr {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #424551;
+  margin-bottom: 24px;
+}
+body .wrapper #main .testimonials .testimonials__container .testimonials__body .testimonials__body-center .testimonials__cards .testimonials__card .testimonials__card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #main .testimonials .testimonials__container .testimonials__body .testimonials__body-center .testimonials__cards .testimonials__card .testimonials__card-footer .testimonials__card-avaBox {
+  width: 72px;
+  height: 72px;
+  border: none;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  margin-right: 20px;
+}
+body .wrapper #main .testimonials .testimonials__container .testimonials__body .testimonials__body-center .testimonials__cards .testimonials__card .testimonials__card-footer .testimonials__card-avaBox .testimonials__card-ava {
+  width: 96px;
+  height: 96px;
+}
+body .wrapper #main .testimonials .testimonials__container .testimonials__body .testimonials__body-center .testimonials__cards .testimonials__card .testimonials__card-footer .testimonials__card-info .testimonials__card-name {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  color: #1e212c;
+  margin-bottom: 4px;
+}
+body .wrapper #main .testimonials .testimonials__container .testimonials__body .testimonials__body-center .testimonials__cards .testimonials__card .testimonials__card-footer .testimonials__card-info .testimonials__card-positon {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  color: #787a80;
+}
+body .wrapper #main .testimonials .testimonials__container .testimonials__body .testimonials__body-right .testimonials__body-rightArrow {
+  cursor: pointer;
+}
+body .wrapper #main .testimonials .testimonials__container .testimonials__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .wrapper #main .testimonials .testimonials__container .testimonials__footer .testimonials__footer-line {
+  width: 30px;
+  height: 3px;
+  border: none;
+  border-radius: 18px;
+  background-color: #b3b7bc;
+}
+body .wrapper #main .testimonials .testimonials__container .testimonials__footer .testimonials__footer-line:not(:last-child) {
+  margin-right: 12px;
+}
+body .wrapper #main .testimonials .testimonials__container .testimonials__footer .testimonials__footer-line:first-child {
+  background-color: #424551;
+}
+body .wrapper #main .blog .blog__container {
+  padding: 120px 0px 180px 0px;
+}
+body .wrapper #main .blog .blog__container .blog__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px;
+}
+body .wrapper #main .blog .blog__container .blog__header .blog__header-left .blog__header-prevtext {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 10px;
+}
+body .wrapper #main .blog .blog__container .blog__header .blog__header-left .blog__header-title {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  color: #1e212c;
+}
+body .wrapper #main .blog .blog__container .blog__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post {
+  max-width: 390px;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-imgBox {
+  margin-bottom: 16px;
+  position: relative;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-imgBox .blog__post-imgDescr {
+  padding: 2px 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 88%;
+  left: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-imgBox .blog__post-imgDescr .blog__post-iconBox {
+  margin-right: 4px;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-imgBox .blog__post-imgDescr .blog__post-icon__descr {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  color: #424551;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8px;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-course {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #787a80;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-vertical {
+  color: #787a80;
+  margin: 0px 12px;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-data .post__data-iconBox {
+  margin-right: 8px;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-data .post__data-data {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #787a80;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-time .post__time-iconBox {
+  margin-right: 8px;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-time .post__time-time {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #787a80;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-info .blog__post-title {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-info .blog__post-descr {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+  margin-bottom: 16px;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-info .blog__post-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-info .blog__post-btn .blog__post-btn__descr {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  color: #1e212c;
+  margin-right: 8px;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer {
+  padding: 120px 0px 0px 0px;
+  margin: 0 auto;
+  max-width: 1920px;
+  min-height: 564px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center {
+  margin: 0px 0px 180px 0px;
+  min-width: 810px;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__prevtext {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__title {
+  max-width: 810px;
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  text-align: center;
+  color: #1e212c;
+  margin-bottom: 60px;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form {
+  max-width: 606px;
+  margin: 0 auto;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail {
+  min-width: 422px;
+  min-height: 52px;
+  padding: 13px 16px;
+  margin-right: 24px;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+  border: 1px solid #9a9ca5;
+  border-radius: 4px;
+  background-color: #fff;
+  outline: none;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::-webkit-input-placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::-moz-placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail:-ms-input-placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::-ms-input-placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+}

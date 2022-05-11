@@ -1,0 +1,602 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+[class*=__container] {
+  padding: 0px 5px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+body .wrapper {
+  overflow: hidden;
+  height: 100%;
+}
+body .wrapper #header .header__container {
+  padding: 20px 0px 80px 0px;
+}
+body .wrapper #header .header__container .header__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .header__container .header__header .header__header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .header__container .header__header .header__header-left .header__logo-img__box {
+  margin-right: 60px;
+}
+body .wrapper #header .header__container .header__header .header__header-left .header__logo-img__box .header__logo-img {
+  cursor: pointer;
+}
+body .wrapper #header .header__container .header__header .header__header-left .header__menu .menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .header__container .header__header .header__header-left .header__menu .menu__list .menu__item:not(:last-child) {
+  margin-right: 40px;
+}
+body .wrapper #header .header__container .header__header .header__header-left .header__menu .menu__list .menu__item .menu__item-link {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #424551;
+  cursor: pointer;
+}
+body .wrapper #header .header__container .header__header .header__header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .header__container .header__header .header__header-right .header__header-right__button {
+  padding: 0px 40px;
+  margin-right: 36px;
+  min-height: 52px;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login .header__login-img__box {
+  margin-right: 8px;
+}
+body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login .header__login-info__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  color: #424551;
+  text-align: center;
+}
+body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login .header__login-info__box .header__login-info__login {
+  cursor: pointer;
+}
+body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login .header__login-info__box .header__login-info__register {
+  cursor: pointer;
+}
+body .wrapper #main {
+  font-family: "Lato";
+}
+body .wrapper #main .titles {
+  color: #1e212c;
+  margin-bottom: 60px;
+}
+body .wrapper #main .titles .titles__text {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 8px;
+}
+body .wrapper #main .titles .titles__title {
+  font-weight: 900;
+  font-size: 46px;
+  text-align: center;
+}
+body .wrapper #main .courses {
+  padding-bottom: 120px;
+}
+body .wrapper #main .courses .courses__container .courses__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+body .wrapper #main .courses .courses__container .courses__header .courses__header-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #9a9ca5;
+}
+body .wrapper #main .courses .courses__container .courses__header .courses__header-tabs .courses__header-tabs__item {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+}
+body .wrapper #main .courses .courses__container .courses__header .courses__header-tabs .courses__header-tabs__item:not(:last-child) {
+  margin-right: 52px;
+}
+body .wrapper #main .courses .courses__container .courses__header .courses__header-tabs .courses__header-tabs__item:hover {
+  color: #ff3f3a;
+}
+body .wrapper #main .courses .courses__container .courses__header .courses__header-tabs .courses__header-tabs__item .courses__tabs-item__value {
+  font-weight: 900;
+  font-size: 10px;
+  text-align: center;
+  margin-left: 4px;
+}
+body .wrapper #main .courses .courses__container .courses__header .courses__header-search {
+  padding: 11px 16px;
+  min-width: 315px;
+  min-height: 44px;
+  background-color: #ffffff;
+  border: 1px solid #d7dadd;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #9a9ca5;
+  outline: none;
+}
+body .wrapper #main .courses .courses__container .courses__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+body .wrapper #main .courses .courses__container .courses__body .courses__body-item {
+  max-width: calc(100% / 3 - 30px);
+  height: calc(100% / 3);
+  background-color: #ffffff;
+  border: 1px solid #e5e8ed;
+  border-radius: 4px;
+  margin: 0px 30px 30px 0px;
+  cursor: pointer;
+}
+body .wrapper #main .courses .courses__container .courses__body .courses__body-item .courses__item-header {
+  min-width: 100%;
+  height: 240px;
+  background-color: lightgrey;
+}
+body .wrapper #main .courses .courses__container .courses__body .courses__body-item .courses__item-content {
+  padding: 24px;
+}
+body .wrapper #main .courses .courses__container .courses__body .courses__body-item .courses__item-content .courses__item-content__chapter {
+  display: inline-block;
+  padding: 2px 8px;
+  background-color: #03cea4;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+body .wrapper #main .courses .courses__container .courses__body .courses__body-item .courses__item-content .courses__item-content__chapter .courses__content-chapter__text {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+}
+body .wrapper #main .courses .courses__container .courses__body .courses__body-item .courses__item-content .courses__item-content__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1e212c;
+  margin-bottom: 20px;
+}
+body .wrapper #main .courses .courses__container .courses__body .courses__body-item .courses__item-content .courses__item-content__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #main .courses .courses__container .courses__body .courses__body-item .courses__item-content .courses__item-content__info .courses__content-info__price {
+  font-weight: 700;
+  font-size: 18px;
+  color: #ff4242;
+}
+body .wrapper #main .courses .courses__container .courses__body .courses__body-item .courses__item-content .courses__item-content__info .courses__content-info__vertical {
+  height: 16px;
+  width: 1.5px;
+  background-color: #787a80;
+  margin: 0px 8px;
+}
+body .wrapper #main .courses .courses__container .courses__body .courses__body-item .courses__item-content .courses__item-content__info .courses__content-info__author {
+  font-weight: 400;
+  font-size: 18px;
+  color: #787a80;
+}
+body .wrapper #main .courses .courses__container .courses__footer {
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .wrapper #main .courses .courses__container .courses__footer .courses__footer-img {
+  cursor: pointer;
+  margin-right: 16px;
+}
+body .wrapper #main .courses .courses__container .courses__footer .courses__footer-text {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  color: #424551;
+}
+body .wrapper #main .sertificate .sertificate__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body .wrapper #main .sertificate .sertificate__container .sertificate__content {
+  max-width: 397px;
+  position: relative;
+  bottom: 60px;
+}
+body .wrapper #main .sertificate .sertificate__container .sertificate__content .sertificate__content-text {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+body .wrapper #main .sertificate .sertificate__container .sertificate__content .sertificate__content-title {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: #1e212c;
+  margin-bottom: 48px;
+}
+body .wrapper #main .sertificate .sertificate__container .sertificate__content .sertificate__content-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+  margin-bottom: 32px;
+}
+body .wrapper #main .sertificate .sertificate__container .sertificate__content .sertificate__content-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #main .sertificate .sertificate__container .sertificate__content .sertificate__content-images .sertificate__content-images__img:not(:last-child) {
+  margin-right: 40px;
+}
+body .wrapper #main .testimonials {
+  background: #f4f5f7;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer {
+  padding: 80px 5px 180px 5px;
+  margin: 0 auto;
+  width: 1252px;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__header {
+  margin-bottom: 60px;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__header .testimonials__header-text {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__header .testimonials__header-title {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  text-align: center;
+  color: #1e212c;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  min-width: 0;
+  width: 100%;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .swiper-button-next,
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .swiper-button-prev {
+  position: none;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box {
+  max-width: 1020px;
+  overflow: hidden;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box .testimonials__wrapper {
+  max-width: 1020px;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box .testimonials__wrapper .testimonials__item {
+  padding: 64px 105px;
+  max-width: 1020px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box .testimonials__wrapper .testimonials__item .testimonials__item-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box .testimonials__wrapper .testimonials__item .testimonials__item-left .testimonials__item-img:not(:last-child) {
+  margin-right: 8px;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box .testimonials__wrapper .testimonials__item .testimonials__item-content .testimonials__item-content__descr {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #424551;
+  margin-bottom: 24px;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box .testimonials__wrapper .testimonials__item .testimonials__item-content .testimonials__item-content__personal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box .testimonials__wrapper .testimonials__item .testimonials__item-content .testimonials__item-content__personal .testimonials__item-ava__box {
+  width: 72px;
+  height: 72px;
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 20px;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box .testimonials__wrapper .testimonials__item .testimonials__item-content .testimonials__item-content__personal .testimonials__item-ava__box .testimonials__item-ava {
+  width: 90px;
+  height: 90px;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box .testimonials__wrapper .testimonials__item .testimonials__item-content .testimonials__item-content__personal .testimonials__item-info .testimonials__item-info__name {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  color: #1e212c;
+  margin-bottom: 4px;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box .testimonials__wrapper .testimonials__item .testimonials__item-content .testimonials__item-content__personal .testimonials__item-info .testimonials__item-info__position {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  color: #787a80;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer {
+  padding: 120px 0px 0px 0px;
+  margin: 0 auto;
+  max-width: 1920px;
+  min-height: 564px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center {
+  margin: 0px 0px 180px 0px;
+  min-width: 810px;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__prevtext {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__title {
+  max-width: 810px;
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  text-align: center;
+  color: #1e212c;
+  margin-bottom: 60px;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form {
+  max-width: 606px;
+  margin: 0 auto;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail {
+  min-width: 422px;
+  min-height: 52px;
+  padding: 13px 16px;
+  margin-right: 24px;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+  border: 1px solid #9a9ca5;
+  border-radius: 4px;
+  background-color: #fff;
+  outline: none;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::-webkit-input-placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::-moz-placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail:-ms-input-placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::-ms-input-placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-button {
+  min-height: 52px;
+  padding: 0px 40px;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  border: none;
+  border-radius: 4px;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+body .wrapper #footer {
+  padding-top: 80px;
+}

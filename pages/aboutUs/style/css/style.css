@@ -1,0 +1,1166 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+[class*=__container] {
+  padding: 0px 5px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+body .wrapper {
+  overflow: hidden;
+  height: 100%;
+}
+body .wrapper #header .header__container {
+  padding: 20px 0px 80px 0px;
+}
+body .wrapper #header .header__container .header__header {
+  margin-bottom: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .header__container .header__header .header__header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .header__container .header__header .header__header-left .header__logo-img__box {
+  margin-right: 60px;
+}
+body .wrapper #header .header__container .header__header .header__header-left .header__logo-img__box .header__logo-img {
+  cursor: pointer;
+}
+body .wrapper #header .header__container .header__header .header__header-left .header__menu .menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .header__container .header__header .header__header-left .header__menu .menu__list .menu__item:not(:last-child) {
+  margin-right: 40px;
+}
+body .wrapper #header .header__container .header__header .header__header-left .header__menu .menu__list .menu__item .menu__item-link {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #424551;
+  cursor: pointer;
+}
+body .wrapper #header .header__container .header__header .header__header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .header__container .header__header .header__header-right .header__header-right__button {
+  padding: 0px 40px;
+  margin-right: 36px;
+  min-height: 52px;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login .header__login-img__box {
+  margin-right: 8px;
+}
+body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login .header__login-info__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  color: #424551;
+  text-align: center;
+}
+body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login .header__login-info__box .header__login-info__login {
+  cursor: pointer;
+}
+body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login .header__login-info__box .header__login-info__register {
+  cursor: pointer;
+}
+body .wrapper #main .intro .intro__container {
+  margin-bottom: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body .wrapper #main .intro .intro__container .intro__info {
+  max-width: 600px;
+}
+body .wrapper #main .intro .intro__container .intro__info .intro__info-text {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+body .wrapper #main .intro .intro__container .intro__info .intro__info-title {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  color: #1e212c;
+  margin-bottom: 48px;
+}
+body .wrapper #main .intro .intro__container .intro__info .intro__info-subdescr {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1e212c;
+  margin-bottom: 24px;
+}
+body .wrapper #main .intro .intro__container .intro__info .intro__info-descr {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+  margin-bottom: 60px;
+}
+body .wrapper #main .intro .intro__container .intro__info .intro__info-buttons__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #main .intro .intro__container .intro__info .intro__info-buttons__box .intro__info-buttonLeft {
+  max-height: 52px;
+  padding: 0px 40px;
+  background-color: #fff;
+  border: 2px solid #ff3f3a;
+  border-radius: 4px;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #ff3f3a;
+  cursor: pointer;
+  margin-right: 24px;
+}
+body .wrapper #main .intro .intro__container .intro__info .intro__info-buttons__box .intro__info-buttonright {
+  max-height: 52px;
+  padding: 0px 40px;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  border: none;
+  border-radius: 4px;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+body .wrapper #main .statistic .statistic__container {
+  margin-bottom: 180px;
+}
+body .wrapper #main .statistic .statistic__container .statistic__header {
+  margin-bottom: 32px;
+}
+body .wrapper #main .statistic .statistic__container .statistic__header .statistic__header-play__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #main .statistic .statistic__container .statistic__header .statistic__header-play__box .statistic__header-play__circle {
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ff3f3a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  margin-right: 16px;
+}
+body .wrapper #main .statistic .statistic__container .statistic__header .statistic__header-play__box .statistic__header-play__text {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 14px;
+  color: #1e212c;
+}
+body .wrapper #main .statistic .statistic__container .statistic__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body .wrapper #main .statistic .statistic__container .statistic__body .statistic__body-info .statistic__body-info__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #main .statistic .statistic__container .statistic__body .statistic__body-info .statistic__body-info__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+body .wrapper #main .statistic .statistic__container .statistic__body .statistic__body-info .statistic__body-info__item .statistic__info-item__number {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 48px;
+  letter-spacing: 1px;
+  color: #ff3f3a;
+  margin-right: 16px;
+}
+body .wrapper #main .statistic .statistic__container .statistic__body .statistic__body-info .statistic__body-info__item .statistic__info-item__name {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 18px;
+  color: #1e212c;
+}
+body .wrapper #main .values .values__container {
+  margin-bottom: 180px;
+}
+body .wrapper #main .values .values__container .values__header {
+  margin-bottom: 60px;
+}
+body .wrapper #main .values .values__container .values__header .values__header-text {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+body .wrapper #main .values .values__container .values__header .values__header-title {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  text-align: center;
+  color: #1e212c;
+}
+body .wrapper #main .values .values__container .values__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body .wrapper #main .values .values__container .values__body .values__body-item {
+  max-width: 240px;
+  max-height: 162px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .wrapper #main .values .values__container .values__body .values__body-item .values__item-img__box {
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .wrapper #main .values .values__container .values__body .values__body-item .values__item-img__title {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+body .wrapper #main .values .values__container .values__body .values__body-item .values__item-img__descr {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #787a80;
+}
+body .wrapper #main .values .values__container .values__body .values__body-vertical {
+  height: 162px;
+  width: 1px;
+  background-color: #e9e9e9;
+}
+body .wrapper #main .directions .directions__container {
+  margin-bottom: 180px;
+}
+body .wrapper #main .directions .directions__container .directions__header {
+  margin-bottom: 60px;
+}
+body .wrapper #main .directions .directions__container .directions__header .directions__header-text {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+body .wrapper #main .directions .directions__container .directions__header .directions__header-title {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  text-align: center;
+  color: #1e212c;
+}
+body .wrapper #main .directions .directions__container .directions__body {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body .wrapper #main .directions .directions__container .directions__body .directions__body-item,
+body .wrapper #main .directions .directions__container .directions__body .directions__body-newItem {
+  height: calc(100% / 2 - 50px);
+  width: calc(100% / 3 - 20px);
+  margin: 0px 20px 20px 0px;
+}
+body .wrapper #main .directions .directions__container .directions__body .directions__body-item .directions__item-img__box,
+body .wrapper #main .directions .directions__container .directions__body .directions__body-newItem .directions__item-img__box {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 4px 4px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .wrapper #main .directions .directions__container .directions__body .directions__body-item .directions__body-item__info,
+body .wrapper #main .directions .directions__container .directions__body .directions__body-newItem .directions__body-item__info {
+  padding: 24px;
+  border: 2px solid #e5e8ed;
+  border-top: none;
+  border-radius: 0px 0px 4px 4px;
+}
+body .wrapper #main .directions .directions__container .directions__body .directions__body-item .directions__body-item__info .directions__body-item__text,
+body .wrapper #main .directions .directions__container .directions__body .directions__body-newItem .directions__body-item__info .directions__body-item__text {
+  padding: 1px 8px;
+  display: inline-block;
+  background: #03cea4;
+  border: none;
+  border-radius: 4px;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+body .wrapper #main .directions .directions__container .directions__body .directions__body-item .directions__body-item__info .dev,
+body .wrapper #main .directions .directions__container .directions__body .directions__body-newItem .directions__body-item__info .dev {
+  background-color: #7772f1;
+}
+body .wrapper #main .directions .directions__container .directions__body .directions__body-item .directions__body-item__info .hr,
+body .wrapper #main .directions .directions__container .directions__body .directions__body-newItem .directions__body-item__info .hr {
+  background-color: #f89828;
+}
+body .wrapper #main .directions .directions__container .directions__body .directions__body-item .directions__body-item__info .design,
+body .wrapper #main .directions .directions__container .directions__body .directions__body-newItem .directions__body-item__info .design {
+  background-color: #f52f6e;
+}
+body .wrapper #main .directions .directions__container .directions__body .directions__body-item .directions__body-item__info .managment,
+body .wrapper #main .directions .directions__container .directions__body .directions__body-newItem .directions__body-item__info .managment {
+  background-color: #5a87fc;
+}
+body .wrapper #main .directions .directions__container .directions__body .directions__body-item .directions__body-item__info .directions__body-item__descr,
+body .wrapper #main .directions .directions__container .directions__body .directions__body-newItem .directions__body-item__info .directions__body-item__descr {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #787a80;
+  margin-bottom: 20px;
+}
+body .wrapper #main .directions .directions__container .directions__body .directions__body-item .directions__body-item__info .directions__body-item__check,
+body .wrapper #main .directions .directions__container .directions__body .directions__body-newItem .directions__body-item__info .directions__body-item__check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #main .directions .directions__container .directions__body .directions__body-item .directions__body-item__info .directions__body-item__check .directions__item-text,
+body .wrapper #main .directions .directions__container .directions__body .directions__body-newItem .directions__body-item__info .directions__body-item__check .directions__item-text {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  color: #1e212c;
+  margin-right: 8px;
+}
+body .wrapper #main .directions .directions__container .directions__body .directions__body-item .directions__body-item__info .directions__body-item__check .directions__item-icon__box .directions__item-icon,
+body .wrapper #main .directions .directions__container .directions__body .directions__body-newItem .directions__body-item__info .directions__body-item__check .directions__item-icon__box .directions__item-icon {
+  cursor: pointer;
+}
+body .wrapper #main .directions .directions__container .directions__body .directions__body-newItem {
+  min-height: 407px;
+  background-color: #f4f5f7;
+  border: none;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .wrapper #main .directions .directions__container .directions__body .directions__body-newItem .directions__body-newItem__text {
+  max-width: 242px;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #424551;
+}
+body .wrapper #main .stuprocess .stuprocess__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 180px;
+}
+body .wrapper #main .stuprocess .stuprocess__container .stuprocess__left {
+  max-width: 495px;
+}
+body .wrapper #main .stuprocess .stuprocess__container .stuprocess__left .stuprocess__left-header {
+  margin-bottom: 60px;
+}
+body .wrapper #main .stuprocess .stuprocess__container .stuprocess__left .stuprocess__left-header .stuprocess__left-header__text {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+body .wrapper #main .stuprocess .stuprocess__container .stuprocess__left .stuprocess__left-header .stuprocess__left-header__title {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  color: #1e212c;
+}
+body .wrapper #main .stuprocess .stuprocess__container .stuprocess__left .stuprocess__left-body .stuprocess__left-body__step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+body .wrapper #main .stuprocess .stuprocess__container .stuprocess__left .stuprocess__left-body .stuprocess__left-body__step .stuprocess__body-step__left {
+  margin-right: 40px;
+}
+body .wrapper #main .stuprocess .stuprocess__container .stuprocess__left .stuprocess__left-body .stuprocess__left-body__step .stuprocess__body-step__left .stuprocess__step-left__circle {
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ff3f3a;
+  margin-bottom: 5px;
+}
+body .wrapper #main .stuprocess .stuprocess__container .stuprocess__left .stuprocess__left-body .stuprocess__left-body__step .stuprocess__body-step__left .stuprocess__step-left__line {
+  position: relative;
+  left: 3.5px;
+  height: 125px;
+  width: 1px;
+  background-color: #9a9ca5;
+  margin-bottom: 5px;
+}
+body .wrapper #main .stuprocess .stuprocess__container .stuprocess__left .stuprocess__left-body .stuprocess__left-body__step .stuprocess__body-step__left .step__line-last {
+  height: 118px;
+  width: 1px;
+}
+body .wrapper #main .stuprocess .stuprocess__container .stuprocess__left .stuprocess__left-body .stuprocess__left-body__step .stuprocess__body-step__right {
+  position: relative;
+  bottom: 3px;
+}
+body .wrapper #main .stuprocess .stuprocess__container .stuprocess__left .stuprocess__left-body .stuprocess__left-body__step .stuprocess__body-step__right .stuprocess__step-right__text {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 12px;
+  color: #787a80;
+  margin-bottom: 4px;
+}
+body .wrapper #main .stuprocess .stuprocess__container .stuprocess__left .stuprocess__left-body .stuprocess__left-body__step .stuprocess__body-step__right .stuprocess__step-right__title {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 20px;
+  color: #1e212c;
+  margin-bottom: 9px;
+}
+body .wrapper #main .stuprocess .stuprocess__container .stuprocess__left .stuprocess__left-body .stuprocess__left-body__step .stuprocess__body-step__right .stuprocess__step-right__descr {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #787a80;
+}
+body .wrapper #main .team .team__container {
+  margin-bottom: 120px;
+}
+body .wrapper #main .team .team__container .team__header {
+  margin-bottom: 60px;
+}
+body .wrapper #main .team .team__container .team__header .team__header-text {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+body .wrapper #main .team .team__container .team__header .team__header-title {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  text-align: center;
+  color: #1e212c;
+}
+body .wrapper #main .team .team__container .team__body {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body .wrapper #main .team .team__container .team__body .team__body-item {
+  height: calc(100% / 2);
+  width: calc(100% / 4 - 30px);
+  margin: 0px 30px 60px 0px;
+}
+body .wrapper #main .team .team__container .team__body .team__body-item .team__item-img__box {
+  width: 285px;
+  height: 340px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: lightgrey;
+}
+body .wrapper #main .team .team__container .team__body .team__body-item .team__item-name {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: #424551;
+  margin-bottom: 4px;
+}
+body .wrapper #main .team .team__container .team__body .team__body-item .team__item-position {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #787a80;
+}
+body .wrapper #main .testimonials {
+  background: #f4f5f7;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer {
+  padding: 80px 5px 180px 5px;
+  margin: 0 auto;
+  width: 1252px;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__header {
+  margin-bottom: 60px;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__header .testimonials__header-text {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__header .testimonials__header-title {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  text-align: center;
+  color: #1e212c;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  min-width: 0;
+  width: 100%;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .swiper-button-next,
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .swiper-button-prev {
+  position: none;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box {
+  max-width: 1020px;
+  overflow: hidden;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box .testimonials__wrapper {
+  max-width: 1020px;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box .testimonials__wrapper .testimonials__item {
+  padding: 64px 105px;
+  max-width: 1020px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box .testimonials__wrapper .testimonials__item .testimonials__item-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box .testimonials__wrapper .testimonials__item .testimonials__item-left .testimonials__item-img:not(:last-child) {
+  margin-right: 8px;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box .testimonials__wrapper .testimonials__item .testimonials__item-content .testimonials__item-content__descr {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #424551;
+  margin-bottom: 24px;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box .testimonials__wrapper .testimonials__item .testimonials__item-content .testimonials__item-content__personal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box .testimonials__wrapper .testimonials__item .testimonials__item-content .testimonials__item-content__personal .testimonials__item-ava__box {
+  width: 72px;
+  height: 72px;
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 20px;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box .testimonials__wrapper .testimonials__item .testimonials__item-content .testimonials__item-content__personal .testimonials__item-ava__box .testimonials__item-ava {
+  width: 90px;
+  height: 90px;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box .testimonials__wrapper .testimonials__item .testimonials__item-content .testimonials__item-content__personal .testimonials__item-info .testimonials__item-info__name {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  color: #1e212c;
+  margin-bottom: 4px;
+}
+body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box .testimonials__wrapper .testimonials__item .testimonials__item-content .testimonials__item-content__personal .testimonials__item-info .testimonials__item-info__position {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  color: #787a80;
+}
+body .wrapper #main .companies {
+  background: #f4f5f7;
+  padding-bottom: 100px;
+}
+body .wrapper #main .companies .companies__container .companies__header {
+  margin-bottom: 60px;
+}
+body .wrapper #main .companies .companies__container .companies__header .companies__header-text {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+body .wrapper #main .companies .companies__container .companies__header .companies__header-title {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  text-align: center;
+  color: #1e212c;
+}
+body .wrapper #main .companies .companies__container .companies__body {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body .wrapper #main .companies .companies__container .companies__body .companies__body-img__box {
+  height: calc(100% / 2);
+  width: calc(100% / 5 - 102px);
+  margin: 0px 102px 40px 0px;
+  overflow: hidden;
+}
+body .wrapper #main .blog .blog__container {
+  padding: 120px 0px 180px 0px;
+}
+body .wrapper #main .blog .blog__container .blog__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px;
+}
+body .wrapper #main .blog .blog__container .blog__header .blog__header-left .blog__header-prevtext {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 10px;
+}
+body .wrapper #main .blog .blog__container .blog__header .blog__header-left .blog__header-title {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  color: #1e212c;
+}
+body .wrapper #main .blog .blog__container .blog__header .blog__header-btn {
+  max-height: 52px;
+  padding: 0px 40px;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  border: none;
+  border-radius: 4px;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+body .wrapper #main .blog .blog__container .blog__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post {
+  max-width: 390px;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-imgBox {
+  margin-bottom: 16px;
+  position: relative;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-imgBox .blog__post-imgDescr {
+  padding: 2px 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 88%;
+  left: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-imgBox .blog__post-imgDescr .blog__post-iconBox {
+  margin-right: 4px;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-imgBox .blog__post-imgDescr .blog__post-icon__descr {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  color: #424551;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8px;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-course {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #787a80;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-vertical {
+  color: #787a80;
+  margin: 0px 12px;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-data .post__data-iconBox {
+  margin-right: 8px;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-data .post__data-data {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #787a80;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-time .post__time-iconBox {
+  margin-right: 8px;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-time .post__time-time {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #787a80;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-info .blog__post-title {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-info .blog__post-descr {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+  margin-bottom: 16px;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-info .blog__post-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-info .blog__post-btn .blog__post-btn__descr {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  color: #1e212c;
+  margin-right: 8px;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer {
+  padding: 120px 0px 0px 0px;
+  margin: 0 auto;
+  max-width: 1920px;
+  min-height: 564px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center {
+  margin: 0px 0px 180px 0px;
+  min-width: 810px;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__prevtext {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__title {
+  max-width: 810px;
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  text-align: center;
+  color: #1e212c;
+  margin-bottom: 60px;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form {
+  max-width: 606px;
+  margin: 0 auto;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail {
+  min-width: 422px;
+  min-height: 52px;
+  padding: 13px 16px;
+  margin-right: 24px;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+  border: 1px solid #9a9ca5;
+  border-radius: 4px;
+  background-color: #fff;
+  outline: none;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::-webkit-input-placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::-moz-placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail:-ms-input-placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::-ms-input-placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #9a9ca5;
+}
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-button {
+  min-height: 52px;
+  padding: 0px 40px;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  border: none;
+  border-radius: 4px;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  cursor: pointer;
+}

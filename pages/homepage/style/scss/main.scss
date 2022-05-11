@@ -1,0 +1,882 @@
+#main {
+  .btn__homepage {
+    padding: 0px 40px;
+    min-height: 52px;
+    border: 1px solid #ff3f3a;
+    border-radius: 4px;
+    background-color: transparent;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #ff4242;
+    transition: all 0.15s linear;
+    cursor: pointer;
+    &:hover {
+      background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+      color: #ffffff;
+    }
+  }
+
+  // ----------------------
+
+  .about {
+    .about__container {
+      padding: 180px 0px;
+      display: flex;
+      align-items: center;
+      .about__imgBox {
+        margin-right: 135px;
+        .about__img {
+        }
+      }
+
+      .about__right {
+        .about__prevtitle {
+          font-family: 'Lato';
+          font-weight: 700;
+          font-size: 16px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #1e212c;
+          margin-bottom: 8px;
+        }
+        .about__title {
+          font-family: 'Lato';
+          font-weight: 900;
+          font-size: 46px;
+          color: #1e212c;
+          margin-bottom: 40px;
+        }
+        .about__list {
+          margin-bottom: 48px;
+          .about__list-item {
+            display: flex;
+            align-items: baseline;
+            .list__item-imgBox {
+              margin-right: 16px;
+              .list__item-img {
+              }
+            }
+
+            .list__item-text {
+              font-family: 'Lato';
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 160%;
+              color: #424551;
+            }
+
+            &:not(:last-child) {
+              margin-bottom: 12px;
+            }
+            &::before {
+              content: '';
+              background: url('/pages/homepage/src/icons/list-item.svg');
+            }
+          }
+        }
+
+        .about__more {
+        }
+      }
+    }
+  }
+
+  .courses {
+    margin-bottom: 180px;
+    .courses__container {
+      .courses__header {
+        margin-bottom: 60px;
+        .courses__prevtitle {
+          font-family: 'Lato';
+          font-weight: 700;
+          font-size: 16px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #1e212c;
+          margin-bottom: 8px;
+        }
+        .courses__bottom {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .courses__title {
+            font-family: 'Lato';
+            font-weight: 900;
+            font-size: 46px;
+            color: #1e212c;
+          }
+          .corses__bottom-btn {
+          }
+        }
+      }
+
+      .courses__cardsBox {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        overflow: hidden;
+        .courses__card {
+          margin: 0px 14px 14px 0px;
+          max-width: 600px;
+          display: flex;
+          align-items: center;
+          border: 1px solid #e5e8ed;
+          border-radius: 4px;
+          cursor: pointer;
+          .courses__card-imgBox {
+            .courses__card-img {
+            }
+          }
+
+          .courses__card-content {
+            padding: 32px;
+            .courses__card-direction {
+              display: inline-block;
+              padding: 1px 8px;
+              background: #03cea4;
+              border: none;
+              font-family: 'Lato';
+              font-weight: 400;
+              font-size: 14px;
+              color: #ffffff;
+              border-radius: 4px;
+              margin-bottom: 20px;
+            }
+            .courses__card-title {
+              font-family: 'Lato';
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 150%;
+              color: #1e212c;
+              margin-bottom: 20px;
+            }
+            .courses__card-infoBox {
+              display: flex;
+              align-items: center;
+              font-family: 'Lato';
+              font-weight: 400;
+              font-size: 18px;
+              color: #787a80;
+              .courses__card-price {
+                font-family: 'Lato';
+                font-weight: 700;
+                font-size: 18px;
+                color: #ff4242;
+                margin-right: 8px;
+              }
+              .courses__card-name {
+                margin-left: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .benefits {
+    .benefits__container {
+      .benefits__header {
+        margin-bottom: 60px;
+        .benefits__header-prevtitle {
+          font-family: 'Lato';
+          font-weight: 700;
+          font-size: 16px;
+          text-align: center;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #1e212c;
+          margin-bottom: 6px;
+        }
+        .benefits__header-title {
+          font-family: 'Lato';
+          font-weight: 900;
+          font-size: 46px;
+          text-align: center;
+          color: #1e212c;
+        }
+      }
+
+      .benefits__body {
+        .benefits__body-navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 60px;
+          .navbar__item {
+            padding: 10px 0px;
+            min-width: 307px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            transition: all 0.15s ease;
+            cursor: pointer;
+            &:hover {
+              border: 1px solid #ff3f3a;
+              color: #ff3f3a;
+            }
+            .navbar__imgBox {
+              margin-right: 8px;
+              .navbar__img {
+              }
+            }
+            .navbar__text {
+              font-family: 'Lato';
+              font-weight: 700;
+              font-size: 16px;
+              text-align: center;
+              color: #9a9ca5;
+            }
+          }
+        }
+        .benefits__body-main {
+          display: flex;
+          align-items: center;
+          .benefits__body-left {
+            max-width: 495px;
+            margin-right: 135px;
+            .benefits__body-title {
+              font-family: 'Lato';
+              font-weight: 900;
+              font-size: 32px;
+              color: #1e212c;
+              margin-bottom: 24px;
+            }
+            .benefits__body-descr {
+              font-family: 'Lato';
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 160%;
+              color: #424551;
+            }
+          }
+
+          .benefits__body-right {
+            .benefits__body-img {
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .events {
+    padding: 120px 0px 80px 0px;
+    // background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+    // opacity: 0.2;
+    .events__container {
+      display: flex;
+      flex-direction: column;
+      .events__header {
+        margin-bottom: 60px;
+        opacity: 0.8;
+        .events__prevtitle {
+          font-family: 'Lato';
+          font-weight: 700;
+          font-size: 16px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          text-align: center;
+          color: #1e212c;
+          margin-bottom: 8px;
+        }
+        .events__title {
+          font-family: 'Lato';
+          font-weight: 900;
+          font-size: 46px;
+          text-align: center;
+          color: #1e212c;
+        }
+      }
+      .events__cards {
+        max-width: 100%;
+        margin-bottom: 60px;
+        .events__card {
+          padding: 32px 40px;
+          border: none;
+          border-radius: 4px;
+          min-width: 100%;
+          background-color: #fff;
+          border: 2px solid lightgrey;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          &:not(:last-child) {
+            margin-bottom: 24px;
+          }
+          .events__flexBox {
+            display: flex;
+            align-items: center;
+            .events__card-left {
+              display: flex;
+              align-items: center;
+              margin-right: 40px;
+              .left__number {
+                font-family: 'Lato';
+                font-weight: 900;
+                font-size: 48px;
+                letter-spacing: 1px;
+                color: #ff3f3a;
+                margin-right: 20px;
+              }
+              .card__left-right {
+                .left__month {
+                  font-family: 'Lato';
+                  font-weight: 700;
+                  font-size: 20px;
+                  color: #1e212c;
+                  margin-bottom: 4px;
+                }
+                .left__time {
+                  min-width: 100px;
+                  font-family: 'Lato';
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: #787a80;
+                }
+              }
+            }
+
+            .events__card-center {
+              .center__descr {
+                font-family: 'Lato';
+                font-weight: 700;
+                font-size: 20px;
+                color: #1e212c;
+                margin-bottom: 4px;
+              }
+              .center__text {
+                font-family: 'Lato';
+                font-weight: 400;
+                font-size: 16px;
+                color: #787a80;
+              }
+            }
+          }
+
+          .events__card-right {
+            .events__button {
+            }
+          }
+        }
+      }
+      .events__footer {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        .events__footer-text {
+          font-family: 'Lato';
+          font-weight: 700;
+          font-size: 28px;
+          color: #1e212c;
+          margin-right: 40px;
+        }
+        .events__footer-btn {
+        }
+      }
+    }
+  }
+
+  .sertificate {
+    padding: 120px 0px;
+    .sertificate__container {
+      display: flex;
+      .sertificate__left {
+        margin-right: 130px;
+        max-width: 397px;
+        .sertificate__prevtext {
+          font-family: 'Lato';
+          font-weight: 700;
+          font-size: 16px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #1e212c;
+          margin-bottom: 8px;
+        }
+        .sertificate__title {
+          font-family: 'Lato';
+          font-weight: 900;
+          font-size: 46px;
+          line-height: 130%;
+          color: #1e212c;
+          margin-bottom: 48px;
+        }
+        .sertificate__descr {
+          font-family: 'Lato';
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 160%;
+          color: #424551;
+          margin-bottom: 32px;
+        }
+        .sertificate__logos {
+          display: flex;
+          align-items: center;
+          .sertificate__logo-imgBox {
+            &:not(:last-child) {
+              margin-right: 40px;
+            }
+            .sertificate__logo-img {
+            }
+          }
+        }
+      }
+
+      .sertificate__right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        .sertificate__img {
+        }
+      }
+    }
+  }
+
+  .team {
+    background: #f4f5f7;
+    .team__container {
+      padding: 166px 0px 180px 0px;
+      .team__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 60px;
+        .team__header-left {
+          .team__header-prevtext {
+            font-family: 'Lato';
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #1e212c;
+          }
+          .team__header-title {
+            font-family: 'Lato';
+            font-weight: 900;
+            font-size: 46px;
+            color: #1e212c;
+          }
+        }
+
+        .team__header-right {
+          .team__circles-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 6px;
+            .team__circle-icon {
+              cursor: pointer;
+              &:not(:last-child) {
+                margin-right: 26px;
+              }
+            }
+          }
+        }
+      }
+
+      .team__cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        .team__card {
+          max-width: 285px;
+          .team__card-imgBox {
+            max-width: 285px;
+            max-height: 340px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            .team__card-img {
+            }
+          }
+
+          .team__card-content {
+            .team__card-name {
+              font-family: 'Lato';
+              font-weight: 700;
+              font-size: 20px;
+              text-align: center;
+              color: #424551;
+              margin-bottom: 4px;
+            }
+            .team__card-position {
+              font-family: 'Lato';
+              font-weight: 400;
+              font-size: 16px;
+              text-align: center;
+              color: #787a80;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .testimonials {
+    background: #f4f5f7;
+    .testimonials__container {
+      padding: 180px 0px 100px 0px;
+      .testimonials__header {
+        margin-bottom: 60px;
+        .testimonials__prevtext {
+          font-family: 'Lato';
+          font-weight: 700;
+          font-size: 16px;
+          text-align: center;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #1e212c;
+          margin-bottom: 8px;
+        }
+        .testimonials__title {
+          font-family: 'Lato';
+          font-weight: 900;
+          font-size: 46px;
+          text-align: center;
+          color: #1e212c;
+        }
+      }
+
+      .testimonials__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        .testimonials__body-left {
+          .testimonials__body-leftArrow {
+            cursor: pointer;
+          }
+        }
+
+        .testimonials__body-center {
+          padding: 64px 105px;
+          background-color: #fff;
+          border: none;
+          border-radius: 4px;
+          max-width: 1020px;
+          .testimonials__cards {
+            display: flex;
+            align-items: flex-start;
+            .testimonials__cards-left {
+              margin-right: 30px;
+              display: flex;
+              align-items: center;
+              .testimonials__cards-leftIcon {
+                &:not(:last-child) {
+                  margin-right: 8px;
+                }
+              }
+            }
+            .testimonials__card {
+              .testimonials__card-descr {
+                font-family: 'Lato';
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 150%;
+                color: #424551;
+                margin-bottom: 24px;
+              }
+
+              .testimonials__card-footer {
+                display: flex;
+                align-items: center;
+                .testimonials__card-avaBox {
+                  width: 72px;
+                  height: 72px;
+                  border: none;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  overflow: hidden;
+                  margin-right: 20px;
+                  .testimonials__card-ava {
+                    width: 96px;
+                    height: 96px;
+                  }
+                }
+
+                .testimonials__card-info {
+                  .testimonials__card-name {
+                    font-family: 'Lato';
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #1e212c;
+                    margin-bottom: 4px;
+                  }
+                  .testimonials__card-positon {
+                    font-family: 'Lato';
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #787a80;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .testimonials__body-right {
+          .testimonials__body-rightArrow {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .testimonials__footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .testimonials__footer-line {
+          width: 30px;
+          height: 3px;
+          border: none;
+          border-radius: 18px;
+          background-color: #b3b7bc;
+          &:not(:last-child) {
+            margin-right: 12px;
+          }
+          &:first-child {
+            background-color: #424551;
+          }
+        }
+      }
+    }
+  }
+
+  .blog {
+    .blog__container {
+      padding: 120px 0px 180px 0px;
+      .blog__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        .blog__header-left {
+          .blog__header-prevtext {
+            font-family: 'Lato';
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #1e212c;
+            margin-bottom: 10px;
+          }
+          .blog__header-title {
+            font-family: 'Lato';
+            font-weight: 900;
+            font-size: 46px;
+            color: #1e212c;
+          }
+        }
+
+        .blog__header-btn {
+        }
+      }
+
+      .blog__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .blog__post {
+          max-width: 390px;
+          .blog__post-imgBox {
+            margin-bottom: 16px;
+            position: relative;
+            .blog__post-img {
+            }
+            .blog__post-imgDescr {
+              padding: 2px 8px;
+              border: none;
+              border-radius: 4px;
+              background-color: #fff;
+              position: absolute;
+              bottom: 88%;
+              left: 14px;
+              display: flex;
+              align-items: center;
+              .blog__post-iconBox {
+                margin-right: 4px;
+                .blog__post-icon {
+                }
+              }
+              .blog__post-icon__descr {
+                font-family: 'Lato';
+                font-weight: 400;
+                font-size: 14px;
+                color: #424551;
+              }
+            }
+          }
+
+          .blog__post-content {
+            .blog__post-top {
+              display: flex;
+              align-items: center;
+              margin-bottom: 8px;
+              .blog__post-course {
+                font-family: 'Lato';
+                font-weight: 700;
+                font-size: 14px;
+                align-items: center;
+                color: #787a80;
+              }
+              .blog__post-vertical {
+                color: #787a80;
+                margin: 0px 12px;
+              }
+              .blog__post-data {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .post__data-iconBox {
+                  margin-right: 8px;
+                  .post__data-img {
+                  }
+                }
+                .post__data-data {
+                  font-family: 'Lato';
+                  font-weight: 400;
+                  font-size: 14px;
+                  align-items: center;
+                  color: #787a80;
+                }
+              }
+
+              .blog__post-time {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .post__time-iconBox {
+                  margin-right: 8px;
+                  .post__time-img {
+                  }
+                }
+                .post__time-time {
+                  font-family: 'Lato';
+                  font-weight: 400;
+                  font-size: 14px;
+                  align-items: center;
+                  color: #787a80;
+                }
+              }
+            }
+
+            .blog__post-info {
+              .blog__post-title {
+                font-family: 'Lato';
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 150%;
+                color: #1e212c;
+                margin-bottom: 8px;
+              }
+              .blog__post-descr {
+                font-family: 'Lato';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 160%;
+                color: #424551;
+                margin-bottom: 16px;
+              }
+              .blog__post-btn {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                .blog__post-btn__descr {
+                  font-family: 'Lato';
+                  font-weight: 700;
+                  font-size: 16px;
+                  color: #1e212c;
+                  margin-right: 8px;
+                }
+                .blog__post-btn__iconBox {
+                  .blog__post-btn__icon {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .subscribe {
+    .subscribe__uniqcontainer {
+      padding: 120px 0px 0px 0px;
+      margin: 0 auto;
+      max-width: 1920px;
+      min-height: 564px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      .subscribe__left {
+        .subscribe__left-img {
+        }
+      }
+
+      .subscribe__center {
+        margin: 0px 0px 180px 0px;
+        min-width: 810px;
+        .subscribe__prevtext {
+          font-family: 'Lato';
+          font-weight: 700;
+          font-size: 16px;
+          text-align: center;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #1e212c;
+          margin-bottom: 8px;
+        }
+        .subscribe__title {
+          max-width: 810px;
+          font-family: 'Lato';
+          font-weight: 900;
+          font-size: 46px;
+          text-align: center;
+          color: #1e212c;
+          margin-bottom: 60px;
+        }
+        .subscribe__form {
+          max-width: 606px;
+          margin: 0 auto;
+          .subscribe__form-mail {
+            min-width: 422px;
+            min-height: 52px;
+            padding: 13px 16px;
+            margin-right: 24px;
+            font-family: 'Lato';
+            font-weight: 400;
+            font-size: 16px;
+            color: #9a9ca5;
+            border: 1px solid #9a9ca5;
+            border-radius: 4px;
+            background-color: #fff;
+            outline: none;
+            &::placeholder {
+              font-family: 'Lato';
+              font-weight: 400;
+              font-size: 16px;
+              color: #9a9ca5;
+            }
+          }
+        }
+      }
+
+      .subscribe__right {
+        .subscribe__right {
+        }
+      }
+    }
+  }
+}

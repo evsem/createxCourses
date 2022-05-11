@@ -1,0 +1,179 @@
+#header {
+  .btn__homepage {
+    padding: 0px 40px;
+    min-height: 52px;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .header__container {
+    .header__top {
+      padding-top: 20px;
+      margin-bottom: 128px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .header__top-left {
+        display: flex;
+        align-items: center;
+        .header__top-left__img {
+          cursor: pointer;
+          margin-right: 60px;
+        }
+
+        .header__top-left__menu {
+          .header__left-menu__list {
+            display: flex;
+            align-items: center;
+            .header__menu-list__item {
+              &:not(:last-child) {
+                margin-right: 40px;
+              }
+              .header__list-item__link {
+                font-family: "Lato";
+                font-weight: 700;
+                font-size: 16px;
+                text-align: center;
+                color: #424551;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+
+      .header__top-right {
+        display: flex;
+        align-items: center;
+        .header__top-right__button {
+          margin-right: 36px;
+        }
+
+        .header__top-right__login {
+          display: flex;
+          align-items: center;
+          .header__right-login__img {
+            margin-right: 8px;
+          }
+          .header__right-login__text {
+            display: flex;
+            align-items: center;
+            font-family: "Lato";
+            font-weight: 700;
+            font-size: 16px;
+            color: #424551;
+            text-align: center;
+            .header__login-text__login {
+              cursor: pointer;
+            }
+            .header__login-text__register {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    .header__center {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 189px;
+      .center__left {
+        padding: 12px 0px 0px 0px;
+        .left__playBox {
+          display: flex;
+          align-items: center;
+          margin-bottom: 40px;
+          .play__circleBox {
+            margin-right: 16px;
+            cursor: pointer;
+            .play__firstCircle {
+              width: 52px;
+              height: 52px;
+              background-color: #ff3f3a;
+              border: none;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              box-shadow: 0px 0px 32px #ff3f3a;
+              .play__imgBox {
+                .play__img {
+                }
+              }
+            }
+          }
+
+          .play__text {
+          }
+        }
+        .center__title {
+          margin-bottom: 60px;
+          max-width: 496px;
+          font-family: "Lato";
+          font-weight: 900;
+          font-size: 64px;
+          line-height: 130%;
+          letter-spacing: 1px;
+          color: #1e212c;
+        }
+        .center__buttons {
+          .left__button {
+            margin-right: 24px;
+          }
+          .right__button {
+          }
+        }
+      }
+
+      .center__right {
+        .center__imgBox {
+          .center__img {
+          }
+        }
+      }
+    }
+
+    .header__bottom {
+      .header__statistics {
+        display: flex;
+        align-items: center;
+        .statistics__item {
+          display: flex;
+          align-items: center;
+          .statistic__number {
+            font-family: "Lato";
+            font-weight: 900;
+            font-size: 46px;
+            text-align: center;
+            color: #1e212c;
+            margin-right: 12px;
+          }
+          .statistic__text {
+            font-family: "Lato";
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+            color: #1e212c;
+          }
+        }
+
+        .statistic__circle {
+          margin: 0px 66px;
+          width: 8px;
+          height: 8px;
+          border: none;
+          border-radius: 50%;
+          background-color: #ff3f3a;
+        }
+      }
+    }
+  }
+}
