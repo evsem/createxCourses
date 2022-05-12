@@ -27,9 +27,9 @@ ul {
   list-style: none;
 }
 
-[class*='__container'] {
-  padding: 0px 5px;
-  max-width: 1241px;
+[class*="__container"] {
+  padding: 0px 10px;
+  max-width: 1251px;
   margin: 0 auto;
 }
 
@@ -38,8 +38,8 @@ body {
     overflow: hidden;
     height: 100%;
 
-    @import 'header.scss';
-    @import 'main.scss';
-    @import 'footer.scss';
+    @import "header.scss";
+    @import "main.scss";
+    @import "footer.scss";
   }
 }

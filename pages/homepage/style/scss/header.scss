@@ -1,28 +1,45 @@
 #header {
+  font-family: "Lato";
+  :root {
+    // colors
+    --top-primary-color: #424551;
+    --center-primary-color: #1e212c;
+  }
+
   .btn__homepage {
     padding: 0px 40px;
     min-height: 52px;
-    border: none;
+    border: 1px solid #ff3f3a;
     border-radius: 4px;
     background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
     font-family: "Lato";
     font-weight: 700;
     font-size: 16px;
     text-align: center;
-    color: #ffffff;
+    color: #fff;
+    transition: all 0.12s linear;
     cursor: pointer;
+    &:hover {
+      background: transparent;
+      color: #ff4242;
+    }
   }
 
+  // ------------------------------------------------------------------
+
   .header__container {
+    padding: 0px 10px;
     .header__top {
       padding-top: 20px;
       margin-bottom: 128px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
       .header__top-left {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         .header__top-left__img {
           cursor: pointer;
           margin-right: 60px;
@@ -32,6 +49,7 @@
           .header__left-menu__list {
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
             .header__menu-list__item {
               &:not(:last-child) {
                 margin-right: 40px;
@@ -41,8 +59,13 @@
                 font-weight: 700;
                 font-size: 16px;
                 text-align: center;
-                color: #424551;
+                color: var(--top-primary-color);
                 cursor: pointer;
+                transition: all 0.12s;
+                &:hover {
+                  opacity: 0.9;
+                  letter-spacing: 0.2px;
+                }
               }
             }
           }
@@ -52,6 +75,7 @@
       .header__top-right {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         .header__top-right__button {
           margin-right: 36px;
         }
@@ -65,15 +89,16 @@
           .header__right-login__text {
             display: flex;
             align-items: center;
-            font-family: "Lato";
             font-weight: 700;
             font-size: 16px;
-            color: #424551;
+            color: var(--top-primary-color);
             text-align: center;
             .header__login-text__login {
               cursor: pointer;
+              margin-right: 4px;
             }
             .header__login-text__register {
+              margin-left: 4px;
               cursor: pointer;
             }
           }
@@ -84,17 +109,18 @@
     .header__center {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       margin-bottom: 189px;
-      .center__left {
+      .header__center-left {
         padding: 12px 0px 0px 0px;
-        .left__playBox {
+        .header__center-left__play {
           display: flex;
           align-items: center;
           margin-bottom: 40px;
-          .play__circleBox {
+          .header__left-play__circle {
             margin-right: 16px;
             cursor: pointer;
-            .play__firstCircle {
+            .header__play-circle__block {
               width: 52px;
               height: 52px;
               background-color: #ff3f3a;
@@ -103,18 +129,15 @@
               display: flex;
               justify-content: center;
               align-items: center;
-              box-shadow: 0px 0px 32px #ff3f3a;
-              .play__imgBox {
-                .play__img {
-                }
+              .header__play-img {
               }
             }
           }
 
-          .play__text {
+          .header__left-play__text {
           }
         }
-        .center__title {
+        .header__center-left__title {
           margin-bottom: 60px;
           max-width: 496px;
           font-family: "Lato";
@@ -122,50 +145,47 @@
           font-size: 64px;
           line-height: 130%;
           letter-spacing: 1px;
-          color: #1e212c;
+          color: var(--primary-color);
         }
-        .center__buttons {
-          .left__button {
+        .header__center-left__buttons {
+          .header__button-button__left {
             margin-right: 24px;
           }
-          .right__button {
+          .header__button-right__button {
           }
         }
       }
 
-      .center__right {
-        .center__imgBox {
-          .center__img {
-          }
+      .header__center-right {
+        .header__center-right__img {
         }
       }
     }
 
     .header__bottom {
-      .header__statistics {
+      .header__bottom-statistics {
         display: flex;
         align-items: center;
-        .statistics__item {
+        flex-wrap: wrap;
+        .header__bottom-statistics__item {
           display: flex;
           align-items: center;
-          .statistic__number {
-            font-family: "Lato";
+          .header__statistics-item__number {
             font-weight: 900;
             font-size: 46px;
             text-align: center;
-            color: #1e212c;
+            color: var(--primary-color);
             margin-right: 12px;
           }
-          .statistic__text {
-            font-family: "Lato";
+          .header__statisrics-item__text {
             font-weight: 400;
             font-size: 16px;
             text-align: center;
-            color: #1e212c;
+            color: var(--primary-color);
           }
         }
 
-        .statistic__circle {
+        .header__bottom-statistics__circle {
           margin: 0px 66px;
           width: 8px;
           height: 8px;

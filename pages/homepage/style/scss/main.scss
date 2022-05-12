@@ -1,16 +1,17 @@
 #main {
+  font-family: "Lato";
   .btn__homepage {
     padding: 0px 40px;
     min-height: 52px;
     border: 1px solid #ff3f3a;
     border-radius: 4px;
     background-color: transparent;
-    font-family: 'Lato';
+    font-family: "Lato";
     font-weight: 700;
     font-size: 16px;
     text-align: center;
     color: #ff4242;
-    transition: all 0.15s linear;
+    transition: all 0.12s linear;
     cursor: pointer;
     &:hover {
       background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
@@ -25,15 +26,16 @@
       padding: 180px 0px;
       display: flex;
       align-items: center;
-      .about__imgBox {
-        margin-right: 135px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .about__img-box {
         .about__img {
         }
       }
 
-      .about__right {
-        .about__prevtitle {
-          font-family: 'Lato';
+      .about__info {
+        .about__info-text {
+          font-family: "Lato";
           font-weight: 700;
           font-size: 16px;
           letter-spacing: 1px;
@@ -41,26 +43,27 @@
           color: #1e212c;
           margin-bottom: 8px;
         }
-        .about__title {
-          font-family: 'Lato';
+        .about__info-title {
+          font-family: "Lato";
           font-weight: 900;
           font-size: 46px;
           color: #1e212c;
           margin-bottom: 40px;
         }
-        .about__list {
+        .about__info-list {
           margin-bottom: 48px;
-          .about__list-item {
+          .about__info-list__item {
             display: flex;
             align-items: baseline;
-            .list__item-imgBox {
+
+            .about__list-item-img {
+              position: relative;
+              top: 3px;
               margin-right: 16px;
-              .list__item-img {
-              }
             }
 
-            .list__item-text {
-              font-family: 'Lato';
+            .about__list-item-descr {
+              font-family: "Lato";
               font-weight: 400;
               font-size: 16px;
               line-height: 160%;
@@ -70,14 +73,10 @@
             &:not(:last-child) {
               margin-bottom: 12px;
             }
-            &::before {
-              content: '';
-              background: url('/pages/homepage/src/icons/list-item.svg');
-            }
           }
         }
 
-        .about__more {
+        .about__info-button {
         }
       }
     }
@@ -88,8 +87,7 @@
     .courses__container {
       .courses__header {
         margin-bottom: 60px;
-        .courses__prevtitle {
-          font-family: 'Lato';
+        .courses__header-text {
           font-weight: 700;
           font-size: 16px;
           letter-spacing: 1px;
@@ -97,77 +95,92 @@
           color: #1e212c;
           margin-bottom: 8px;
         }
-        .courses__bottom {
+        .courses__header-bottom {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          .courses__title {
-            font-family: 'Lato';
+          flex-wrap: wrap;
+          .courses__header-bottom__title {
+            font-family: "Lato";
             font-weight: 900;
             font-size: 46px;
             color: #1e212c;
           }
-          .corses__bottom-btn {
+          .corses__header-bottom__button {
           }
         }
       }
 
-      .courses__cardsBox {
-        display: flex;
-        flex-wrap: wrap;
+      .courses__cards {
         width: 100%;
         overflow: hidden;
-        .courses__card {
+        display: flex;
+        flex-wrap: wrap;
+        .courses__cards-item {
           margin: 0px 14px 14px 0px;
           max-width: 600px;
+          min-height: 214px;
           display: flex;
           align-items: center;
-          border: 1px solid #e5e8ed;
-          border-radius: 4px;
           cursor: pointer;
-          .courses__card-imgBox {
-            .courses__card-img {
+          .courses__item-img__box {
+            max-width: 214px;
+            min-height: 214px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .courses__item-img {
             }
           }
 
-          .courses__card-content {
+          .courses__item-content {
             padding: 32px;
-            .courses__card-direction {
+            min-height: 100%;
+            border: 1px solid #e5e8ed;
+            border-left: none;
+            border-radius: 0px 4px 4px 0px;
+            .courses__item-content__direction {
               display: inline-block;
               padding: 1px 8px;
               background: #03cea4;
               border: none;
-              font-family: 'Lato';
+              font-family: "Lato";
               font-weight: 400;
               font-size: 14px;
               color: #ffffff;
               border-radius: 4px;
               margin-bottom: 20px;
             }
-            .courses__card-title {
-              font-family: 'Lato';
+            .courses__item-content__title {
+              font-family: "Lato";
               font-weight: 700;
               font-size: 20px;
               line-height: 150%;
               color: #1e212c;
               margin-bottom: 20px;
             }
-            .courses__card-infoBox {
+            .courses__item-content__info {
               display: flex;
               align-items: center;
-              font-family: 'Lato';
+              flex-wrap: wrap;
+              font-family: "Lato";
               font-weight: 400;
               font-size: 18px;
               color: #787a80;
-              .courses__card-price {
-                font-family: 'Lato';
+              .courses__content-info__price {
+                font-family: "Lato";
                 font-weight: 700;
                 font-size: 18px;
                 color: #ff4242;
-                margin-right: 8px;
               }
-              .courses__card-name {
-                margin-left: 8px;
+              .courses__content-info__vertical {
+                height: 16px;
+                width: 1px;
+                background-color: #787a80;
+                margin: 0px 8px;
+              }
+              .courses__content-info__name {
               }
             }
           }
@@ -180,8 +193,8 @@
     .benefits__container {
       .benefits__header {
         margin-bottom: 60px;
-        .benefits__header-prevtitle {
-          font-family: 'Lato';
+        .benefits__header-text {
+          font-family: "Lato";
           font-weight: 700;
           font-size: 16px;
           text-align: center;
@@ -191,7 +204,7 @@
           margin-bottom: 6px;
         }
         .benefits__header-title {
-          font-family: 'Lato';
+          font-family: "Lato";
           font-weight: 900;
           font-size: 46px;
           text-align: center;
@@ -200,53 +213,59 @@
       }
 
       .benefits__body {
-        .benefits__body-navbar {
+        .benefits__body-bar {
           display: flex;
-          justify-content: space-between;
+          justify-content: center;
           align-items: center;
+          flex-wrap: wrap;
           margin-bottom: 60px;
-          .navbar__item {
+          .benefits__body-bar__item {
             padding: 10px 0px;
             min-width: 307px;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 4px;
-            transition: all 0.15s ease;
             cursor: pointer;
-            &:hover {
-              border: 1px solid #ff3f3a;
-              color: #ff3f3a;
+            &:not(:last-child) {
+              margin-right: 60px;
             }
-            .navbar__imgBox {
-              margin-right: 8px;
-              .navbar__img {
+            .benefits__item-img__box {
+              margin-right: 10px;
+              position: relative;
+              top: 2px;
+              .benefits__item-img {
               }
             }
-            .navbar__text {
-              font-family: 'Lato';
+            .benefits__item-text {
+              font-family: "Lato";
               font-weight: 700;
-              font-size: 16px;
+              font-size: 18px;
               text-align: center;
               color: #9a9ca5;
+              transition: color 0.2s;
+              &:hover {
+                color: #ff3f3a;
+              }
             }
           }
         }
-        .benefits__body-main {
+        .benefits__body-info {
           display: flex;
           align-items: center;
-          .benefits__body-left {
+          flex-wrap: wrap;
+          .benefits__body-info__content {
             max-width: 495px;
             margin-right: 135px;
-            .benefits__body-title {
-              font-family: 'Lato';
+            .benefits__info__content__title {
+              font-family: "Lato";
               font-weight: 900;
               font-size: 32px;
               color: #1e212c;
               margin-bottom: 24px;
             }
-            .benefits__body-descr {
-              font-family: 'Lato';
+            .benefits__info__content__descr {
+              font-family: "Lato";
               font-weight: 400;
               font-size: 16px;
               line-height: 160%;
@@ -254,8 +273,8 @@
             }
           }
 
-          .benefits__body-right {
-            .benefits__body-img {
+          .benefits__info-img__box {
+            .benefits__info-img {
             }
           }
         }
@@ -265,16 +284,14 @@
 
   .events {
     padding: 120px 0px 80px 0px;
-    // background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
-    // opacity: 0.2;
     .events__container {
       display: flex;
       flex-direction: column;
       .events__header {
         margin-bottom: 60px;
         opacity: 0.8;
-        .events__prevtitle {
-          font-family: 'Lato';
+        .events__header-text {
+          font-family: "Lato";
           font-weight: 700;
           font-size: 16px;
           letter-spacing: 1px;
@@ -283,8 +300,8 @@
           color: #1e212c;
           margin-bottom: 8px;
         }
-        .events__title {
-          font-family: 'Lato';
+        .events__header-title {
+          font-family: "Lato";
           font-weight: 900;
           font-size: 46px;
           text-align: center;
@@ -294,7 +311,7 @@
       .events__cards {
         max-width: 100%;
         margin-bottom: 60px;
-        .events__card {
+        .events__cards-item {
           padding: 32px 40px;
           border: none;
           border-radius: 4px;
@@ -304,35 +321,36 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
+          flex-wrap: wrap;
           &:not(:last-child) {
             margin-bottom: 24px;
           }
-          .events__flexBox {
+          .events__cards-item__content {
             display: flex;
             align-items: center;
-            .events__card-left {
+            .events__item-content__left {
               display: flex;
               align-items: center;
               margin-right: 40px;
-              .left__number {
-                font-family: 'Lato';
+              .events__content-left__number {
+                font-family: "Lato";
                 font-weight: 900;
                 font-size: 48px;
                 letter-spacing: 1px;
                 color: #ff3f3a;
                 margin-right: 20px;
               }
-              .card__left-right {
-                .left__month {
-                  font-family: 'Lato';
+              .events__content-left__info {
+                .events__left-info__month {
+                  font-family: "Lato";
                   font-weight: 700;
                   font-size: 20px;
                   color: #1e212c;
                   margin-bottom: 4px;
                 }
-                .left__time {
+                .events__left-info__time {
                   min-width: 100px;
-                  font-family: 'Lato';
+                  font-family: "Lato";
                   font-weight: 400;
                   font-size: 16px;
                   color: #787a80;
@@ -340,16 +358,16 @@
               }
             }
 
-            .events__card-center {
-              .center__descr {
-                font-family: 'Lato';
+            .events__item-content__right {
+              .events__content-right__descr {
+                font-family: "Lato";
                 font-weight: 700;
                 font-size: 20px;
                 color: #1e212c;
                 margin-bottom: 4px;
               }
-              .center__text {
-                font-family: 'Lato';
+              .events__content-right__online {
+                font-family: "Lato";
                 font-weight: 400;
                 font-size: 16px;
                 color: #787a80;
@@ -357,9 +375,7 @@
             }
           }
 
-          .events__card-right {
-            .events__button {
-            }
+          .events__cards-item__button {
           }
         }
       }
@@ -368,13 +384,13 @@
         align-items: center;
         margin: 0 auto;
         .events__footer-text {
-          font-family: 'Lato';
+          font-family: "Lato";
           font-weight: 700;
           font-size: 28px;
           color: #1e212c;
           margin-right: 40px;
         }
-        .events__footer-btn {
+        .events__footer-button {
         }
       }
     }
@@ -384,11 +400,12 @@
     padding: 120px 0px;
     .sertificate__container {
       display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
       .sertificate__left {
-        margin-right: 130px;
         max-width: 397px;
-        .sertificate__prevtext {
-          font-family: 'Lato';
+        .sertificate__left-text {
+          font-family: "Lato";
           font-weight: 700;
           font-size: 16px;
           letter-spacing: 1px;
@@ -396,41 +413,47 @@
           color: #1e212c;
           margin-bottom: 8px;
         }
-        .sertificate__title {
-          font-family: 'Lato';
+        .sertificate__left-title {
+          font-family: "Lato";
           font-weight: 900;
           font-size: 46px;
           line-height: 130%;
           color: #1e212c;
           margin-bottom: 48px;
         }
-        .sertificate__descr {
-          font-family: 'Lato';
+        .sertificate__left-descr {
+          font-family: "Lato";
           font-weight: 400;
           font-size: 16px;
           line-height: 160%;
           color: #424551;
           margin-bottom: 32px;
         }
-        .sertificate__logos {
+        .sertificate__left-images {
           display: flex;
           align-items: center;
-          .sertificate__logo-imgBox {
+          .sertificate__images-img__box {
             &:not(:last-child) {
               margin-right: 40px;
             }
-            .sertificate__logo-img {
+            .sertificate__images-img {
             }
           }
         }
       }
 
-      .sertificate__right {
+      .sertificate__right-img__box {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        // align-items: center;
+        // justify-content: center;
         overflow: hidden;
-        .sertificate__img {
+        max-width: 600px;
+        max-height: 500px;
+        .sertificate__right-img {
+          position: relative;
+          max-width: 720px;
+          max-height: 500px;
+          top: 1px;
         }
       }
     }
@@ -446,32 +469,30 @@
         align-items: flex-end;
         margin-bottom: 60px;
         .team__header-left {
-          .team__header-prevtext {
-            font-family: 'Lato';
+          .team__header-left__text {
+            font-family: "Lato";
             font-weight: 700;
             font-size: 16px;
             letter-spacing: 1px;
             text-transform: uppercase;
             color: #1e212c;
           }
-          .team__header-title {
-            font-family: 'Lato';
+          .team__header-left__title {
+            font-family: "Lato";
             font-weight: 900;
             font-size: 46px;
             color: #1e212c;
           }
         }
 
-        .team__header-right {
-          .team__circles-box {
-            display: flex;
-            align-items: center;
-            margin-bottom: 6px;
-            .team__circle-icon {
-              cursor: pointer;
-              &:not(:last-child) {
-                margin-right: 26px;
-              }
+        .team__header-right__images {
+          display: flex;
+          align-items: center;
+          margin-bottom: 6px;
+          .team__right-images__img {
+            cursor: pointer;
+            &:not(:last-child) {
+              margin-right: 26px;
             }
           }
         }
@@ -482,9 +503,9 @@
         align-items: center;
         justify-content: space-between;
         overflow: hidden;
-        .team__card {
+        .team__cards-card {
           max-width: 285px;
-          .team__card-imgBox {
+          .team__card-img__box {
             max-width: 285px;
             max-height: 340px;
             display: flex;
@@ -498,17 +519,17 @@
             }
           }
 
-          .team__card-content {
-            .team__card-name {
-              font-family: 'Lato';
+          .team__cards-card__content {
+            .team__card-content__name {
+              font-family: "Lato";
               font-weight: 700;
               font-size: 20px;
               text-align: center;
               color: #424551;
               margin-bottom: 4px;
             }
-            .team__card-position {
-              font-family: 'Lato';
+            .team__card-content__position {
+              font-family: "Lato";
               font-weight: 400;
               font-size: 16px;
               text-align: center;
@@ -527,7 +548,7 @@
       .testimonials__header {
         margin-bottom: 60px;
         .testimonials__prevtext {
-          font-family: 'Lato';
+          font-family: "Lato";
           font-weight: 700;
           font-size: 16px;
           text-align: center;
@@ -537,7 +558,7 @@
           margin-bottom: 8px;
         }
         .testimonials__title {
-          font-family: 'Lato';
+          font-family: "Lato";
           font-weight: 900;
           font-size: 46px;
           text-align: center;
@@ -577,7 +598,7 @@
             }
             .testimonials__card {
               .testimonials__card-descr {
-                font-family: 'Lato';
+                font-family: "Lato";
                 font-weight: 400;
                 font-size: 20px;
                 line-height: 150%;
@@ -606,14 +627,14 @@
 
                 .testimonials__card-info {
                   .testimonials__card-name {
-                    font-family: 'Lato';
+                    font-family: "Lato";
                     font-weight: 700;
                     font-size: 16px;
                     color: #1e212c;
                     margin-bottom: 4px;
                   }
                   .testimonials__card-positon {
-                    font-family: 'Lato';
+                    font-family: "Lato";
                     font-weight: 400;
                     font-size: 14px;
                     color: #787a80;
@@ -659,10 +680,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin-bottom: 60px;
         .blog__header-left {
-          .blog__header-prevtext {
-            font-family: 'Lato';
+          .blog__header-left__text {
+            font-family: "Lato";
             font-weight: 700;
             font-size: 16px;
             letter-spacing: 1px;
@@ -670,15 +692,15 @@
             color: #1e212c;
             margin-bottom: 10px;
           }
-          .blog__header-title {
-            font-family: 'Lato';
+          .blog__header-left__title {
+            font-family: "Lato";
             font-weight: 900;
             font-size: 46px;
             color: #1e212c;
           }
         }
 
-        .blog__header-btn {
+        .blog__header-button {
         }
       }
 
@@ -686,14 +708,15 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .blog__post {
+        flex-wrap: wrap;
+        .blog__body-post {
           max-width: 390px;
-          .blog__post-imgBox {
+          .blog__post-img__box {
             margin-bottom: 16px;
             position: relative;
-            .blog__post-img {
+            .blog__body-img {
             }
-            .blog__post-imgDescr {
+            .blog__body-img__descr {
               padding: 2px 8px;
               border: none;
               border-radius: 4px;
@@ -703,13 +726,13 @@
               left: 14px;
               display: flex;
               align-items: center;
-              .blog__post-iconBox {
+              .blog__descr-img__box {
                 margin-right: 4px;
-                .blog__post-icon {
+                .blog__descr-img {
                 }
               }
-              .blog__post-icon__descr {
-                font-family: 'Lato';
+              .blog__descr-img__name {
+                font-family: "Lato";
                 font-weight: 400;
                 font-size: 14px;
                 color: #424551;
@@ -718,32 +741,32 @@
           }
 
           .blog__post-content {
-            .blog__post-top {
+            .blog__post-content__top {
               display: flex;
               align-items: center;
               margin-bottom: 8px;
-              .blog__post-course {
-                font-family: 'Lato';
+              .blog__content-top__course {
+                font-family: "Lato";
                 font-weight: 700;
                 font-size: 14px;
                 align-items: center;
                 color: #787a80;
               }
-              .blog__post-vertical {
+              .blog__content-top__vertical {
                 color: #787a80;
                 margin: 0px 12px;
               }
-              .blog__post-data {
+              .blog__content-top__data {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                .post__data-iconBox {
+                .blog__data-img__box {
                   margin-right: 8px;
-                  .post__data-img {
+                  .blog__data-img {
                   }
                 }
-                .post__data-data {
-                  font-family: 'Lato';
+                .blog__data-date {
+                  font-family: "Lato";
                   font-weight: 400;
                   font-size: 14px;
                   align-items: center;
@@ -751,17 +774,17 @@
                 }
               }
 
-              .blog__post-time {
+              .blog__content-top__time {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                .post__time-iconBox {
+                .blog__time-img__box {
                   margin-right: 8px;
-                  .post__time-img {
+                  .blog__time-img {
                   }
                 }
                 .post__time-time {
-                  font-family: 'Lato';
+                  font-family: "Lato";
                   font-weight: 400;
                   font-size: 14px;
                   align-items: center;
@@ -770,36 +793,36 @@
               }
             }
 
-            .blog__post-info {
-              .blog__post-title {
-                font-family: 'Lato';
+            .blog__post-content__info {
+              .blog__content-info__title {
+                font-family: "Lato";
                 font-weight: 700;
                 font-size: 20px;
                 line-height: 150%;
                 color: #1e212c;
                 margin-bottom: 8px;
               }
-              .blog__post-descr {
-                font-family: 'Lato';
+              .blog__content-info__descr {
+                font-family: "Lato";
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 160%;
                 color: #424551;
                 margin-bottom: 16px;
               }
-              .blog__post-btn {
+              .blog__content-info__click {
                 display: flex;
                 align-items: center;
                 cursor: pointer;
-                .blog__post-btn__descr {
-                  font-family: 'Lato';
+                .blog__info-click__text {
+                  font-family: "Lato";
                   font-weight: 700;
                   font-size: 16px;
                   color: #1e212c;
                   margin-right: 8px;
                 }
-                .blog__post-btn__iconBox {
-                  .blog__post-btn__icon {
+                .blog__click-img__box {
+                  .blog__click-img {
                   }
                 }
               }
@@ -812,24 +835,19 @@
 
   .subscribe {
     .subscribe__uniqcontainer {
-      padding: 120px 0px 0px 0px;
+      padding-top: 120px;
       margin: 0 auto;
-      max-width: 1920px;
+      max-width: 1910px;
       min-height: 564px;
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
 
-      .subscribe__left {
-        .subscribe__left-img {
-        }
-      }
-
       .subscribe__center {
         margin: 0px 0px 180px 0px;
         min-width: 810px;
-        .subscribe__prevtext {
-          font-family: 'Lato';
+        .subscribe__center-text {
+          font-family: "Lato";
           font-weight: 700;
           font-size: 16px;
           text-align: center;
@@ -838,24 +856,26 @@
           color: #1e212c;
           margin-bottom: 8px;
         }
-        .subscribe__title {
+        .subscribe__center-title {
           max-width: 810px;
-          font-family: 'Lato';
+          font-family: "Lato";
           font-weight: 900;
           font-size: 46px;
           text-align: center;
           color: #1e212c;
           margin-bottom: 60px;
         }
-        .subscribe__form {
+        .subscribe__center-form {
           max-width: 606px;
           margin: 0 auto;
-          .subscribe__form-mail {
-            min-width: 422px;
+          display: flex;
+          flex-direction: column;
+          .subscribe__center-form__input {
+            min-width: 100%;
             min-height: 52px;
             padding: 13px 16px;
             margin-right: 24px;
-            font-family: 'Lato';
+            font-family: "Lato";
             font-weight: 400;
             font-size: 16px;
             color: #9a9ca5;
@@ -863,19 +883,21 @@
             border-radius: 4px;
             background-color: #fff;
             outline: none;
+            margin-bottom: 16px;
             &::placeholder {
-              font-family: 'Lato';
+              font-family: "Lato";
               font-weight: 400;
               font-size: 16px;
               color: #9a9ca5;
             }
           }
+
+          .subscribe__center-form__button {
+          }
         }
       }
 
-      .subscribe__right {
-        .subscribe__right {
-        }
+      .subscribe__img {
       }
     }
   }

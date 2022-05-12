@@ -33,8 +33,8 @@ ul {
 }
 
 [class*=__container] {
-  padding: 0px 5px;
-  max-width: 1241px;
+  padding: 0px 10px;
+  max-width: 1251px;
   margin: 0 auto;
 }
 
@@ -42,18 +42,34 @@ body .wrapper {
   overflow: hidden;
   height: 100%;
 }
+body .wrapper #header {
+  font-family: "Lato";
+}
+body .wrapper #header :root {
+  --top-primary-color: #424551;
+  --center-primary-color: #1e212c;
+}
 body .wrapper #header .btn__homepage {
   padding: 0px 40px;
   min-height: 52px;
-  border: none;
+  border: 1px solid #ff3f3a;
   border-radius: 4px;
   background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
   font-family: "Lato";
   font-weight: 700;
   font-size: 16px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
+  -webkit-transition: all 0.12s linear;
+  transition: all 0.12s linear;
   cursor: pointer;
+}
+body .wrapper #header .btn__homepage:hover {
+  background: transparent;
+  color: #ff4242;
+}
+body .wrapper #header .header__container {
+  padding: 0px 10px;
 }
 body .wrapper #header .header__container .header__top {
   padding-top: 20px;
@@ -67,6 +83,8 @@ body .wrapper #header .header__container .header__top {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 body .wrapper #header .header__container .header__top .header__top-left {
   display: -webkit-box;
@@ -75,6 +93,8 @@ body .wrapper #header .header__container .header__top .header__top-left {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 body .wrapper #header .header__container .header__top .header__top-left .header__top-left__img {
   cursor: pointer;
@@ -87,6 +107,8 @@ body .wrapper #header .header__container .header__top .header__top-left .header_
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 body .wrapper #header .header__container .header__top .header__top-left .header__top-left__menu .header__left-menu__list .header__menu-list__item:not(:last-child) {
   margin-right: 40px;
@@ -96,8 +118,14 @@ body .wrapper #header .header__container .header__top .header__top-left .header_
   font-weight: 700;
   font-size: 16px;
   text-align: center;
-  color: #424551;
+  color: var(--top-primary-color);
   cursor: pointer;
+  -webkit-transition: all 0.12s;
+  transition: all 0.12s;
+}
+body .wrapper #header .header__container .header__top .header__top-left .header__top-left__menu .header__left-menu__list .header__menu-list__item .header__list-item__link:hover {
+  opacity: 0.9;
+  letter-spacing: 0.2px;
 }
 body .wrapper #header .header__container .header__top .header__top-right {
   display: -webkit-box;
@@ -106,6 +134,8 @@ body .wrapper #header .header__container .header__top .header__top-right {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 body .wrapper #header .header__container .header__top .header__top-right .header__top-right__button {
   margin-right: 36px;
@@ -128,16 +158,17 @@ body .wrapper #header .header__container .header__top .header__top-right .header
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Lato";
   font-weight: 700;
   font-size: 16px;
-  color: #424551;
+  color: var(--top-primary-color);
   text-align: center;
 }
 body .wrapper #header .header__container .header__top .header__top-right .header__top-right__login .header__right-login__text .header__login-text__login {
   cursor: pointer;
+  margin-right: 4px;
 }
 body .wrapper #header .header__container .header__top .header__top-right .header__top-right__login .header__right-login__text .header__login-text__register {
+  margin-left: 4px;
   cursor: pointer;
 }
 body .wrapper #header .header__container .header__center {
@@ -147,12 +178,14 @@ body .wrapper #header .header__container .header__center {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 189px;
 }
-body .wrapper #header .header__container .header__center .center__left {
+body .wrapper #header .header__container .header__center .header__center-left {
   padding: 12px 0px 0px 0px;
 }
-body .wrapper #header .header__container .header__center .center__left .left__playBox {
+body .wrapper #header .header__container .header__center .header__center-left .header__center-left__play {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,11 +194,11 @@ body .wrapper #header .header__container .header__center .center__left .left__pl
           align-items: center;
   margin-bottom: 40px;
 }
-body .wrapper #header .header__container .header__center .center__left .left__playBox .play__circleBox {
+body .wrapper #header .header__container .header__center .header__center-left .header__center-left__play .header__left-play__circle {
   margin-right: 16px;
   cursor: pointer;
 }
-body .wrapper #header .header__container .header__center .center__left .left__playBox .play__circleBox .play__firstCircle {
+body .wrapper #header .header__container .header__center .header__center-left .header__center-left__play .header__left-play__circle .header__play-circle__block {
   width: 52px;
   height: 52px;
   background-color: #ff3f3a;
@@ -180,10 +213,8 @@ body .wrapper #header .header__container .header__center .center__left .left__pl
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0px 0px 32px #ff3f3a;
-          box-shadow: 0px 0px 32px #ff3f3a;
 }
-body .wrapper #header .header__container .header__center .center__left .center__title {
+body .wrapper #header .header__container .header__center .header__center-left .header__center-left__title {
   margin-bottom: 60px;
   max-width: 496px;
   font-family: "Lato";
@@ -191,12 +222,22 @@ body .wrapper #header .header__container .header__center .center__left .center__
   font-size: 64px;
   line-height: 130%;
   letter-spacing: 1px;
-  color: #1e212c;
+  color: var(--primary-color);
 }
-body .wrapper #header .header__container .header__center .center__left .center__buttons .left__button {
+body .wrapper #header .header__container .header__center .header__center-left .header__center-left__buttons .header__button-button__left {
   margin-right: 24px;
 }
-body .wrapper #header .header__container .header__bottom .header__statistics {
+body .wrapper #header .header__container .header__bottom .header__bottom-statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body .wrapper #header .header__container .header__bottom .header__bottom-statistics .header__bottom-statistics__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,36 +245,29 @@ body .wrapper #header .header__container .header__bottom .header__statistics {
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper #header .header__container .header__bottom .header__statistics .statistics__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-body .wrapper #header .header__container .header__bottom .header__statistics .statistics__item .statistic__number {
-  font-family: "Lato";
+body .wrapper #header .header__container .header__bottom .header__bottom-statistics .header__bottom-statistics__item .header__statistics-item__number {
   font-weight: 900;
   font-size: 46px;
   text-align: center;
-  color: #1e212c;
+  color: var(--primary-color);
   margin-right: 12px;
 }
-body .wrapper #header .header__container .header__bottom .header__statistics .statistics__item .statistic__text {
-  font-family: "Lato";
+body .wrapper #header .header__container .header__bottom .header__bottom-statistics .header__bottom-statistics__item .header__statisrics-item__text {
   font-weight: 400;
   font-size: 16px;
   text-align: center;
-  color: #1e212c;
+  color: var(--primary-color);
 }
-body .wrapper #header .header__container .header__bottom .header__statistics .statistic__circle {
+body .wrapper #header .header__container .header__bottom .header__bottom-statistics .header__bottom-statistics__circle {
   margin: 0px 66px;
   width: 8px;
   height: 8px;
   border: none;
   border-radius: 50%;
   background-color: #ff3f3a;
+}
+body .wrapper #main {
+  font-family: "Lato";
 }
 body .wrapper #main .btn__homepage {
   padding: 0px 40px;
@@ -246,8 +280,8 @@ body .wrapper #main .btn__homepage {
   font-size: 16px;
   text-align: center;
   color: #ff4242;
-  -webkit-transition: all 0.15s linear;
-  transition: all 0.15s linear;
+  -webkit-transition: all 0.12s linear;
+  transition: all 0.12s linear;
   cursor: pointer;
 }
 body .wrapper #main .btn__homepage:hover {
@@ -262,11 +296,13 @@ body .wrapper #main .about .about__container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-body .wrapper #main .about .about__container .about__imgBox {
-  margin-right: 135px;
-}
-body .wrapper #main .about .about__container .about__right .about__prevtitle {
+body .wrapper #main .about .about__container .about__info .about__info-text {
   font-family: "Lato";
   font-weight: 700;
   font-size: 16px;
@@ -275,17 +311,17 @@ body .wrapper #main .about .about__container .about__right .about__prevtitle {
   color: #1e212c;
   margin-bottom: 8px;
 }
-body .wrapper #main .about .about__container .about__right .about__title {
+body .wrapper #main .about .about__container .about__info .about__info-title {
   font-family: "Lato";
   font-weight: 900;
   font-size: 46px;
   color: #1e212c;
   margin-bottom: 40px;
 }
-body .wrapper #main .about .about__container .about__right .about__list {
+body .wrapper #main .about .about__container .about__info .about__info-list {
   margin-bottom: 48px;
 }
-body .wrapper #main .about .about__container .about__right .about__list .about__list-item {
+body .wrapper #main .about .about__container .about__info .about__info-list .about__info-list__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,22 +329,20 @@ body .wrapper #main .about .about__container .about__right .about__list .about__
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-body .wrapper #main .about .about__container .about__right .about__list .about__list-item .list__item-imgBox {
+body .wrapper #main .about .about__container .about__info .about__info-list .about__info-list__item .about__list-item-img {
+  position: relative;
+  top: 3px;
   margin-right: 16px;
 }
-body .wrapper #main .about .about__container .about__right .about__list .about__list-item .list__item-text {
+body .wrapper #main .about .about__container .about__info .about__info-list .about__info-list__item .about__list-item-descr {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
   color: #424551;
 }
-body .wrapper #main .about .about__container .about__right .about__list .about__list-item:not(:last-child) {
+body .wrapper #main .about .about__container .about__info .about__info-list .about__info-list__item:not(:last-child) {
   margin-bottom: 12px;
-}
-body .wrapper #main .about .about__container .about__right .about__list .about__list-item::before {
-  content: "";
-  background: url("/pages/homepage/src/icons/list-item.svg");
 }
 body .wrapper #main .courses {
   margin-bottom: 180px;
@@ -316,8 +350,7 @@ body .wrapper #main .courses {
 body .wrapper #main .courses .courses__container .courses__header {
   margin-bottom: 60px;
 }
-body .wrapper #main .courses .courses__container .courses__header .courses__prevtitle {
-  font-family: "Lato";
+body .wrapper #main .courses .courses__container .courses__header .courses__header-text {
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 1px;
@@ -325,7 +358,7 @@ body .wrapper #main .courses .courses__container .courses__header .courses__prev
   color: #1e212c;
   margin-bottom: 8px;
 }
-body .wrapper #main .courses .courses__container .courses__header .courses__bottom {
+body .wrapper #main .courses .courses__container .courses__header .courses__header-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,39 +368,58 @@ body .wrapper #main .courses .courses__container .courses__header .courses__bott
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-body .wrapper #main .courses .courses__container .courses__header .courses__bottom .courses__title {
+body .wrapper #main .courses .courses__container .courses__header .courses__header-bottom .courses__header-bottom__title {
   font-family: "Lato";
   font-weight: 900;
   font-size: 46px;
   color: #1e212c;
 }
-body .wrapper #main .courses .courses__container .courses__cardsBox {
+body .wrapper #main .courses .courses__container .courses__cards {
+  width: 100%;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
-  overflow: hidden;
 }
-body .wrapper #main .courses .courses__container .courses__cardsBox .courses__card {
+body .wrapper #main .courses .courses__container .courses__cards .courses__cards-item {
   margin: 0px 14px 14px 0px;
   max-width: 600px;
+  min-height: 214px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #e5e8ed;
-  border-radius: 4px;
   cursor: pointer;
 }
-body .wrapper #main .courses .courses__container .courses__cardsBox .courses__card .courses__card-content {
-  padding: 32px;
+body .wrapper #main .courses .courses__container .courses__cards .courses__cards-item .courses__item-img__box {
+  max-width: 214px;
+  min-height: 214px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-body .wrapper #main .courses .courses__container .courses__cardsBox .courses__card .courses__card-content .courses__card-direction {
+body .wrapper #main .courses .courses__container .courses__cards .courses__cards-item .courses__item-content {
+  padding: 32px;
+  min-height: 100%;
+  border: 1px solid #e5e8ed;
+  border-left: none;
+  border-radius: 0px 4px 4px 0px;
+}
+body .wrapper #main .courses .courses__container .courses__cards .courses__cards-item .courses__item-content .courses__item-content__direction {
   display: inline-block;
   padding: 1px 8px;
   background: #03cea4;
@@ -379,7 +431,7 @@ body .wrapper #main .courses .courses__container .courses__cardsBox .courses__ca
   border-radius: 4px;
   margin-bottom: 20px;
 }
-body .wrapper #main .courses .courses__container .courses__cardsBox .courses__card .courses__card-content .courses__card-title {
+body .wrapper #main .courses .courses__container .courses__cards .courses__cards-item .courses__item-content .courses__item-content__title {
   font-family: "Lato";
   font-weight: 700;
   font-size: 20px;
@@ -387,32 +439,36 @@ body .wrapper #main .courses .courses__container .courses__cardsBox .courses__ca
   color: #1e212c;
   margin-bottom: 20px;
 }
-body .wrapper #main .courses .courses__container .courses__cardsBox .courses__card .courses__card-content .courses__card-infoBox {
+body .wrapper #main .courses .courses__container .courses__cards .courses__cards-item .courses__item-content .courses__item-content__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-family: "Lato";
   font-weight: 400;
   font-size: 18px;
   color: #787a80;
 }
-body .wrapper #main .courses .courses__container .courses__cardsBox .courses__card .courses__card-content .courses__card-infoBox .courses__card-price {
+body .wrapper #main .courses .courses__container .courses__cards .courses__cards-item .courses__item-content .courses__item-content__info .courses__content-info__price {
   font-family: "Lato";
   font-weight: 700;
   font-size: 18px;
   color: #ff4242;
-  margin-right: 8px;
 }
-body .wrapper #main .courses .courses__container .courses__cardsBox .courses__card .courses__card-content .courses__card-infoBox .courses__card-name {
-  margin-left: 8px;
+body .wrapper #main .courses .courses__container .courses__cards .courses__cards-item .courses__item-content .courses__item-content__info .courses__content-info__vertical {
+  height: 16px;
+  width: 1px;
+  background-color: #787a80;
+  margin: 0px 8px;
 }
 body .wrapper #main .benefits .benefits__container .benefits__header {
   margin-bottom: 60px;
 }
-body .wrapper #main .benefits .benefits__container .benefits__header .benefits__header-prevtitle {
+body .wrapper #main .benefits .benefits__container .benefits__header .benefits__header-text {
   font-family: "Lato";
   font-weight: 700;
   font-size: 16px;
@@ -429,19 +485,21 @@ body .wrapper #main .benefits .benefits__container .benefits__header .benefits__
   text-align: center;
   color: #1e212c;
 }
-body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-navbar {
+body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 60px;
 }
-body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-navbar .navbar__item {
+body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-bar .benefits__body-bar__item {
   padding: 10px 0px;
   min-width: 307px;
   display: -webkit-box;
@@ -454,44 +512,50 @@ body .wrapper #main .benefits .benefits__container .benefits__body .benefits__bo
       -ms-flex-align: center;
           align-items: center;
   border-radius: 4px;
-  -webkit-transition: all 0.15s ease;
-  transition: all 0.15s ease;
   cursor: pointer;
 }
-body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-navbar .navbar__item:hover {
-  border: 1px solid #ff3f3a;
-  color: #ff3f3a;
+body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-bar .benefits__body-bar__item:not(:last-child) {
+  margin-right: 60px;
 }
-body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-navbar .navbar__item .navbar__imgBox {
-  margin-right: 8px;
+body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-bar .benefits__body-bar__item .benefits__item-img__box {
+  margin-right: 10px;
+  position: relative;
+  top: 2px;
 }
-body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-navbar .navbar__item .navbar__text {
+body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-bar .benefits__body-bar__item .benefits__item-text {
   font-family: "Lato";
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   color: #9a9ca5;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
-body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-main {
+body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-bar .benefits__body-bar__item .benefits__item-text:hover {
+  color: #ff3f3a;
+}
+body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-main .benefits__body-left {
+body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-info .benefits__body-info__content {
   max-width: 495px;
   margin-right: 135px;
 }
-body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-main .benefits__body-left .benefits__body-title {
+body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-info .benefits__body-info__content .benefits__info__content__title {
   font-family: "Lato";
   font-weight: 900;
   font-size: 32px;
   color: #1e212c;
   margin-bottom: 24px;
 }
-body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-main .benefits__body-left .benefits__body-descr {
+body .wrapper #main .benefits .benefits__container .benefits__body .benefits__body-info .benefits__body-info__content .benefits__info__content__descr {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
@@ -514,7 +578,7 @@ body .wrapper #main .events .events__container .events__header {
   margin-bottom: 60px;
   opacity: 0.8;
 }
-body .wrapper #main .events .events__container .events__header .events__prevtitle {
+body .wrapper #main .events .events__container .events__header .events__header-text {
   font-family: "Lato";
   font-weight: 700;
   font-size: 16px;
@@ -524,7 +588,7 @@ body .wrapper #main .events .events__container .events__header .events__prevtitl
   color: #1e212c;
   margin-bottom: 8px;
 }
-body .wrapper #main .events .events__container .events__header .events__title {
+body .wrapper #main .events .events__container .events__header .events__header-title {
   font-family: "Lato";
   font-weight: 900;
   font-size: 46px;
@@ -535,7 +599,7 @@ body .wrapper #main .events .events__container .events__cards {
   max-width: 100%;
   margin-bottom: 60px;
 }
-body .wrapper #main .events .events__container .events__cards .events__card {
+body .wrapper #main .events .events__container .events__cards .events__cards-item {
   padding: 32px 40px;
   border: none;
   border-radius: 4px;
@@ -551,11 +615,13 @@ body .wrapper #main .events .events__container .events__cards .events__card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-body .wrapper #main .events .events__container .events__cards .events__card:not(:last-child) {
+body .wrapper #main .events .events__container .events__cards .events__cards-item:not(:last-child) {
   margin-bottom: 24px;
 }
-body .wrapper #main .events .events__container .events__cards .events__card .events__flexBox {
+body .wrapper #main .events .events__container .events__cards .events__cards-item .events__cards-item__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -563,7 +629,7 @@ body .wrapper #main .events .events__container .events__cards .events__card .eve
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper #main .events .events__container .events__cards .events__card .events__flexBox .events__card-left {
+body .wrapper #main .events .events__container .events__cards .events__cards-item .events__cards-item__content .events__item-content__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -572,7 +638,7 @@ body .wrapper #main .events .events__container .events__cards .events__card .eve
           align-items: center;
   margin-right: 40px;
 }
-body .wrapper #main .events .events__container .events__cards .events__card .events__flexBox .events__card-left .left__number {
+body .wrapper #main .events .events__container .events__cards .events__cards-item .events__cards-item__content .events__item-content__left .events__content-left__number {
   font-family: "Lato";
   font-weight: 900;
   font-size: 48px;
@@ -580,28 +646,28 @@ body .wrapper #main .events .events__container .events__cards .events__card .eve
   color: #ff3f3a;
   margin-right: 20px;
 }
-body .wrapper #main .events .events__container .events__cards .events__card .events__flexBox .events__card-left .card__left-right .left__month {
+body .wrapper #main .events .events__container .events__cards .events__cards-item .events__cards-item__content .events__item-content__left .events__content-left__info .events__left-info__month {
   font-family: "Lato";
   font-weight: 700;
   font-size: 20px;
   color: #1e212c;
   margin-bottom: 4px;
 }
-body .wrapper #main .events .events__container .events__cards .events__card .events__flexBox .events__card-left .card__left-right .left__time {
+body .wrapper #main .events .events__container .events__cards .events__cards-item .events__cards-item__content .events__item-content__left .events__content-left__info .events__left-info__time {
   min-width: 100px;
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   color: #787a80;
 }
-body .wrapper #main .events .events__container .events__cards .events__card .events__flexBox .events__card-center .center__descr {
+body .wrapper #main .events .events__container .events__cards .events__cards-item .events__cards-item__content .events__item-content__right .events__content-right__descr {
   font-family: "Lato";
   font-weight: 700;
   font-size: 20px;
   color: #1e212c;
   margin-bottom: 4px;
 }
-body .wrapper #main .events .events__container .events__cards .events__card .events__flexBox .events__card-center .center__text {
+body .wrapper #main .events .events__container .events__cards .events__cards-item .events__cards-item__content .events__item-content__right .events__content-right__online {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
@@ -630,12 +696,16 @@ body .wrapper #main .sertificate .sertificate__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 body .wrapper #main .sertificate .sertificate__container .sertificate__left {
-  margin-right: 130px;
   max-width: 397px;
 }
-body .wrapper #main .sertificate .sertificate__container .sertificate__left .sertificate__prevtext {
+body .wrapper #main .sertificate .sertificate__container .sertificate__left .sertificate__left-text {
   font-family: "Lato";
   font-weight: 700;
   font-size: 16px;
@@ -644,7 +714,7 @@ body .wrapper #main .sertificate .sertificate__container .sertificate__left .ser
   color: #1e212c;
   margin-bottom: 8px;
 }
-body .wrapper #main .sertificate .sertificate__container .sertificate__left .sertificate__title {
+body .wrapper #main .sertificate .sertificate__container .sertificate__left .sertificate__left-title {
   font-family: "Lato";
   font-weight: 900;
   font-size: 46px;
@@ -652,7 +722,7 @@ body .wrapper #main .sertificate .sertificate__container .sertificate__left .ser
   color: #1e212c;
   margin-bottom: 48px;
 }
-body .wrapper #main .sertificate .sertificate__container .sertificate__left .sertificate__descr {
+body .wrapper #main .sertificate .sertificate__container .sertificate__left .sertificate__left-descr {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
@@ -660,7 +730,7 @@ body .wrapper #main .sertificate .sertificate__container .sertificate__left .ser
   color: #424551;
   margin-bottom: 32px;
 }
-body .wrapper #main .sertificate .sertificate__container .sertificate__left .sertificate__logos {
+body .wrapper #main .sertificate .sertificate__container .sertificate__left .sertificate__left-images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -668,20 +738,22 @@ body .wrapper #main .sertificate .sertificate__container .sertificate__left .ser
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper #main .sertificate .sertificate__container .sertificate__left .sertificate__logos .sertificate__logo-imgBox:not(:last-child) {
+body .wrapper #main .sertificate .sertificate__container .sertificate__left .sertificate__left-images .sertificate__images-img__box:not(:last-child) {
   margin-right: 40px;
 }
-body .wrapper #main .sertificate .sertificate__container .sertificate__right {
+body .wrapper #main .sertificate .sertificate__container .sertificate__right-img__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   overflow: hidden;
+  max-width: 600px;
+  max-height: 500px;
+}
+body .wrapper #main .sertificate .sertificate__container .sertificate__right-img__box .sertificate__right-img {
+  position: relative;
+  max-width: 720px;
+  max-height: 500px;
+  top: 1px;
 }
 body .wrapper #main .team {
   background: #f4f5f7;
@@ -701,7 +773,7 @@ body .wrapper #main .team .team__container .team__header {
           align-items: flex-end;
   margin-bottom: 60px;
 }
-body .wrapper #main .team .team__container .team__header .team__header-left .team__header-prevtext {
+body .wrapper #main .team .team__container .team__header .team__header-left .team__header-left__text {
   font-family: "Lato";
   font-weight: 700;
   font-size: 16px;
@@ -709,13 +781,13 @@ body .wrapper #main .team .team__container .team__header .team__header-left .tea
   text-transform: uppercase;
   color: #1e212c;
 }
-body .wrapper #main .team .team__container .team__header .team__header-left .team__header-title {
+body .wrapper #main .team .team__container .team__header .team__header-left .team__header-left__title {
   font-family: "Lato";
   font-weight: 900;
   font-size: 46px;
   color: #1e212c;
 }
-body .wrapper #main .team .team__container .team__header .team__header-right .team__circles-box {
+body .wrapper #main .team .team__container .team__header .team__header-right__images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -724,10 +796,10 @@ body .wrapper #main .team .team__container .team__header .team__header-right .te
           align-items: center;
   margin-bottom: 6px;
 }
-body .wrapper #main .team .team__container .team__header .team__header-right .team__circles-box .team__circle-icon {
+body .wrapper #main .team .team__container .team__header .team__header-right__images .team__right-images__img {
   cursor: pointer;
 }
-body .wrapper #main .team .team__container .team__header .team__header-right .team__circles-box .team__circle-icon:not(:last-child) {
+body .wrapper #main .team .team__container .team__header .team__header-right__images .team__right-images__img:not(:last-child) {
   margin-right: 26px;
 }
 body .wrapper #main .team .team__container .team__cards {
@@ -742,10 +814,10 @@ body .wrapper #main .team .team__container .team__cards {
           justify-content: space-between;
   overflow: hidden;
 }
-body .wrapper #main .team .team__container .team__cards .team__card {
+body .wrapper #main .team .team__container .team__cards .team__cards-card {
   max-width: 285px;
 }
-body .wrapper #main .team .team__container .team__cards .team__card .team__card-imgBox {
+body .wrapper #main .team .team__container .team__cards .team__cards-card .team__card-img__box {
   max-width: 285px;
   max-height: 340px;
   display: -webkit-box;
@@ -762,7 +834,7 @@ body .wrapper #main .team .team__container .team__cards .team__card .team__card-
   border-radius: 4px;
   margin-bottom: 16px;
 }
-body .wrapper #main .team .team__container .team__cards .team__card .team__card-content .team__card-name {
+body .wrapper #main .team .team__container .team__cards .team__cards-card .team__cards-card__content .team__card-content__name {
   font-family: "Lato";
   font-weight: 700;
   font-size: 20px;
@@ -770,7 +842,7 @@ body .wrapper #main .team .team__container .team__cards .team__card .team__card-
   color: #424551;
   margin-bottom: 4px;
 }
-body .wrapper #main .team .team__container .team__cards .team__card .team__card-content .team__card-position {
+body .wrapper #main .team .team__container .team__cards .team__cards-card .team__cards-card__content .team__card-content__position {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
@@ -935,9 +1007,11 @@ body .wrapper #main .blog .blog__container .blog__header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 60px;
 }
-body .wrapper #main .blog .blog__container .blog__header .blog__header-left .blog__header-prevtext {
+body .wrapper #main .blog .blog__container .blog__header .blog__header-left .blog__header-left__text {
   font-family: "Lato";
   font-weight: 700;
   font-size: 16px;
@@ -946,7 +1020,7 @@ body .wrapper #main .blog .blog__container .blog__header .blog__header-left .blo
   color: #1e212c;
   margin-bottom: 10px;
 }
-body .wrapper #main .blog .blog__container .blog__header .blog__header-left .blog__header-title {
+body .wrapper #main .blog .blog__container .blog__header .blog__header-left .blog__header-left__title {
   font-family: "Lato";
   font-weight: 900;
   font-size: 46px;
@@ -962,15 +1036,17 @@ body .wrapper #main .blog .blog__container .blog__body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post {
   max-width: 390px;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-imgBox {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-img__box {
   margin-bottom: 16px;
   position: relative;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-imgBox .blog__post-imgDescr {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-img__box .blog__body-img__descr {
   padding: 2px 8px;
   border: none;
   border-radius: 4px;
@@ -985,16 +1061,16 @@ body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-i
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-imgBox .blog__post-imgDescr .blog__post-iconBox {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-img__box .blog__body-img__descr .blog__descr-img__box {
   margin-right: 4px;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-imgBox .blog__post-imgDescr .blog__post-icon__descr {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-img__box .blog__body-img__descr .blog__descr-img__name {
   font-family: "Lato";
   font-weight: 400;
   font-size: 14px;
   color: #424551;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1003,7 +1079,7 @@ body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-c
           align-items: center;
   margin-bottom: 8px;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-course {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__top .blog__content-top__course {
   font-family: "Lato";
   font-weight: 700;
   font-size: 14px;
@@ -1012,11 +1088,11 @@ body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-c
           align-items: center;
   color: #787a80;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-vertical {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__top .blog__content-top__vertical {
   color: #787a80;
   margin: 0px 12px;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-data {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__top .blog__content-top__data {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1027,10 +1103,10 @@ body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-c
       -ms-flex-pack: center;
           justify-content: center;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-data .post__data-iconBox {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__top .blog__content-top__data .blog__data-img__box {
   margin-right: 8px;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-data .post__data-data {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__top .blog__content-top__data .blog__data-date {
   font-family: "Lato";
   font-weight: 400;
   font-size: 14px;
@@ -1039,7 +1115,7 @@ body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-c
           align-items: center;
   color: #787a80;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-time {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__top .blog__content-top__time {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1050,10 +1126,10 @@ body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-c
       -ms-flex-pack: center;
           justify-content: center;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-time .post__time-iconBox {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__top .blog__content-top__time .blog__time-img__box {
   margin-right: 8px;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-time .post__time-time {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__top .blog__content-top__time .post__time-time {
   font-family: "Lato";
   font-weight: 400;
   font-size: 14px;
@@ -1062,7 +1138,7 @@ body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-c
           align-items: center;
   color: #787a80;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-info .blog__post-title {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__info .blog__content-info__title {
   font-family: "Lato";
   font-weight: 700;
   font-size: 20px;
@@ -1070,7 +1146,7 @@ body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-c
   color: #1e212c;
   margin-bottom: 8px;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-info .blog__post-descr {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__info .blog__content-info__descr {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
@@ -1078,7 +1154,7 @@ body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-c
   color: #424551;
   margin-bottom: 16px;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-info .blog__post-btn {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__info .blog__content-info__click {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1087,7 +1163,7 @@ body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-c
           align-items: center;
   cursor: pointer;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-info .blog__post-btn .blog__post-btn__descr {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__info .blog__content-info__click .blog__info-click__text {
   font-family: "Lato";
   font-weight: 700;
   font-size: 16px;
@@ -1095,9 +1171,9 @@ body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-c
   margin-right: 8px;
 }
 body .wrapper #main .subscribe .subscribe__uniqcontainer {
-  padding: 120px 0px 0px 0px;
+  padding-top: 120px;
   margin: 0 auto;
-  max-width: 1920px;
+  max-width: 1910px;
   min-height: 564px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1113,7 +1189,7 @@ body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center {
   margin: 0px 0px 180px 0px;
   min-width: 810px;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__prevtext {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-text {
   font-family: "Lato";
   font-weight: 700;
   font-size: 16px;
@@ -1123,7 +1199,7 @@ body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .sub
   color: #1e212c;
   margin-bottom: 8px;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__title {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-title {
   max-width: 810px;
   font-family: "Lato";
   font-weight: 900;
@@ -1132,12 +1208,19 @@ body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .sub
   color: #1e212c;
   margin-bottom: 60px;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form {
   max-width: 606px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail {
-  min-width: 422px;
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input {
+  min-width: 100%;
   min-height: 52px;
   padding: 13px 16px;
   margin-right: 24px;
@@ -1149,34 +1232,203 @@ body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .sub
   border-radius: 4px;
   background-color: #fff;
   outline: none;
+  margin-bottom: 16px;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::-webkit-input-placeholder {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input::-webkit-input-placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   color: #9a9ca5;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::-moz-placeholder {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input::-moz-placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   color: #9a9ca5;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail:-ms-input-placeholder {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input:-ms-input-placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   color: #9a9ca5;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::-ms-input-placeholder {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input::-ms-input-placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   color: #9a9ca5;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::placeholder {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input::placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   color: #9a9ca5;
+}
+body .wrapper #footer {
+  font-family: "Lato";
+}
+body .wrapper #footer .footer__body {
+  padding: 80px 0px 60px 0px;
+  background-color: #1e212c;
+}
+body .wrapper #footer .footer__body .footer__container {
+  padding: 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body .wrapper #footer .footer__body .footer__container .footer__body-left {
+  max-width: 279px;
+}
+body .wrapper #footer .footer__body .footer__container .footer__body-left .footer__left-img__box {
+  margin-bottom: 24px;
+}
+body .wrapper #footer .footer__body .footer__container .footer__body-left .footer__left-descr {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #ffffff;
+  opacity: 0.6;
+  margin-bottom: 38px;
+}
+body .wrapper #footer .footer__body .footer__container .footer__body-left .footer__left-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #footer .footer__body .footer__container .footer__body-left .footer__left-socials .footer__socials-img__box:not(:last-child) {
+  margin-right: 20px;
+}
+body .wrapper #footer .footer__body .footer__container .footer__body-left .footer__left-socials .footer__socials-img__box .footer__socials-img {
+  cursor: pointer;
+}
+body .wrapper #footer .footer__body .footer__container .footer__body-list .footer__body-list__title {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+body .wrapper #footer .footer__body .footer__container .footer__body-list .footer__body-list__item {
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 0.6;
+  cursor: pointer;
+}
+body .wrapper #footer .footer__body .footer__container .footer__body-list .footer__body-list__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+body .wrapper #footer .footer__body .footer__container .footer__body-contact .footer__body-contact__title {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+body .wrapper #footer .footer__body .footer__container .footer__body-contact .footer__body-contact__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+body .wrapper #footer .footer__body .footer__container .footer__body-contact .footer__body-contact__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+body .wrapper #footer .footer__body .footer__container .footer__body-contact .footer__body-contact__item .footer__contact-img {
+  margin-right: 8px;
+}
+body .wrapper #footer .footer__body .footer__container .footer__body-contact .footer__body-contact__item .footer-contact__text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+body .wrapper #footer .footer__body .footer__container .footer__body-newsletter {
+  max-width: 286px;
+}
+body .wrapper #footer .footer__body .footer__container .footer__body-newsletter .footer__body-newsletter__title {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+body .wrapper #footer .footer__body .footer__container .footer__body-newsletter .footer__body-newsletter__input {
+  padding: 9px 12px;
+  min-width: 100%;
+  min-height: 36px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffffff;
+  opacity: 0.6;
+  outline: none;
+  margin-bottom: 12px;
+}
+body .wrapper #footer .footer__body .footer__container .footer__body-newsletter .footer__body-newsletter__warning {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+  color: #ffffff;
+  opacity: 0.6;
+}
+body .wrapper #footer .footer__footer {
+  padding: 20px 0px;
+  background-color: #292c37;
+}
+body .wrapper #footer .footer__footer .footer__container {
+  padding: 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body .wrapper #footer .footer__footer .footer__container .footer__footer-left {
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper #footer .footer__footer .footer__container .footer__footer-left .footer__footer-left__img {
+  margin: 0px 4px;
+}
+body .wrapper #footer .footer__footer .footer__container .footer__footer-right {
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.6;
+  cursor: pointer;
 }

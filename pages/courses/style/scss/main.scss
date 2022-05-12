@@ -143,6 +143,10 @@
         .courses__footer-img {
           cursor: pointer;
           margin-right: 16px;
+          transition: all 0.2s;
+          &:hover {
+            transform: rotate(0deg, 360deg);
+          }
         }
 
         .courses__footer-text {
