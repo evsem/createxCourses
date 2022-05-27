@@ -9,10 +9,27 @@
       href="https://fonts.googleapis.com/css?family=Lato:regular,700,900"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script
+      src="https://unpkg.com/swiper@8/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="./homepage/homepage.js" defer></script>
     <title>Homepage</title>
   </head>
   <body>
     <div class="wrapper">
+      <section class="modals">
+        <div class="modals__wrapper">
+          <div class="modal" data-modal="login__modal">kassi</div>
+
+          <div class="modal" data-modal="register__modal">soua</div>
+        </div>
+      </section>
+
       <header id="header">
         <div class="header__container">
           <div class="header__top">
@@ -63,8 +80,17 @@
                   class="header__right-login__img"
                 />
                 <div class="header__right-login__text">
-                  <span class="header__login-text__login">Log in</span>
-                  / <span class="header__login-text__register">Register</span>
+                  <span
+                    class="header__login-text__login header__button"
+                    data-path__modal="login__modal"
+                    >Log in</span
+                  >
+                  /
+                  <span
+                    class="header__login-text__register header__button"
+                    data-path__modal="register__modal"
+                    >Register</span
+                  >
                 </div>
               </div>
             </div>
@@ -72,18 +98,6 @@
 
           <div class="header__center">
             <div class="header__center-left">
-              <div class="header__center-left__play">
-                <div class="header__left-play__circle">
-                  <div class="header__play-circle__block">
-                    <img
-                      src="./homepage/src/icons/playHeader.svg"
-                      alt="play"
-                      class="header__play-img"
-                    />
-                  </div>
-                </div>
-                <span class="header__left-play__text">Play showreel</span>
-              </div>
               <h1 class="header__center-left__title">
                 Enjoy studying with Createx Online Courses
               </h1>
@@ -150,20 +164,19 @@
           <div class="about__container">
             <div class="about__img-box">
               <img
-                src="./homepage/src/img/about.jpg"
+                src="./homepage/src/img/life_1.jpg"
                 alt="image"
                 class="about__img"
               />
             </div>
 
             <div class="about__info">
-              <span class="about__info-text">Who we are</span>
               <h2 class="about__info-title">Why Createx?</h2>
               <ul class="about__info-list">
                 <li class="about__info-list__item">
                   <img
                     src="./homepage/src/icons/list-item.svg"
-                    alt=""
+                    alt="icon"
                     class="about__list-item-img"
                   />
                   <p class="about__list-item-descr">
@@ -175,7 +188,7 @@
                   <div class="about__list-item-imgBox">
                     <img
                       src="./homepage/src/icons/list-item.svg"
-                      alt=""
+                      alt="icon"
                       class="about__list-item-img"
                     />
                   </div>
@@ -188,7 +201,7 @@
                   <div class="about__list-item-imgBox">
                     <img
                       src="./homepage/src/icons/list-item.svg"
-                      alt=""
+                      alt="icon"
                       class="about__list-item-img"
                     />
                   </div>
@@ -201,7 +214,7 @@
                   <div class="about__list-item-imgBox">
                     <img
                       src="./homepage/src/icons/list-item.svg"
-                      alt=""
+                      alt="icon"
                       class="about__list-item-img"
                     />
                   </div>
@@ -214,7 +227,7 @@
                   <div class="about__list-item-imgBox">
                     <img
                       src="./homepage/src/icons/list-item.svg"
-                      alt=""
+                      alt="icon"
                       class="about__list-item-img"
                     />
                   </div>
@@ -227,7 +240,7 @@
                   <div class="about__list-item-imgBox">
                     <img
                       src="./homepage/src/icons/list-item.svg"
-                      alt=""
+                      alt="icon"
                       class="about__list-item-img"
                     />
                   </div>
@@ -258,11 +271,14 @@
 
             <div class="courses__cards">
               <div class="courses__cards-item">
-                <img
-                  src="./homepage/src/img/1.jpg"
-                  alt="image"
-                  class="courses__item-img"
-                />
+                <div class="courses__item-img__box">
+                  <img
+                    src="./homepage/src/img/girl_2.jpg"
+                    alt="image"
+                    class="courses__item-img"
+                  />
+                </div>
+
                 <div class="courses__item-content">
                   <span class="courses__item-content__direction"
                     >Marketing</span
@@ -281,115 +297,123 @@
               </div>
 
               <div class="courses__cards-item">
-                <img
-                  src="./homepage/src/img/1.jpg"
-                  alt="image"
-                  class="courses__item-img"
-                />
+                <div class="courses__item-img__box">
+                  <img
+                    src="./homepage/src/img/girl_2.jpg"
+                    alt="image"
+                    class="courses__item-img"
+                  />
+                </div>
                 <div class="courses__item-content">
                   <span class="courses__item-content__direction"
-                    >Marketing</span
+                    >HR & Recruting</span
                   >
                   <h4 class="courses__item-content__title">
-                    The Ultimate Google Ads Training Course
+                    HR Management and Analytics
                   </h4>
                   <div class="courses__item-content__info">
-                    <span class="courses__content-info__price">$100</span>
+                    <span class="courses__content-info__price">$200</span>
                     <div class="courses__content-info__vertical"></div>
                     <span class="courses__content-info__name"
-                      >by Jerome Bell</span
+                      >by Leslie Alexander Li</span
                     >
                   </div>
                 </div>
               </div>
 
               <div class="courses__cards-item">
-                <img
-                  src="./homepage/src/img/1.jpg"
-                  alt="image"
-                  class="courses__item-img"
-                />
+                <div class="courses__item-img__box">
+                  <img
+                    src="./homepage/src/img/girl_2.jpg"
+                    alt="image"
+                    class="courses__item-img"
+                  />
+                </div>
                 <div class="courses__item-content">
                   <span class="courses__item-content__direction"
-                    >Marketing</span
+                    >Management</span
                   >
                   <h4 class="courses__item-content__title">
-                    The Ultimate Google Ads Training Course
+                    Product Management Fundamentals
                   </h4>
                   <div class="courses__item-content__info">
-                    <span class="courses__content-info__price">$100</span>
+                    <span class="courses__content-info__price">$480</span>
                     <div class="courses__content-info__vertical"></div>
                     <span class="courses__content-info__name"
-                      >by Jerome Bell</span
+                      >by Marvin McKinney</span
                     >
                   </div>
                 </div>
               </div>
 
               <div class="courses__cards-item">
-                <img
-                  src="./homepage/src/img/1.jpg"
-                  alt="image"
-                  class="courses__item-img"
-                />
+                <div class="courses__item-img__box">
+                  <img
+                    src="./homepage/src/img/girl_2.jpg"
+                    alt="image"
+                    class="courses__item-img"
+                  />
+                </div>
                 <div class="courses__item-content">
                   <span class="courses__item-content__direction"
                     >Marketing</span
                   >
                   <h4 class="courses__item-content__title">
-                    The Ultimate Google Ads Training Course
+                    Brand Management & PR Communications
                   </h4>
                   <div class="courses__item-content__info">
-                    <span class="courses__content-info__price">$100</span>
+                    <span class="courses__content-info__price">$580</span>
                     <div class="courses__content-info__vertical"></div>
                     <span class="courses__content-info__name"
-                      >by Jerome Bell</span
+                      >by Kristin Watson</span
                     >
                   </div>
                 </div>
               </div>
 
               <div class="courses__cards-item">
-                <img
-                  src="./homepage/src/img/1.jpg"
-                  alt="image"
-                  class="courses__item-img"
-                />
+                <div class="courses__item-img__box">
+                  <img
+                    src="./homepage/src/img/girl_2.jpg"
+                    alt="image"
+                    class="courses__item-img"
+                  />
+                </div>
                 <div class="courses__item-content">
                   <span class="courses__item-content__direction"
-                    >Marketing</span
+                    >Management</span
                   >
                   <h4 class="courses__item-content__title">
-                    The Ultimate Google Ads Training Course
+                    Business Development Management
                   </h4>
                   <div class="courses__item-content__info">
-                    <span class="courses__content-info__price">$100</span>
+                    <span class="courses__content-info__price">$400</span>
                     <div class="courses__content-info__vertical"></div>
                     <span class="courses__content-info__name"
-                      >by Jerome Bell</span
+                      >by Dianne Russell</span
                     >
                   </div>
                 </div>
               </div>
 
               <div class="courses__cards-item">
-                <img
-                  src="./homepage/src/img/1.jpg"
-                  alt="image"
-                  class="courses__item-img"
-                />
+                <div class="courses__item-img__box">
+                  <img
+                    src="./homepage/src/img/girl_2.jpg"
+                    alt="image"
+                    class="courses__item-img"
+                  />
+                </div>
                 <div class="courses__item-content">
-                  <span class="courses__item-content__direction"
-                    >Marketing</span
-                  >
+                  <span class="courses__item-content__direction">Design</span>
                   <h4 class="courses__item-content__title">
-                    The Ultimate Google Ads Training Course
+                    Graphic Design Basic
                   </h4>
                   <div class="courses__item-content__info">
-                    <span class="courses__content-info__price">$100</span>
+                    <span class="courses__content-info__price">$400</span>
                     <div class="courses__content-info__vertical"></div>
                     <span class="courses__content-info__name"
-                      >by Jerome Bell</span
+                      >by Guy Hawkins</span
                     >
                   </div>
                 </div>
@@ -625,7 +649,7 @@
               <div class="team__cards-card">
                 <div class="team__card-img__box">
                   <img
-                    src="./homepage/src/img/girl_2.jpg"
+                    src="./homepage/src/img/life_1.jpg"
                     alt="girl"
                     class="team__card-img"
                   />
@@ -641,7 +665,7 @@
               <div class="team__cards-card">
                 <div class="team__card-img__box">
                   <img
-                    src="./homepage/src/img/girl_2.jpg"
+                    src="./homepage/src/img/life_1.jpg"
                     alt="girl"
                     class="team__card-img"
                   />
@@ -657,7 +681,7 @@
               <div class="team__cards-card">
                 <div class="team__card-img__box">
                   <img
-                    src="./homepage/src/img/girl_2.jpg"
+                    src="./homepage/src/img/life_1.jpg"
                     alt="girl"
                     class="team__card-img"
                   />
@@ -673,7 +697,7 @@
               <div class="team__cards-card">
                 <div class="team__card-img__box">
                   <img
-                    src="./homepage/src/img/girl_2.jpg"
+                    src="./homepage/src/img/life_1.jpg"
                     alt="girl"
                     class="team__card-img"
                   />
@@ -690,76 +714,211 @@
         </section>
 
         <section class="testimonials">
-          <div class="testimonials__container">
+          <div class="testimonials__uniqcontainer">
             <div class="testimonials__header">
-              <span class="testimonials__prevtext">TESTIMONIALS</span>
-              <h2 class="testimonials__title">What our students say</h2>
+              <span class="testimonials__header-text">TESTIMONIALS</span>
+              <h2 class="testimonials__header-title">What our students say</h2>
             </div>
             <div class="testimonials__body">
-              <div class="testimonials__body-left">
+              <picture class="testimonials__body-leftArrow__box">
                 <img
-                  src="./homepage/src/icons/arrowTeamLeft.svg"
+                  src="./aboutUs/src/icons/arrowLeft.svg"
                   alt="arrow"
-                  class="testimonials__body-leftArrow"
+                  class="testimonials__body-leftArrow swiper-button-prev"
                 />
-              </div>
-              <div class="testimonials__body-center">
-                <div class="testimonials__cards">
-                  <div class="testimonials__cards-left">
-                    <img
-                      src="./homepage/src/icons/forSwiper.svg"
-                      alt="icon"
-                      class="testimonials__cards-leftIcon"
-                    />
-                    <img
-                      src="./homepage/src/icons/forSwiper.svg"
-                      alt="icon"
-                      class="testimonials__cards-leftIcon"
-                    />
-                  </div>
-                  <div class="testimonials__card">
-                    <p class="testimonials__card-descr">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Justo, amet lectus quam viverra mus lobortis fermentum
-                      amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis
-                      tempus ornare turpis quis non. Congue tortor in euismod
-                      vulputate etiam eros. Pulvinar neque pharetra arcu diam
-                      maecenas diam integer in.
-                    </p>
-                    <div class="testimonials__card-footer">
-                      <div class="testimonials__card-avaBox">
-                        <img
-                          src="./homepage/src/img/girl_2.jpg"
-                          alt=""
-                          class="testimonials__card-ava"
-                        />
+              </picture>
+
+              <div class="testimonials__box swiper-container">
+                <div class="testimonials__wrapper swiper-wrapper">
+                  <div class="testimonials__item swiper-slide">
+                    <picture class="testimonials__item-left">
+                      <img
+                        src="./aboutUs/src/icons/forSwiper.svg"
+                        alt="image"
+                        class="testimonials__item-img"
+                      />
+                      <img
+                        src="./aboutUs/src/icons/forSwiper.svg"
+                        alt="image"
+                        class="testimonials__item-img"
+                      />
+                    </picture>
+                    <div class="testimonials__item-content">
+                      <p class="testimonials__item-content__descr">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Justo, amet lectus quam viverra mus lobortis fermentum
+                        amet, eu. Pulvinar eu sed purus facilisi. Vitae id
+                        turpis tempus ornare turpis quis non. Congue tortor in
+                        euismod vulputate etiam eros. Pulvinar neque pharetra
+                        arcu diam maecenas diam integer in.
+                      </p>
+                      <div class="testimonials__item-content__personal">
+                        <div class="testimonials__item-ava__box"></div>
+                        <div class="testimonials__item-info">
+                          <span class="testimonials__item-info__name"
+                            >Eleanor Pena</span
+                          >
+                          <span class="testimonials__item-info__position"
+                            >Position, Course</span
+                          >
+                        </div>
                       </div>
-                      <div class="testimonials__card-info">
-                        <span class="testimonials__card-name"
-                          >Eleanor Pena</span
-                        >
-                        <span class="testimonials__card-positon"
-                          >Position, Course</span
-                        >
+                    </div>
+                  </div>
+
+                  <div class="testimonials__item swiper-slide">
+                    <picture class="testimonials__item-left">
+                      <img
+                        src="./aboutUs/src/icons/forSwiper.svg"
+                        alt="image"
+                        class="testimonials__item-img"
+                      />
+                      <img
+                        src="./aboutUs/src/icons/forSwiper.svg"
+                        alt="image"
+                        class="testimonials__item-img"
+                      />
+                    </picture>
+                    <div class="testimonials__item-content">
+                      <p class="testimonials__item-content__descr">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Justo, amet lectus quam viverra mus lobortis fermentum
+                        amet, eu. Pulvinar eu sed purus facilisi. Vitae id
+                        turpis tempus ornare turpis quis non. Congue tortor in
+                        euismod vulputate etiam eros. Pulvinar neque pharetra
+                        arcu diam maecenas diam integer in.
+                      </p>
+                      <div class="testimonials__item-content__personal">
+                        <div class="testimonials__item-ava__box"></div>
+                        <div class="testimonials__item-info">
+                          <span class="testimonials__item-info__name"
+                            >Eleanor Pena</span
+                          >
+                          <span class="testimonials__item-info__position"
+                            >Position, Course</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="testimonials__item swiper-slide">
+                    <picture class="testimonials__item-left">
+                      <img
+                        src="./aboutUs/src/icons/forSwiper.svg"
+                        alt="image"
+                        class="testimonials__item-img"
+                      />
+                      <img
+                        src="./aboutUs/src/icons/forSwiper.svg"
+                        alt="image"
+                        class="testimonials__item-img"
+                      />
+                    </picture>
+                    <div class="testimonials__item-content">
+                      <p class="testimonials__item-content__descr">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Justo, amet lectus quam viverra mus lobortis fermentum
+                        amet, eu. Pulvinar eu sed purus facilisi. Vitae id
+                        turpis tempus ornare turpis quis non. Congue tortor in
+                        euismod vulputate etiam eros. Pulvinar neque pharetra
+                        arcu diam maecenas diam integer in.
+                      </p>
+                      <div class="testimonials__item-content__personal">
+                        <div class="testimonials__item-ava__box"></div>
+                        <div class="testimonials__item-info">
+                          <span class="testimonials__item-info__name"
+                            >Eleanor Pena</span
+                          >
+                          <span class="testimonials__item-info__position"
+                            >Position, Course</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="testimonials__item swiper-slide">
+                    <picture class="testimonials__item-left">
+                      <img
+                        src="./aboutUs/src/icons/forSwiper.svg"
+                        alt="image"
+                        class="testimonials__item-img"
+                      />
+                      <img
+                        src="./aboutUs/src/icons/forSwiper.svg"
+                        alt="image"
+                        class="testimonials__item-img"
+                      />
+                    </picture>
+                    <div class="testimonials__item-content">
+                      <p class="testimonials__item-content__descr">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Justo, amet lectus quam viverra mus lobortis fermentum
+                        amet, eu. Pulvinar eu sed purus facilisi. Vitae id
+                        turpis tempus ornare turpis quis non. Congue tortor in
+                        euismod vulputate etiam eros. Pulvinar neque pharetra
+                        arcu diam maecenas diam integer in.
+                      </p>
+                      <div class="testimonials__item-content__personal">
+                        <div class="testimonials__item-ava__box"></div>
+                        <div class="testimonials__item-info">
+                          <span class="testimonials__item-info__name"
+                            >Eleanor Pena</span
+                          >
+                          <span class="testimonials__item-info__position"
+                            >Position, Course</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="testimonials__item swiper-slide">
+                    <picture class="testimonials__item-left">
+                      <img
+                        src="./aboutUs/src/icons/forSwiper.svg"
+                        alt="image"
+                        class="testimonials__item-img"
+                      />
+                      <img
+                        src="./aboutUs/src/icons/forSwiper.svg"
+                        alt="image"
+                        class="testimonials__item-img"
+                      />
+                    </picture>
+                    <div class="testimonials__item-content">
+                      <p class="testimonials__item-content__descr">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Justo, amet lectus quam viverra mus lobortis fermentum
+                        amet, eu. Pulvinar eu sed purus facilisi. Vitae id
+                        turpis tempus ornare turpis quis non. Congue tortor in
+                        euismod vulputate etiam eros. Pulvinar neque pharetra
+                        arcu diam maecenas diam integer in.
+                      </p>
+                      <div class="testimonials__item-content__personal">
+                        <div class="testimonials__item-ava__box"></div>
+                        <div class="testimonials__item-info">
+                          <span class="testimonials__item-info__name"
+                            >Eleanor Pena</span
+                          >
+                          <span class="testimonials__item-info__position"
+                            >Position, Course</span
+                          >
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="testimonials__body-right">
+
+              <picture class="testimonials__body-rightArrow__box">
                 <img
-                  src="./homepage/src/icons/arrowTeamRight.svg"
+                  src="./aboutUs/src/icons/arrowRight.svg"
                   alt="arrow"
-                  class="testimonials__body-rightArrow"
+                  class="testimonials__body-rightArrow swiper-button-next"
                 />
-              </div>
-            </div>
-            <div class="testimonials__footer">
-              <div class="testimonials__footer-line"></div>
-              <div class="testimonials__footer-line"></div>
-              <div class="testimonials__footer-line"></div>
-              <div class="testimonials__footer-line"></div>
-              <div class="testimonials__footer-line"></div>
+              </picture>
             </div>
           </div>
         </section>
@@ -798,26 +957,22 @@
                 <div class="blog__post-content">
                   <div class="blog__post-content__top">
                     <span class="blog__content-top__course">Marketing</span>
-                    <span class="blog__content-top__vertical">|</span>
+                    <span class="blog__content-top__vertical"></span>
                     <div class="blog__content-top__data">
-                      <div class="blog__data-img__box">
-                        <img
-                          src="./homepage/src/icons/calendar.svg"
-                          alt="icon"
-                          class="blog__data-img"
-                        />
-                      </div>
+                      <img
+                        src="./homepage/src/icons/calendar.svg"
+                        alt="icon"
+                        class="blog__data-img"
+                      />
                       <span class="blog__data-date">September 4, 2020</span>
                     </div>
-                    <span class="blog__content-top__vertical">|</span>
+                    <span class="blog__content-top__vertical"></span>
                     <div class="blog__content-top__time">
-                      <div class="blog__time-img__box">
-                        <img
-                          src="./homepage/src/icons/clock.svg"
-                          alt="icon"
-                          class="blog__time-img"
-                        />
-                      </div>
+                      <img
+                        src="./homepage/src/icons/clock.svg"
+                        alt="icon"
+                        class="blog__time-img"
+                      />
                       <span class="blog__time-time">36 min</span>
                     </div>
                   </div>
@@ -866,29 +1021,25 @@
                   <div class="blog__post-content__top">
                     <span class="blog__content-top__course">Management</span>
 
-                    <span class="blog__content-top__vertical">|</span>
+                    <span class="blog__content-top__vertical"></span>
 
                     <div class="blog__content-top__data">
-                      <div class="blog__data-img__box">
-                        <img
-                          src="./homepage/src/icons/calendar.svg"
-                          alt="icon"
-                          class="blog__data-img"
-                        />
-                      </div>
-                      <span class="blog__data-img">August 25, 2020</span>
+                      <img
+                        src="./homepage/src/icons/calendar.svg"
+                        alt="icon"
+                        class="blog__data-img"
+                      />
+                      <span class="blog__data-date">August 25, 2020</span>
                     </div>
 
-                    <span class="blog__content-top__vertical">|</span>
+                    <span class="blog__content-top__vertical"></span>
 
                     <div class="blog__content-top__time">
-                      <div class="blog__time-img__box">
-                        <img
-                          src="./homepage/src/icons/clock.svg"
-                          alt="icon"
-                          class="blog__time-img"
-                        />
-                      </div>
+                      <img
+                        src="./homepage/src/icons/clock.svg"
+                        alt="icon"
+                        class="blog__time-img"
+                      />
                       <span class="blog__time-time">45 min</span>
                     </div>
                   </div>
@@ -937,16 +1088,14 @@
                 <div class="blog__post-content">
                   <div class="blog__post-content__top">
                     <span class="blog__content-top__course">Design</span>
-                    <span class="blog__content-top__vertical">|</span>
+                    <span class="blog__content-top__vertical"></span>
                     <div class="blog__content-top__data">
-                      <div class="blog__data-img__box">
-                        <img
-                          src="./homepage/src/icons/calendar.svg"
-                          alt="icon"
-                          class="blog__data-img"
-                        />
-                      </div>
-                      <span class="blog__data-img">August 8, 2020</span>
+                      <img
+                        src="./homepage/src/icons/calendar.svg"
+                        alt="icon"
+                        class="blog__data-img"
+                      />
+                      <span class="blog__data-date">August 8, 2020</span>
                     </div>
                   </div>
                   <div class="blog__post-content__info">

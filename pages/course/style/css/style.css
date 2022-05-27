@@ -195,7 +195,7 @@ body .wrapper #main .about .about__container .about__left .about__left-descr {
   color: #424551;
   margin-bottom: 48px;
 }
-body .wrapper #main .about .about__container .about__left .about__left-prevtitle {
+body .wrapper #main .about .about__container .about__left .about__left-text {
   font-family: "Lato";
   font-weight: 700;
   font-size: 28px;
@@ -319,7 +319,7 @@ body .wrapper #main .curator .curator__container .curator__content .curator__con
   color: #1e212c;
   margin-bottom: 16px;
 }
-body .wrapper #main .curator .curator__container .curator__content .curator__content-subdescr {
+body .wrapper #main .curator .curator__container .curator__content .curator__content-position {
   font-family: "Lato";
   font-weight: 400;
   font-size: 20px;
@@ -338,7 +338,7 @@ body .wrapper #main .curator .curator__container .curator__content .curator__con
           align-items: center;
   margin-bottom: 4px;
 }
-body .wrapper #main .curator .curator__container .curator__content .curator__content-state .curator__content-state__item .state__item-img__box {
+body .wrapper #main .curator .curator__container .curator__content .curator__content-state .curator__content-state__item .curator__item-img__box {
   margin-right: 8px;
 }
 body .wrapper #main .curator .curator__container .curator__content .curator__content-state .curator__content-state__item .curator__content-state__text {
@@ -359,7 +359,7 @@ body .wrapper #main .curator .curator__container .curator__content .curator__con
   color: #424551;
   margin-bottom: 40px;
 }
-body .wrapper #main .curator .curator__container .curator__content .curator__content-social__box {
+body .wrapper #main .curator .curator__container .curator__content .curator__content-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,10 +367,10 @@ body .wrapper #main .curator .curator__container .curator__content .curator__con
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper #main .curator .curator__container .curator__content .curator__content-social__box .curator__content-social__item:not(:last-child) {
+body .wrapper #main .curator .curator__container .curator__content .curator__content-social .curator__content-social__item:not(:last-child) {
   margin-right: 24px;
 }
-body .wrapper #main .curator .curator__container .curator__content .curator__content-social__box .curator__content-social__item .curator__content-img {
+body .wrapper #main .curator .curator__container .curator__content .curator__content-social .curator__content-social__item .curator__content-img {
   cursor: pointer;
 }
 body .wrapper #main .steps .steps__container {
@@ -483,7 +483,7 @@ body .wrapper #main .cta .cta__container .cta__header .cta__header-title {
   text-align: center;
   color: #1e212c;
 }
-body .wrapper #main .cta .cta__container .cta__header .cta__header-time__box {
+body .wrapper #main .cta .cta__container .cta__header .cta__header-time__block {
   padding-left: 5px;
   min-width: 190px;
   display: -webkit-box;
@@ -496,7 +496,7 @@ body .wrapper #main .cta .cta__container .cta__header .cta__header-time__box {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-body .wrapper #main .cta .cta__container .cta__header .cta__header-time__box .cta__header-time__item .cta__header-time__number {
+body .wrapper #main .cta .cta__container .cta__header .cta__header-time__block .cta__header-time__item .cta__header-time__number {
   font-family: "Lato";
   font-weight: 700;
   font-size: 20px;
@@ -504,7 +504,7 @@ body .wrapper #main .cta .cta__container .cta__header .cta__header-time__box .ct
   text-align: center;
   margin-bottom: 4px;
 }
-body .wrapper #main .cta .cta__container .cta__header .cta__header-time__box .cta__header-time__item .cta__header-time__text {
+body .wrapper #main .cta .cta__container .cta__header .cta__header-time__block .cta__header-time__item .cta__header-time__text {
   font-family: "Lato";
   font-weight: 400;
   font-size: 12px;
@@ -524,7 +524,7 @@ body .wrapper #main .cta .cta__container .cta__body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-body .wrapper #main .cta .cta__container .cta__body .cta__body-inputs__box {
+body .wrapper #main .cta .cta__container .cta__body .cta__body-inputs__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -534,17 +534,17 @@ body .wrapper #main .cta .cta__container .cta__body .cta__body-inputs__box {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-body .wrapper #main .cta .cta__container .cta__body .cta__body-inputs__box .cta__body-input__item {
+body .wrapper #main .cta .cta__container .cta__body .cta__body-inputs__block .cta__body-input__item {
   margin-right: 24px;
 }
-body .wrapper #main .cta .cta__container .cta__body .cta__body-inputs__box .cta__body-input__item .cta__body-input__name {
+body .wrapper #main .cta .cta__container .cta__body .cta__body-inputs__block .cta__body-input__item .cta__body-input__name {
   font-family: "Lato";
   font-weight: 400;
   font-size: 14px;
   color: #424551;
   margin-bottom: 8px;
 }
-body .wrapper #main .cta .cta__container .cta__body .cta__body-inputs__box .cta__body-input__item .cta__body-input__input {
+body .wrapper #main .cta .cta__container .cta__body .cta__body-inputs__block .cta__body-input__item .cta__body-input__input {
   padding: 11px 16px;
   min-width: 291px;
   min-height: 44px;
@@ -557,31 +557,31 @@ body .wrapper #main .cta .cta__container .cta__body .cta__body-inputs__box .cta_
   color: #9a9ca5;
   outline: none;
 }
-body .wrapper #main .cta .cta__container .cta__body .cta__body-inputs__box .cta__body-input__item .cta__body-input__input::-webkit-input-placeholder {
+body .wrapper #main .cta .cta__container .cta__body .cta__body-inputs__block .cta__body-input__item .cta__body-input__input::-webkit-input-placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 14px;
   color: #9a9ca5;
 }
-body .wrapper #main .cta .cta__container .cta__body .cta__body-inputs__box .cta__body-input__item .cta__body-input__input::-moz-placeholder {
+body .wrapper #main .cta .cta__container .cta__body .cta__body-inputs__block .cta__body-input__item .cta__body-input__input::-moz-placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 14px;
   color: #9a9ca5;
 }
-body .wrapper #main .cta .cta__container .cta__body .cta__body-inputs__box .cta__body-input__item .cta__body-input__input:-ms-input-placeholder {
+body .wrapper #main .cta .cta__container .cta__body .cta__body-inputs__block .cta__body-input__item .cta__body-input__input:-ms-input-placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 14px;
   color: #9a9ca5;
 }
-body .wrapper #main .cta .cta__container .cta__body .cta__body-inputs__box .cta__body-input__item .cta__body-input__input::-ms-input-placeholder {
+body .wrapper #main .cta .cta__container .cta__body .cta__body-inputs__block .cta__body-input__item .cta__body-input__input::-ms-input-placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 14px;
   color: #9a9ca5;
 }
-body .wrapper #main .cta .cta__container .cta__body .cta__body-inputs__box .cta__body-input__item .cta__body-input__input::placeholder {
+body .wrapper #main .cta .cta__container .cta__body .cta__body-inputs__block .cta__body-input__item .cta__body-input__input::placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 14px;
@@ -629,11 +629,11 @@ body .wrapper #main .forWhom .forWhom__container .forWhom__left .forWhom__left-t
   line-height: 130%;
   color: #1e212c;
 }
-body .wrapper #main .forWhom .forWhom__container .forWhom__right {
+body .wrapper #main .forWhom .forWhom__container .forWhom__right-list {
   margin-top: 32px;
   max-width: 600px;
 }
-body .wrapper #main .forWhom .forWhom__container .forWhom__right .forWhom__right-list__item {
+body .wrapper #main .forWhom .forWhom__container .forWhom__right-list .forWhom__right-list__item {
   margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -642,10 +642,10 @@ body .wrapper #main .forWhom .forWhom__container .forWhom__right .forWhom__right
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper #main .forWhom .forWhom__container .forWhom__right .forWhom__right-list__item .forWhom__right-img__box {
+body .wrapper #main .forWhom .forWhom__container .forWhom__right-list .forWhom__right-list__item .forWhom__right-img__box {
   margin-right: 16px;
 }
-body .wrapper #main .forWhom .forWhom__container .forWhom__right .forWhom__right-list__item .forWhom__right-text {
+body .wrapper #main .forWhom .forWhom__container .forWhom__right-list .forWhom__right-list__item .forWhom__right-text {
   font-family: "Lato";
   font-weight: 700;
   font-size: 20px;

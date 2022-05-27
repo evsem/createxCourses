@@ -18,56 +18,62 @@
       defer
     ></script>
     <script src="./post/main.js" defer></script>
-    <title>Post</title>
+    <title>Posts</title>
   </head>
   <body>
     <div class="wrapper">
       <header id="header">
         <div class="header__container">
-          <div class="header__header">
-            <div class="header__header-left">
-              <picture class="header__logo-img__box">
-                <img
-                  src="./post/src/icons/logo.svg"
-                  alt="logo"
-                  class="header__logo-img"
-                />
-              </picture>
-              <nav class="header__menu">
-                <ul class="menu__list">
-                  <li class="menu__item">
-                    <a href="homepage.html" class="menu__item-link">Home</a>
+          <div class="header__top">
+            <div class="header__top-left">
+              <img
+                src="./homepage/src/icons/logo.svg"
+                alt="logo"
+                class="header__top-left__img"
+              />
+              <nav class="header__top-left__menu">
+                <ul class="header__left-menu__list">
+                  <li class="header__menu-list__item">
+                    <a href="homepage.html" class="header__list-item__link"
+                      >Home</a
+                    >
                   </li>
-                  <li class="menu__item">
-                    <a href="courses.html" class="menu__item-link">Courses</a>
+                  <li class="header__menu-list__item">
+                    <a href="aboutUs.html" class="header__list-item__link"
+                      >About Us</a
+                    >
                   </li>
-                  <li class="menu__item">
-                    <a href="events.html" class="menu__item-link">Events</a>
+                  <li class="header__menu-list__item">
+                    <a href="courses.html" class="header__list-item__link"
+                      >Courses</a
+                    >
                   </li>
-                  <li class="menu__item">
-                    <a href="aboutUs.html" class="menu__item-link">About Us</a>
+                  <li class="header__menu-list__item">
+                    <a href="events.html" class="header__list-item__link"
+                      >Events</a
+                    >
                   </li>
-                  <li class="menu__item">
-                    <a href="contacts.html" class="menu__item-link">Contacts</a>
+                  <li class="header__menu-list__item">
+                    <a href="contacts.html" class="header__list-item__link"
+                      >Contacts</a
+                    >
                   </li>
                 </ul>
               </nav>
             </div>
-            <div class="header__header-right">
-              <button class="header__header-right__button">
+            <div class="header__top-right">
+              <button class="header__top-right__button btn__homepage">
                 Get consultation
               </button>
-              <div class="header__header-right__login">
-                <picture class="header__login-img__box">
-                  <img
-                    src="./post/src/icons/profile.svg"
-                    alt="log in"
-                    class="header__login-img"
-                  />
-                </picture>
-                <div class="header__login-info__box">
-                  <span class="header__login-info__login">Log in</span>
-                  / <span class="header__login-info__register">Register</span>
+              <div class="header__top-right__login">
+                <img
+                  src="./homepage/src/icons/login.svg"
+                  alt="log in"
+                  class="header__right-login__img"
+                />
+                <div class="header__right-login__text">
+                  <span class="header__login-text__login">Log in</span>
+                  / <span class="header__login-text__register">Register</span>
                 </div>
               </div>
             </div>
@@ -269,7 +275,7 @@
           <aside class="main__right">
             <input
               type="text"
-              placeholder="Search blog..."
+              placeholder="Search posts..."
               class="main__right-search"
             />
 
@@ -402,7 +408,9 @@
                   placeholder="Your working email"
                   class="subscribe__info-form__input"
                 />
-                <button class="subscribe__info-form__button">Subscribe</button>
+                <button class="btn__homepage subscribe__info-form__button">
+                  Subscribe
+                </button>
               </form>
               <div class="subscribe__info-checkbox">
                 <input
@@ -584,7 +592,7 @@
                   </picture>
                   <div class="blog__header-descr__box">
                     <img
-                      src="./post/src/icons/mic.svg"
+                      src="./post/src/icons/file.svg"
                       alt="microfone"
                       class="blog__header-descr__img"
                     />
@@ -634,7 +642,9 @@
               <span class="blog__footer-text">
                 Do you want more articles, podcasts and videos?
               </span>
-              <button class="blog__footer-button">Go to blog</button>
+              <button class="btn__homepage blog__footer-button">
+                Go to blog
+              </button>
             </div>
           </div>
         </section>

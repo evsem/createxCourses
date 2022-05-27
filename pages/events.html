@@ -16,46 +16,56 @@
     <div class="wrapper">
       <header id="header">
         <div class="header__container">
-          <div class="header__header">
-            <div class="header__header-left">
+          <div class="header__top">
+            <div class="header__top-left">
               <img
-                src="./events/src/icons/logo.svg"
+                src="./homepage/src/icons/logo.svg"
                 alt="logo"
-                class="header__logo-img"
+                class="header__top-left__img"
               />
-              <nav class="header__menu">
-                <ul class="menu__list">
-                  <li class="menu__item">
-                    <a href="homepage.html" class="menu__item-link">Home</a>
+              <nav class="header__top-left__menu">
+                <ul class="header__left-menu__list">
+                  <li class="header__menu-list__item">
+                    <a href="homepage.html" class="header__list-item__link"
+                      >Home</a
+                    >
                   </li>
-                  <li class="menu__item">
-                    <a href="courses.html" class="menu__item-link">Courses</a>
+                  <li class="header__menu-list__item">
+                    <a href="aboutUs.html" class="header__list-item__link"
+                      >About Us</a
+                    >
                   </li>
-                  <li class="menu__item">
-                    <a href="aboutUs.html" class="menu__item-link">About Us</a>
+                  <li class="header__menu-list__item">
+                    <a href="courses.html" class="header__list-item__link"
+                      >Courses</a
+                    >
                   </li>
-                  <li class="menu__item">
-                    <a href="post.html" class="menu__item-link">Posts</a>
+                  <li class="header__menu-list__item">
+                    <a href="post.html" class="header__list-item__link"
+                      >Posts</a
+                    >
                   </li>
-                  <li class="menu__item">
-                    <a href="contacts.html" class="menu__item-link">Contacts</a>
+                  <li class="header__menu-list__item">
+                    <a href="contacts.html" class="header__list-item__link"
+                      >Contacts</a
+                    >
                   </li>
                 </ul>
               </nav>
             </div>
-            <div class="header__header-right">
-              <button class="header__header-right__button">
+            <div class="header__top-right">
+              <button class="header__top-right__button btn__homepage">
                 Get consultation
               </button>
-              <div class="header__header-right__login">
+              <div class="header__top-right__login">
                 <img
-                  src="./events/src/icons/profile.svg"
+                  src="./homepage/src/icons/login.svg"
                   alt="log in"
-                  class="header__login-img"
+                  class="header__right-login__img"
                 />
-                <div class="header__login-info__box">
-                  <span class="header__login-info__login">Log in</span>
-                  / <span class="header__login-info__register">Register</span>
+                <div class="header__right-login__text">
+                  <span class="header__login-text__login">Log in</span>
+                  / <span class="header__login-text__register">Register</span>
                 </div>
               </div>
             </div>
@@ -67,10 +77,6 @@
         <section class="heading">
           <span class="heading__text">Our events</span>
           <h1 class="heading__title">Lectures, workshops & master-classes</h1>
-        </section>
-
-        <section class="toolbar">
-          <div class="toolbar__container"></div>
         </section>
 
         <section class="events">
@@ -100,20 +106,19 @@
 
               <div class="events__list-item">
                 <div class="events__list-item__info">
-                  <span class="events__item-info__number">05</span>
+                  <span class="events__item-info__number">24</span>
                   <div class="events__item-info__right">
-                    <span class="events__info-right__month">August</span>
-                    <span class="events__info-right__time">11:00 – 14:00</span>
+                    <span class="events__info-right__month">Jule</span>
+                    <span class="events__info-right__time">11:00 – 15:00</span>
                   </div>
                 </div>
 
                 <div class="events__list-item__content">
                   <h5 class="events__item-content__heading">
-                    Formation of the organizational structure of the company in
-                    the face of uncertainty.
+                    Building a customer service department. Best Practices.
                   </h5>
                   <span class="events__item-content__online"
-                    >Onine master-class</span
+                    >Onine lecture</span
                   >
                 </div>
 
@@ -126,17 +131,61 @@
 
               <div class="events__list-item">
                 <div class="events__list-item__info">
-                  <span class="events__item-info__number">05</span>
+                  <span class="events__item-info__number">16</span>
                   <div class="events__item-info__right">
-                    <span class="events__info-right__month">August</span>
-                    <span class="events__info-right__time">11:00 – 14:00</span>
+                    <span class="events__info-right__month">Jule</span>
+                    <span class="events__info-right__time">11:00 – 12:30</span>
                   </div>
                 </div>
 
                 <div class="events__list-item__content">
                   <h5 class="events__item-content__heading">
-                    Formation of the organizational structure of the company in
-                    the face of uncertainty.
+                    How to apply methods of speculative design in practice.
+                    Worldbuilding prototyping.
+                  </h5>
+                  <span class="events__item-content__online"
+                    >Onine workshop</span
+                  >
+                </div>
+
+                <button class="events__list-item__button">View more</button>
+              </div>
+
+              <div class="events__list-item">
+                <div class="events__list-item__info">
+                  <span class="events__item-info__number">10</span>
+                  <div class="events__item-info__right">
+                    <span class="events__info-right__month">Jule</span>
+                    <span class="events__info-right__time">9:00 – 11:00</span>
+                  </div>
+                </div>
+
+                <div class="events__list-item__content">
+                  <h5 class="events__item-content__heading">
+                    Find and evaluate: search and assessment tools for
+                    candidates.
+                  </h5>
+                  <span class="events__item-content__online"
+                    >Onine workshop</span
+                  >
+                </div>
+
+                <button class="events__list-item__button">View more</button>
+              </div>
+
+              <div class="events__list-item">
+                <div class="events__list-item__info">
+                  <span class="events__item-info__number">27</span>
+                  <div class="events__item-info__right">
+                    <span class="events__info-right__month">June</span>
+                    <span class="events__info-right__time">8:00 – 12:00</span>
+                  </div>
+                </div>
+
+                <div class="events__list-item__content">
+                  <h5 class="events__item-content__heading">
+                    Connection to Microsoft Excel and Google Sheets, Data
+                    Visualization in Power BI.
                   </h5>
                   <span class="events__item-content__online"
                     >Onine master-class</span
@@ -148,20 +197,20 @@
 
               <div class="events__list-item">
                 <div class="events__list-item__info">
-                  <span class="events__item-info__number">05</span>
+                  <span class="events__item-info__number">18</span>
                   <div class="events__item-info__right">
-                    <span class="events__info-right__month">August</span>
-                    <span class="events__info-right__time">11:00 – 14:00</span>
+                    <span class="events__info-right__month">June</span>
+                    <span class="events__info-right__time">11:00 – 11:50</span>
                   </div>
                 </div>
 
                 <div class="events__list-item__content">
                   <h5 class="events__item-content__heading">
-                    Formation of the organizational structure of the company in
-                    the face of uncertainty.
+                    The company's business page as an additional tool to support
+                    the announcement of vacancies.
                   </h5>
                   <span class="events__item-content__online"
-                    >Onine master-class</span
+                    >Onine lecture</span
                   >
                 </div>
 
@@ -170,20 +219,20 @@
 
               <div class="events__list-item">
                 <div class="events__list-item__info">
-                  <span class="events__item-info__number">05</span>
+                  <span class="events__item-info__number">15</span>
                   <div class="events__item-info__right">
-                    <span class="events__info-right__month">August</span>
+                    <span class="events__info-right__month">June</span>
                     <span class="events__info-right__time">11:00 – 14:00</span>
                   </div>
                 </div>
 
                 <div class="events__list-item__content">
                   <h5 class="events__item-content__heading">
-                    Formation of the organizational structure of the company in
-                    the face of uncertainty.
+                    Marketing or growth hacking: main differences and what
+                    business needs.
                   </h5>
                   <span class="events__item-content__online"
-                    >Onine master-class</span
+                    >Onine lecture</span
                   >
                 </div>
 
@@ -192,20 +241,20 @@
 
               <div class="events__list-item">
                 <div class="events__list-item__info">
-                  <span class="events__item-info__number">05</span>
+                  <span class="events__item-info__number">02</span>
                   <div class="events__item-info__right">
-                    <span class="events__info-right__month">August</span>
-                    <span class="events__info-right__time">11:00 – 14:00</span>
+                    <span class="events__info-right__month">June</span>
+                    <span class="events__info-right__time">10:00 – 12:00</span>
                   </div>
                 </div>
 
                 <div class="events__list-item__content">
                   <h5 class="events__item-content__heading">
-                    Formation of the organizational structure of the company in
-                    the face of uncertainty.
+                    How to brief a client and present your design to approve it
+                    from the first show.
                   </h5>
                   <span class="events__item-content__online"
-                    >Onine master-class</span
+                    >Onine lecture</span
                   >
                 </div>
 
@@ -214,86 +263,19 @@
 
               <div class="events__list-item">
                 <div class="events__list-item__info">
-                  <span class="events__item-info__number">05</span>
+                  <span class="events__item-info__number">19</span>
                   <div class="events__item-info__right">
-                    <span class="events__info-right__month">August</span>
-                    <span class="events__info-right__time">11:00 – 14:00</span>
+                    <span class="events__info-right__month">May</span>
+                    <span class="events__info-right__time">11:00 – 13:00</span>
                   </div>
                 </div>
 
                 <div class="events__list-item__content">
                   <h5 class="events__item-content__heading">
-                    Formation of the organizational structure of the company in
-                    the face of uncertainty.
+                    Who is a project manager and do I want to be PM?
                   </h5>
                   <span class="events__item-content__online"
-                    >Onine master-class</span
-                  >
-                </div>
-
-                <button class="events__list-item__button">View more</button>
-              </div>
-
-              <div class="events__list-item">
-                <div class="events__list-item__info">
-                  <span class="events__item-info__number">05</span>
-                  <div class="events__item-info__right">
-                    <span class="events__info-right__month">August</span>
-                    <span class="events__info-right__time">11:00 – 14:00</span>
-                  </div>
-                </div>
-
-                <div class="events__list-item__content">
-                  <h5 class="events__item-content__heading">
-                    Formation of the organizational structure of the company in
-                    the face of uncertainty.
-                  </h5>
-                  <span class="events__item-content__online"
-                    >Onine master-class</span
-                  >
-                </div>
-
-                <button class="events__list-item__button">View more</button>
-              </div>
-
-              <div class="events__list-item">
-                <div class="events__list-item__info">
-                  <span class="events__item-info__number">05</span>
-                  <div class="events__item-info__right">
-                    <span class="events__info-right__month">August</span>
-                    <span class="events__info-right__time">11:00 – 14:00</span>
-                  </div>
-                </div>
-
-                <div class="events__list-item__content">
-                  <h5 class="events__item-content__heading">
-                    Formation of the organizational structure of the company in
-                    the face of uncertainty.
-                  </h5>
-                  <span class="events__item-content__online"
-                    >Onine master-class</span
-                  >
-                </div>
-
-                <button class="events__list-item__button">View more</button>
-              </div>
-
-              <div class="events__list-item">
-                <div class="events__list-item__info">
-                  <span class="events__item-info__number">05</span>
-                  <div class="events__item-info__right">
-                    <span class="events__info-right__month">August</span>
-                    <span class="events__info-right__time">11:00 – 14:00</span>
-                  </div>
-                </div>
-
-                <div class="events__list-item__content">
-                  <h5 class="events__item-content__heading">
-                    Formation of the organizational structure of the company in
-                    the face of uncertainty.
-                  </h5>
-                  <span class="events__item-content__online"
-                    >Onine master-class</span
+                    >Onine lecture</span
                   >
                 </div>
 
@@ -322,34 +304,34 @@
 
         <section class="subscribe">
           <div class="subscribe__uniqcontainer">
-            <div class="subscribe__left">
-              <img
-                src="./events/src/img/hol.png"
-                alt="image"
-                class="subscribe__left-img"
-              />
-            </div>
+            <img
+              src="./homepage/src/img/hol.jpg"
+              alt="image"
+              class="subscribe__img"
+            />
+
             <div class="subscribe__center">
-              <span class="subscribe__prevtext">Don’t miss anything</span>
-              <h2 class="subscribe__title">
+              <span class="subscribe__center-text">Don’t miss anything</span>
+              <h2 class="subscribe__center-title">
                 Subscribe to the Createx School announcements
               </h2>
-              <form class="subscribe__form">
+              <form class="subscribe__center-form">
                 <input
-                  type="mail"
+                  type="email"
                   placeholder="Your working email"
-                  class="subscribe__form-mail"
+                  class="subscribe__center-form__input"
                 />
-                <button class="subscribe__button">Subscribe</button>
+                <button class="subscribe__center-form__button btn__homepage">
+                  Subscribe
+                </button>
               </form>
             </div>
-            <div class="subscribe__right">
-              <img
-                src="./events/src/img/hol.png"
-                alt="image"
-                class="subscribe__right-img"
-              />
-            </div>
+
+            <img
+              src="./homepage/src/img/hol.jpg"
+              alt="image"
+              class="subscribe__img"
+            />
           </div>
         </section>
       </main>

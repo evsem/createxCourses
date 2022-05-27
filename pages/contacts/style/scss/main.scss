@@ -1,8 +1,31 @@
 #main {
   font-family: "Lato";
+
+  .btn__homepage {
+    padding: 0px 40px;
+    min-height: 52px;
+    border: 1px solid #ff3f3a;
+    border-radius: 4px;
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    transition: all 0.12s linear;
+    cursor: pointer;
+    &:hover {
+      background: transparent;
+      color: #ff4242;
+    }
+  }
+
+  // -----------------------------------------------------------------
+
   .contacts {
     position: relative;
     left: 34px;
+    margin-bottom: 110px;
     .contacts__container {
       display: flex;
       align-items: flex-start;
@@ -68,6 +91,15 @@
 
       .contacts__img-box {
         position: relative;
+        min-width: 628px;
+        min-height: 470px;
+        border: none;
+        border-radius: 4px;
+        background-color: #d7dadd;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         .contacts__img {
         }
         .contacts__img-box__icon {
@@ -217,18 +249,7 @@
               }
             }
             .data__form-footer__button {
-              min-width: 340px;
-              min-height: 52px;
-              background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
-              border: none;
-              border-radius: 4px;
-              font-family: "Lato";
-              font-weight: 700;
-              font-size: 16px;
-              text-align: center;
-              letter-spacing: 0.5px;
-              color: #ffffff;
-              cursor: pointer;
+              padding: 0px 60px;
             }
           }
         }

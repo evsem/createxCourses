@@ -56,15 +56,14 @@
               }
               .header__list-item__link {
                 font-family: "Lato";
-                font-weight: 700;
+                font-weight: 500;
                 font-size: 16px;
                 text-align: center;
                 color: var(--top-primary-color);
                 cursor: pointer;
-                transition: all 0.12s;
+                transition: color 0.2s;
                 &:hover {
-                  opacity: 0.9;
-                  letter-spacing: 0.2px;
+                  color: #ff3f3a;
                 }
               }
             }
@@ -89,17 +88,25 @@
           .header__right-login__text {
             display: flex;
             align-items: center;
-            font-weight: 700;
+            font-weight: 400;
             font-size: 16px;
             color: var(--top-primary-color);
             text-align: center;
             .header__login-text__login {
               cursor: pointer;
               margin-right: 4px;
+              transition: color 0.2s;
+              &:hover {
+                color: #ff4242;
+              }
             }
             .header__login-text__register {
               margin-left: 4px;
+              transition: color 0.2s;
               cursor: pointer;
+              &:hover {
+                color: #ff4242;
+              }
             }
           }
         }
@@ -109,34 +116,11 @@
     .header__center {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       flex-wrap: wrap;
       margin-bottom: 189px;
       .header__center-left {
         padding: 12px 0px 0px 0px;
-        .header__center-left__play {
-          display: flex;
-          align-items: center;
-          margin-bottom: 40px;
-          .header__left-play__circle {
-            margin-right: 16px;
-            cursor: pointer;
-            .header__play-circle__block {
-              width: 52px;
-              height: 52px;
-              background-color: #ff3f3a;
-              border: none;
-              border-radius: 50%;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              .header__play-img {
-              }
-            }
-          }
-
-          .header__left-play__text {
-          }
-        }
         .header__center-left__title {
           margin-bottom: 60px;
           max-width: 496px;

@@ -1,4 +1,25 @@
 #main {
+  .btn__homepage {
+    padding: 0px 40px;
+    min-height: 52px;
+    border: 1px solid #ff3f3a;
+    border-radius: 4px;
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    transition: all 0.12s linear;
+    cursor: pointer;
+    &:hover {
+      background: transparent;
+      color: #ff4242;
+    }
+  }
+
+  // -----------------------------------------------
+
   .main__info {
     display: flex;
     justify-content: space-between;
@@ -278,6 +299,9 @@
             border-radius: 4px;
             overflow: hidden;
             margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             .main__item-img {
             }
           }
@@ -307,7 +331,7 @@
       }
 
       .main__right-tags {
-        margin-top: 36px;
+        margin-top: 24px;
         .main__right-tags__title {
           font-family: "Lato";
           font-weight: 700;
@@ -316,7 +340,7 @@
           letter-spacing: 1px;
           text-transform: uppercase;
           color: #1e212c;
-          margin-bottom: 30px;
+          margin-bottom: 14px;
         }
         .main__right-tags__box {
           display: flex;
@@ -381,17 +405,6 @@
             margin-right: 24px;
           }
           .subscribe__info-form__button {
-            padding: 0px 40px;
-            min-height: 52px;
-            background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
-            border: none;
-            border-radius: 4px;
-            font-family: "Lato";
-            font-weight: 700;
-            font-size: 16px;
-            text-align: center;
-            letter-spacing: 0.5px;
-            color: #ffffff;
           }
         }
 
@@ -603,17 +616,6 @@
           margin-right: 40px;
         }
         .blog__footer-button {
-          padding: 0px 40px;
-          min-height: 52px;
-          background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
-          border: none;
-          border-radius: 4px;
-          font-family: "Lato";
-          font-weight: 700;
-          font-size: 16px;
-          text-align: center;
-          letter-spacing: 0.5px;
-          color: #ffffff;
         }
       }
     }

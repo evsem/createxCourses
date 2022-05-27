@@ -43,11 +43,31 @@ body .wrapper {
   overflow: hidden;
   height: 100%;
 }
+body .wrapper #header .btn__homepage {
+  padding: 0px 40px;
+  min-height: 52px;
+  border: 1px solid #ff3f3a;
+  border-radius: 4px;
+  background-color: transparent;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #ff4242;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+body .wrapper #header .btn__homepage:hover {
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  color: #ffffff;
+}
 body .wrapper #header .header__container {
   padding: 20px 0px 80px 0px;
 }
-body .wrapper #header .header__container .header__header {
-  margin-bottom: 120px;
+body .wrapper #header .header__container .header__top {
+  padding-top: 20px;
+  margin-bottom: 128px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,63 +77,63 @@ body .wrapper #header .header__container .header__header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-body .wrapper #header .header__container .header__header .header__header-left {
+body .wrapper #header .header__container .header__top .header__top-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-body .wrapper #header .header__container .header__header .header__header-left .header__logo-img__box {
+body .wrapper #header .header__container .header__top .header__top-left .header__top-left__img {
+  cursor: pointer;
   margin-right: 60px;
 }
-body .wrapper #header .header__container .header__header .header__header-left .header__logo-img__box .header__logo-img {
-  cursor: pointer;
-}
-body .wrapper #header .header__container .header__header .header__header-left .header__menu .menu__list {
+body .wrapper #header .header__container .header__top .header__top-left .header__top-left__menu .header__left-menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-body .wrapper #header .header__container .header__header .header__header-left .header__menu .menu__list .menu__item:not(:last-child) {
+body .wrapper #header .header__container .header__top .header__top-left .header__top-left__menu .header__left-menu__list .header__menu-list__item:not(:last-child) {
   margin-right: 40px;
 }
-body .wrapper #header .header__container .header__header .header__header-left .header__menu .menu__list .menu__item .menu__item-link {
+body .wrapper #header .header__container .header__top .header__top-left .header__top-left__menu .header__left-menu__list .header__menu-list__item .header__list-item__link {
   font-family: "Lato";
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   text-align: center;
-  color: #424551;
+  color: var(--top-primary-color);
   cursor: pointer;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
-body .wrapper #header .header__container .header__header .header__header-right {
+body .wrapper #header .header__container .header__top .header__top-left .header__top-left__menu .header__left-menu__list .header__menu-list__item .header__list-item__link:hover {
+  color: #ff3f3a;
+}
+body .wrapper #header .header__container .header__top .header__top-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-body .wrapper #header .header__container .header__header .header__header-right .header__header-right__button {
-  padding: 0px 40px;
+body .wrapper #header .header__container .header__top .header__top-right .header__top-right__button {
   margin-right: 36px;
-  min-height: 52px;
-  border: none;
-  border-radius: 4px;
-  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
-  font-family: "Lato";
-  font-weight: 700;
-  font-size: 16px;
-  text-align: center;
-  color: #ffffff;
-  cursor: pointer;
 }
-body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login {
+body .wrapper #header .header__container .header__top .header__top-right .header__top-right__login {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,27 +141,57 @@ body .wrapper #header .header__container .header__header .header__header-right .
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login .header__login-img__box {
+body .wrapper #header .header__container .header__top .header__top-right .header__top-right__login .header__right-login__img {
   margin-right: 8px;
 }
-body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login .header__login-info__box {
+body .wrapper #header .header__container .header__top .header__top-right .header__top-right__login .header__right-login__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--top-primary-color);
+  text-align: center;
+}
+body .wrapper #header .header__container .header__top .header__top-right .header__top-right__login .header__right-login__text .header__login-text__login {
+  cursor: pointer;
+  margin-right: 4px;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+body .wrapper #header .header__container .header__top .header__top-right .header__top-right__login .header__right-login__text .header__login-text__login:hover {
+  color: #ff4242;
+}
+body .wrapper #header .header__container .header__top .header__top-right .header__top-right__login .header__right-login__text .header__login-text__register {
+  margin-left: 4px;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+body .wrapper #header .header__container .header__top .header__top-right .header__top-right__login .header__right-login__text .header__login-text__register:hover {
+  color: #ff4242;
+}
+body .wrapper #main .btn__homepage {
+  padding: 0px 40px;
+  min-height: 52px;
+  border: 1px solid #ff3f3a;
+  border-radius: 4px;
+  background-color: transparent;
   font-family: "Lato";
   font-weight: 700;
   font-size: 16px;
-  color: #424551;
   text-align: center;
-}
-body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login .header__login-info__box .header__login-info__login {
+  color: #ff4242;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
   cursor: pointer;
 }
-body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login .header__login-info__box .header__login-info__register {
-  cursor: pointer;
+body .wrapper #main .btn__homepage:hover {
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  color: #ffffff;
 }
 body .wrapper #main .intro .intro__container {
   margin-bottom: 180px;
@@ -200,36 +250,8 @@ body .wrapper #main .intro .intro__container .intro__info .intro__info-buttons__
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper #main .intro .intro__container .intro__info .intro__info-buttons__box .intro__info-buttonLeft {
-  max-height: 52px;
-  padding: 0px 40px;
-  background-color: #fff;
-  border: 2px solid #ff3f3a;
-  border-radius: 4px;
-  font-family: "Lato";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 44px;
-  text-align: center;
-  letter-spacing: 0.5px;
-  color: #ff3f3a;
-  cursor: pointer;
+body .wrapper #main .intro .intro__container .intro__info .intro__info-buttons__box .intro__buttons-button__left {
   margin-right: 24px;
-}
-body .wrapper #main .intro .intro__container .intro__info .intro__info-buttons__box .intro__info-buttonright {
-  max-height: 52px;
-  padding: 0px 40px;
-  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
-  border: none;
-  border-radius: 4px;
-  font-family: "Lato";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 44px;
-  text-align: center;
-  letter-spacing: 0.5px;
-  color: #ffffff;
-  cursor: pointer;
 }
 body .wrapper #main .statistic .statistic__container {
   margin-bottom: 180px;
@@ -445,6 +467,7 @@ body .wrapper #main .directions .directions__container .directions__body .direct
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: lightgrey;
 }
 body .wrapper #main .directions .directions__container .directions__body .directions__body-item .directions__body-item__info,
 body .wrapper #main .directions .directions__container .directions__body .directions__body-newItem .directions__body-item__info {
@@ -499,6 +522,7 @@ body .wrapper #main .directions .directions__container .directions__body .direct
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 body .wrapper #main .directions .directions__container .directions__body .directions__body-item .directions__body-item__info .directions__body-item__check .directions__item-text,
 body .wrapper #main .directions .directions__container .directions__body .directions__body-newItem .directions__body-item__info .directions__body-item__check .directions__item-text {
@@ -507,10 +531,6 @@ body .wrapper #main .directions .directions__container .directions__body .direct
   font-size: 16px;
   color: #1e212c;
   margin-right: 8px;
-}
-body .wrapper #main .directions .directions__container .directions__body .directions__body-item .directions__body-item__info .directions__body-item__check .directions__item-icon__box .directions__item-icon,
-body .wrapper #main .directions .directions__container .directions__body .directions__body-newItem .directions__body-item__info .directions__body-item__check .directions__item-icon__box .directions__item-icon {
-  cursor: pointer;
 }
 body .wrapper #main .directions .directions__container .directions__body .directions__body-newItem {
   min-height: 407px;
@@ -889,9 +909,11 @@ body .wrapper #main .blog .blog__container .blog__header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 60px;
 }
-body .wrapper #main .blog .blog__container .blog__header .blog__header-left .blog__header-prevtext {
+body .wrapper #main .blog .blog__container .blog__header .blog__header-left .blog__header-left__text {
   font-family: "Lato";
   font-weight: 700;
   font-size: 16px;
@@ -900,26 +922,11 @@ body .wrapper #main .blog .blog__container .blog__header .blog__header-left .blo
   color: #1e212c;
   margin-bottom: 10px;
 }
-body .wrapper #main .blog .blog__container .blog__header .blog__header-left .blog__header-title {
+body .wrapper #main .blog .blog__container .blog__header .blog__header-left .blog__header-left__title {
   font-family: "Lato";
   font-weight: 900;
   font-size: 46px;
   color: #1e212c;
-}
-body .wrapper #main .blog .blog__container .blog__header .blog__header-btn {
-  max-height: 52px;
-  padding: 0px 40px;
-  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
-  border: none;
-  border-radius: 4px;
-  font-family: "Lato";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 44px;
-  text-align: center;
-  letter-spacing: 0.5px;
-  color: #ffffff;
-  cursor: pointer;
 }
 body .wrapper #main .blog .blog__container .blog__body {
   display: -webkit-box;
@@ -931,15 +938,17 @@ body .wrapper #main .blog .blog__container .blog__body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post {
   max-width: 390px;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-imgBox {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-img__box {
   margin-bottom: 16px;
   position: relative;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-imgBox .blog__post-imgDescr {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-img__box .blog__body-img__descr {
   padding: 2px 8px;
   border: none;
   border-radius: 4px;
@@ -954,16 +963,16 @@ body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-i
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-imgBox .blog__post-imgDescr .blog__post-iconBox {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-img__box .blog__body-img__descr .blog__descr-img__box {
   margin-right: 4px;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-imgBox .blog__post-imgDescr .blog__post-icon__descr {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-img__box .blog__body-img__descr .blog__descr-img__name {
   font-family: "Lato";
   font-weight: 400;
   font-size: 14px;
   color: #424551;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -972,7 +981,7 @@ body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-c
           align-items: center;
   margin-bottom: 8px;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-course {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__top .blog__content-top__course {
   font-family: "Lato";
   font-weight: 700;
   font-size: 14px;
@@ -981,11 +990,13 @@ body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-c
           align-items: center;
   color: #787a80;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-vertical {
-  color: #787a80;
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__top .blog__content-top__vertical {
+  height: 16px;
+  width: 1px;
+  background-color: #787a80;
   margin: 0px 12px;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-data {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__top .blog__content-top__data {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -996,10 +1007,10 @@ body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-c
       -ms-flex-pack: center;
           justify-content: center;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-data .post__data-iconBox {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__top .blog__content-top__data .blog__data-img {
   margin-right: 8px;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-data .post__data-data {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__top .blog__content-top__data .blog__data-date {
   font-family: "Lato";
   font-weight: 400;
   font-size: 14px;
@@ -1008,7 +1019,7 @@ body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-c
           align-items: center;
   color: #787a80;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-time {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__top .blog__content-top__time {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1019,10 +1030,10 @@ body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-c
       -ms-flex-pack: center;
           justify-content: center;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-time .post__time-iconBox {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__top .blog__content-top__time .blog__time-img {
   margin-right: 8px;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-top .blog__post-time .post__time-time {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__top .blog__content-top__time .blog__time-time {
   font-family: "Lato";
   font-weight: 400;
   font-size: 14px;
@@ -1031,7 +1042,7 @@ body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-c
           align-items: center;
   color: #787a80;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-info .blog__post-title {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__info .blog__content-info__title {
   font-family: "Lato";
   font-weight: 700;
   font-size: 20px;
@@ -1039,7 +1050,7 @@ body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-c
   color: #1e212c;
   margin-bottom: 8px;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-info .blog__post-descr {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__info .blog__content-info__descr {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
@@ -1047,7 +1058,7 @@ body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-c
   color: #424551;
   margin-bottom: 16px;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-info .blog__post-btn {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__info .blog__content-info__click {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1056,7 +1067,7 @@ body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-c
           align-items: center;
   cursor: pointer;
 }
-body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-content .blog__post-info .blog__post-btn .blog__post-btn__descr {
+body .wrapper #main .blog .blog__container .blog__body .blog__body-post .blog__post-content .blog__post-content__info .blog__content-info__click .blog__info-click__text {
   font-family: "Lato";
   font-weight: 700;
   font-size: 16px;
@@ -1064,9 +1075,9 @@ body .wrapper #main .blog .blog__container .blog__body .blog__post .blog__post-c
   margin-right: 8px;
 }
 body .wrapper #main .subscribe .subscribe__uniqcontainer {
-  padding: 120px 0px 0px 0px;
+  padding-top: 120px;
   margin: 0 auto;
-  max-width: 1920px;
+  max-width: 1910px;
   min-height: 564px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1082,7 +1093,7 @@ body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center {
   margin: 0px 0px 180px 0px;
   min-width: 810px;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__prevtext {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-text {
   font-family: "Lato";
   font-weight: 700;
   font-size: 16px;
@@ -1092,7 +1103,7 @@ body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .sub
   color: #1e212c;
   margin-bottom: 8px;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__title {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-title {
   max-width: 810px;
   font-family: "Lato";
   font-weight: 900;
@@ -1101,12 +1112,19 @@ body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .sub
   color: #1e212c;
   margin-bottom: 60px;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form {
   max-width: 606px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail {
-  min-width: 422px;
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input {
+  min-width: 100%;
   min-height: 52px;
   padding: 13px 16px;
   margin-right: 24px;
@@ -1118,51 +1136,37 @@ body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .sub
   border-radius: 4px;
   background-color: #fff;
   outline: none;
+  margin-bottom: 16px;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::-webkit-input-placeholder {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input::-webkit-input-placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   color: #9a9ca5;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::-moz-placeholder {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input::-moz-placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   color: #9a9ca5;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail:-ms-input-placeholder {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input:-ms-input-placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   color: #9a9ca5;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::-ms-input-placeholder {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input::-ms-input-placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   color: #9a9ca5;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::placeholder {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input::placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   color: #9a9ca5;
-}
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-button {
-  min-height: 52px;
-  padding: 0px 40px;
-  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
-  border: none;
-  border-radius: 4px;
-  font-family: "Lato";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 44px;
-  text-align: center;
-  letter-spacing: 0.5px;
-  color: #ffffff;
-  cursor: pointer;
 }
 body .wrapper #footer {
   font-family: "Lato";

@@ -43,10 +43,30 @@ body .wrapper {
   overflow: hidden;
   height: 100%;
 }
+body .wrapper #header .btn__homepage {
+  padding: 0px 40px;
+  min-height: 52px;
+  border: 1px solid #ff3f3a;
+  border-radius: 4px;
+  background-color: transparent;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #ff4242;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+body .wrapper #header .btn__homepage:hover {
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  color: #ffffff;
+}
 body .wrapper #header .header__container {
   padding: 20px 0px 80px 0px;
 }
-body .wrapper #header .header__container .header__header {
+body .wrapper #header .header__container .header__top {
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,63 +76,63 @@ body .wrapper #header .header__container .header__header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-body .wrapper #header .header__container .header__header .header__header-left {
+body .wrapper #header .header__container .header__top .header__top-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-body .wrapper #header .header__container .header__header .header__header-left .header__logo-img__box {
+body .wrapper #header .header__container .header__top .header__top-left .header__top-left__img {
+  cursor: pointer;
   margin-right: 60px;
 }
-body .wrapper #header .header__container .header__header .header__header-left .header__logo-img__box .header__logo-img {
-  cursor: pointer;
-}
-body .wrapper #header .header__container .header__header .header__header-left .header__menu .menu__list {
+body .wrapper #header .header__container .header__top .header__top-left .header__top-left__menu .header__left-menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-body .wrapper #header .header__container .header__header .header__header-left .header__menu .menu__list .menu__item:not(:last-child) {
+body .wrapper #header .header__container .header__top .header__top-left .header__top-left__menu .header__left-menu__list .header__menu-list__item:not(:last-child) {
   margin-right: 40px;
 }
-body .wrapper #header .header__container .header__header .header__header-left .header__menu .menu__list .menu__item .menu__item-link {
+body .wrapper #header .header__container .header__top .header__top-left .header__top-left__menu .header__left-menu__list .header__menu-list__item .header__list-item__link {
   font-family: "Lato";
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   text-align: center;
-  color: #424551;
+  color: var(--top-primary-color);
   cursor: pointer;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
-body .wrapper #header .header__container .header__header .header__header-right {
+body .wrapper #header .header__container .header__top .header__top-left .header__top-left__menu .header__left-menu__list .header__menu-list__item .header__list-item__link:hover {
+  color: #ff3f3a;
+}
+body .wrapper #header .header__container .header__top .header__top-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-body .wrapper #header .header__container .header__header .header__header-right .header__header-right__button {
-  padding: 0px 40px;
+body .wrapper #header .header__container .header__top .header__top-right .header__top-right__button {
   margin-right: 36px;
-  min-height: 52px;
-  border: none;
-  border-radius: 4px;
-  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
-  font-family: "Lato";
-  font-weight: 700;
-  font-size: 16px;
-  text-align: center;
-  color: #ffffff;
-  cursor: pointer;
 }
-body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login {
+body .wrapper #header .header__container .header__top .header__top-right .header__top-right__login {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,30 +140,60 @@ body .wrapper #header .header__container .header__header .header__header-right .
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login .header__login-img__box {
+body .wrapper #header .header__container .header__top .header__top-right .header__top-right__login .header__right-login__img {
   margin-right: 8px;
 }
-body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login .header__login-info__box {
+body .wrapper #header .header__container .header__top .header__top-right .header__top-right__login .header__right-login__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Lato";
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
-  color: #424551;
+  color: var(--top-primary-color);
   text-align: center;
 }
-body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login .header__login-info__box .header__login-info__login {
+body .wrapper #header .header__container .header__top .header__top-right .header__top-right__login .header__right-login__text .header__login-text__login {
+  cursor: pointer;
+  margin-right: 4px;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+body .wrapper #header .header__container .header__top .header__top-right .header__top-right__login .header__right-login__text .header__login-text__login:hover {
+  color: #ff4242;
+}
+body .wrapper #header .header__container .header__top .header__top-right .header__top-right__login .header__right-login__text .header__login-text__register {
+  margin-left: 4px;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
   cursor: pointer;
 }
-body .wrapper #header .header__container .header__header .header__header-right .header__header-right__login .header__login-info__box .header__login-info__register {
-  cursor: pointer;
+body .wrapper #header .header__container .header__top .header__top-right .header__top-right__login .header__right-login__text .header__login-text__register:hover {
+  color: #ff4242;
 }
 body .wrapper #main {
   font-family: "Lato";
+}
+body .wrapper #main .btn__homepage {
+  padding: 0px 40px;
+  min-height: 52px;
+  border: 1px solid #ff3f3a;
+  border-radius: 4px;
+  background-color: transparent;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #ff4242;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+body .wrapper #main .btn__homepage:hover {
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  color: #ffffff;
 }
 body .wrapper #main .titles {
   color: #1e212c;
@@ -221,6 +271,7 @@ body .wrapper #main .courses .courses__container .courses__header .courses__head
   outline: none;
 }
 body .wrapper #main .courses .courses__container .courses__body {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,30 +283,31 @@ body .wrapper #main .courses .courses__container .courses__body {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 body .wrapper #main .courses .courses__container .courses__body .courses__body-item {
-  max-width: calc(100% / 3 - 30px);
-  height: calc(100% / 3);
+  width: 370px;
   background-color: #ffffff;
-  border: 1px solid #e5e8ed;
-  border-radius: 4px;
-  margin: 0px 30px 30px 0px;
+  margin: 0px 15px 30px 15px;
   cursor: pointer;
 }
 body .wrapper #main .courses .courses__container .courses__body .courses__body-item .courses__item-header {
   min-width: 100%;
   height: 240px;
   background-color: lightgrey;
+  border: none;
+  border-radius: 4px 4px 0px 0px;
 }
 body .wrapper #main .courses .courses__container .courses__body .courses__body-item .courses__item-content {
+  min-height: 198px;
+  border: 1px solid #e5e8ed;
+  border-radius: 0px 0px 4px 4px;
   padding: 24px;
 }
 body .wrapper #main .courses .courses__container .courses__body .courses__body-item .courses__item-content .courses__item-content__chapter {
   display: inline-block;
   padding: 2px 8px;
-  background-color: #03cea4;
-  border: none;
+  border: 1px solid #1e212c;
   border-radius: 4px;
   margin-bottom: 20px;
 }
@@ -263,7 +315,7 @@ body .wrapper #main .courses .courses__container .courses__body .courses__body-i
   font-weight: 400;
   font-size: 14px;
   text-align: center;
-  color: #ffffff;
+  color: #1e212c;
 }
 body .wrapper #main .courses .courses__container .courses__body .courses__body-item .courses__item-content .courses__item-content__title {
   font-weight: 700;
@@ -471,6 +523,7 @@ body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__bo
 body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__body .testimonials__box .testimonials__wrapper .testimonials__item .testimonials__item-content .testimonials__item-content__personal .testimonials__item-ava__box {
   width: 72px;
   height: 72px;
+  background-color: #ecec72;
   border: none;
   border-radius: 50%;
   overflow: hidden;
@@ -503,9 +556,9 @@ body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__bo
   color: #787a80;
 }
 body .wrapper #main .subscribe .subscribe__uniqcontainer {
-  padding: 120px 0px 0px 0px;
+  padding-top: 120px;
   margin: 0 auto;
-  max-width: 1920px;
+  max-width: 1910px;
   min-height: 564px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -521,7 +574,7 @@ body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center {
   margin: 0px 0px 180px 0px;
   min-width: 810px;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__prevtext {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-text {
   font-family: "Lato";
   font-weight: 700;
   font-size: 16px;
@@ -531,7 +584,7 @@ body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .sub
   color: #1e212c;
   margin-bottom: 8px;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__title {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-title {
   max-width: 810px;
   font-family: "Lato";
   font-weight: 900;
@@ -540,12 +593,19 @@ body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .sub
   color: #1e212c;
   margin-bottom: 60px;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form {
   max-width: 606px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail {
-  min-width: 422px;
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input {
+  min-width: 100%;
   min-height: 52px;
   padding: 13px 16px;
   margin-right: 24px;
@@ -557,51 +617,37 @@ body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .sub
   border-radius: 4px;
   background-color: #fff;
   outline: none;
+  margin-bottom: 16px;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::-webkit-input-placeholder {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input::-webkit-input-placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   color: #9a9ca5;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::-moz-placeholder {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input::-moz-placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   color: #9a9ca5;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail:-ms-input-placeholder {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input:-ms-input-placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   color: #9a9ca5;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::-ms-input-placeholder {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input::-ms-input-placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   color: #9a9ca5;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-mail::placeholder {
+body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input::placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   color: #9a9ca5;
-}
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__form .subscribe__form-button {
-  min-height: 52px;
-  padding: 0px 40px;
-  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
-  border: none;
-  border-radius: 4px;
-  font-family: "Lato";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 44px;
-  text-align: center;
-  letter-spacing: 0.5px;
-  color: #ffffff;
-  cursor: pointer;
 }
 body .wrapper #footer {
   font-family: "Lato";

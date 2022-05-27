@@ -24,50 +24,56 @@
     <div class="wrapper">
       <header id="header">
         <div class="header__container">
-          <div class="header__header">
-            <div class="header__header-left">
-              <picture class="header__logo-img__box">
-                <img
-                  src="./aboutUs/src/icons/logo.svg"
-                  alt="logo"
-                  class="header__logo-img"
-                />
-              </picture>
-              <nav class="header__menu">
-                <ul class="menu__list">
-                  <li class="menu__item">
-                    <a href="homepage.html" class="menu__item-link">Home</a>
+          <div class="header__top">
+            <div class="header__top-left">
+              <img
+                src="./homepage/src/icons/logo.svg"
+                alt="logo"
+                class="header__top-left__img"
+              />
+              <nav class="header__top-left__menu">
+                <ul class="header__left-menu__list">
+                  <li class="header__menu-list__item">
+                    <a href="homepage.html" class="header__list-item__link"
+                      >Home</a
+                    >
                   </li>
-                  <li class="menu__item">
-                    <a href="courses.html" class="menu__item-link">Courses</a>
+                  <li class="header__menu-list__item">
+                    <a href="courses.html" class="header__list-item__link"
+                      >Courses</a
+                    >
                   </li>
-                  <li class="menu__item">
-                    <a href="events.html" class="menu__item-link">Events</a>
+                  <li class="header__menu-list__item">
+                    <a href="events.html" class="header__list-item__link"
+                      >Events</a
+                    >
                   </li>
-                  <li class="menu__item">
-                    <a href="post.html" class="menu__item-link">Posts</a>
+                  <li class="header__menu-list__item">
+                    <a href="post.html" class="header__list-item__link"
+                      >Posts</a
+                    >
                   </li>
-                  <li class="menu__item">
-                    <a href="contacts.html" class="menu__item-link">Contacts</a>
+                  <li class="header__menu-list__item">
+                    <a href="contacts.html" class="header__list-item__link"
+                      >Contacts</a
+                    >
                   </li>
                 </ul>
               </nav>
             </div>
-            <div class="header__header-right">
-              <button class="header__header-right__button">
+            <div class="header__top-right">
+              <button class="header__top-right__button btn__homepage">
                 Get consultation
               </button>
-              <div class="header__header-right__login">
-                <picture class="header__login-img__box">
-                  <img
-                    src="./aboutUs/src/icons/profile.svg"
-                    alt="log in"
-                    class="header__login-img"
-                  />
-                </picture>
-                <div class="header__login-info__box">
-                  <span class="header__login-info__login">Log in</span>
-                  / <span class="header__login-info__register">Register</span>
+              <div class="header__top-right__login">
+                <img
+                  src="./homepage/src/icons/login.svg"
+                  alt="log in"
+                  class="header__right-login__img"
+                />
+                <div class="header__right-login__text">
+                  <span class="header__login-text__login">Log in</span>
+                  / <span class="header__login-text__register">Register</span>
                 </div>
               </div>
             </div>
@@ -93,8 +99,10 @@
                 courses and online events that we organise.
               </p>
               <div class="intro__info-buttons__box">
-                <button class="intro__info-buttonLeft">Explore events</button>
-                <button class="intro__info-buttonright">Browse courses</button>
+                <button class="btn__homepage intro__buttons-button__left">
+                  Explore events
+                </button>
+                <button class="btn__homepage">Browse courses</button>
               </div>
             </div>
             <picture class="intro__img-box">
@@ -104,63 +112,6 @@
                 class="intro__img"
               />
             </picture>
-          </div>
-        </section>
-
-        <section class="statistic">
-          <div class="statistic__container">
-            <div class="statistic__header">
-              <div class="statistic__header-play__box">
-                <div class="statistic__header-play__circle">
-                  <img
-                    src="./aboutUs/src/icons/playWhite.svg"
-                    alt="play"
-                    class="statistic__header-play__img"
-                  />
-                </div>
-                <span class="statistic__header-play__text">Watch Video</span>
-              </div>
-            </div>
-
-            <div class="statistic__body">
-              <picture class="statistic__body-img__box">
-                <img
-                  src="./aboutUs/src/img/statistic.jpg"
-                  alt="image"
-                  class="statistic__body-img"
-                />
-              </picture>
-
-              <div class="statistic__body-info">
-                <div class="statistic__body-info__item">
-                  <span class="statistic__info-item__number">1200</span>
-                  <span class="statistic__info-item__name"
-                    >students graduated</span
-                  >
-                </div>
-
-                <div class="statistic__body-info__item">
-                  <span class="statistic__info-item__number">84</span>
-                  <span class="statistic__info-item__name"
-                    >completed courses</span
-                  >
-                </div>
-
-                <div class="statistic__body-info__item">
-                  <span class="statistic__info-item__number">16</span>
-                  <span class="statistic__info-item__name"
-                    >qualified tutors</span
-                  >
-                </div>
-
-                <div class="statistic__body-info__item">
-                  <span class="statistic__info-item__number">5</span>
-                  <span class="statistic__info-item__name"
-                    >years of experience</span
-                  >
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -245,13 +196,7 @@
             </div>
             <div class="directions__body">
               <div class="directions__body-item">
-                <picture class="directions__item-img__box">
-                  <img
-                    src="./aboutUs/src/img/girl_2.jpg"
-                    alt="image"
-                    class="directions__item-img"
-                  />
-                </picture>
+                <div class="directions__item-img__box"></div>
                 <div class="directions__body-item__info">
                   <span class="directions__body-item__text">Marketing</span>
                   <p class="directions__body-item__descr">
@@ -272,13 +217,7 @@
               </div>
 
               <div class="directions__body-item">
-                <picture class="directions__item-img__box">
-                  <img
-                    src="./aboutUs/src/img/girl_2.jpg"
-                    alt="image"
-                    class="directions__item-img"
-                  />
-                </picture>
+                <div class="directions__item-img__box"></div>
                 <div class="directions__body-item__info">
                   <span class="directions__body-item__text managment"
                     >Management</span
@@ -301,13 +240,7 @@
               </div>
 
               <div class="directions__body-item">
-                <picture class="directions__item-img__box">
-                  <img
-                    src="./aboutUs/src/img/girl_2.jpg"
-                    alt="image"
-                    class="directions__item-img"
-                  />
-                </picture>
+                <div class="directions__item-img__box"></div>
                 <div class="directions__body-item__info">
                   <span class="directions__body-item__text hr"
                     >HR & Recruting</span
@@ -330,13 +263,7 @@
               </div>
 
               <div class="directions__body-item">
-                <picture class="directions__item-img__box">
-                  <img
-                    src="./aboutUs/src/img/girl_2.jpg"
-                    alt="image"
-                    class="directions__item-img"
-                  />
-                </picture>
+                <div class="directions__item-img__box"></div>
                 <div class="directions__body-item__info">
                   <span class="directions__body-item__text design">Design</span>
                   <p class="directions__body-item__descr">
@@ -357,13 +284,7 @@
               </div>
 
               <div class="directions__body-item">
-                <picture class="directions__item-img__box">
-                  <img
-                    src="./aboutUs/src/img/girl_2.jpg"
-                    alt="image"
-                    class="directions__item-img"
-                  />
-                </picture>
+                <div class="directions__item-img__box"></div>
                 <div class="directions__body-item__info">
                   <span class="directions__body-item__text dev"
                     >Development</span
@@ -908,71 +829,71 @@
           <div class="blog__container">
             <div class="blog__header">
               <div class="blog__header-left">
-                <span class="blog__header-prevtext">Our blog</span>
-                <h2 class="blog__header-title">Latest post</h2>
+                <span class="blog__header-left__text">Our blog</span>
+                <h2 class="blog__header-left__title">Latest post</h2>
               </div>
-              <button class="blog__header-btn btn__homepage">Go to blog</button>
+              <button class="blog__header-button btn__homepage">
+                Go to blog
+              </button>
             </div>
             <div class="blog__body">
-              <div class="blog__post">
-                <div class="blog__post-imgBox">
+              <div class="blog__body-post">
+                <div class="blog__post-img__box">
                   <img
-                    src="./aboutUs/src/img/leftPost.jpg"
+                    src="./homepage/src/img/leftPost.jpg"
                     alt="image"
-                    class="blog__post-img"
+                    class="blog__body-img"
                   />
-                  <div class="blog__post-imgDescr">
-                    <div class="blog__post-iconBox">
+                  <div class="blog__body-img__descr">
+                    <div class="blog__descr-img__box">
                       <img
-                        src="./aboutUs/src/icons/mic.svg"
+                        src="./homepage/src/icons/mic.svg"
                         alt="icon"
-                        class="blog__post-icon"
+                        class="blog__descr-img"
                       />
                     </div>
-                    <span class="blog__post-icon__descr">Podcast</span>
+                    <span class="blog__descr-img__name">Podcast</span>
                   </div>
                 </div>
+
                 <div class="blog__post-content">
-                  <div class="blog__post-top">
-                    <span class="blog__post-course">Marketing</span>
-                    <span class="blog__post-vertical">|</span>
-                    <div class="blog__post-data">
-                      <div class="post__data-iconBox">
-                        <img
-                          src="./aboutUs/src/icons/calendar.svg"
-                          alt="icon"
-                          class="post__data-img"
-                        />
-                      </div>
-                      <span class="post__data-data">September 4, 2020</span>
+                  <div class="blog__post-content__top">
+                    <span class="blog__content-top__course">Marketing</span>
+                    <span class="blog__content-top__vertical"></span>
+                    <div class="blog__content-top__data">
+                      <img
+                        src="./homepage/src/icons/calendar.svg"
+                        alt="icon"
+                        class="blog__data-img"
+                      />
+                      <span class="blog__data-date">September 4, 2020</span>
                     </div>
-                    <span class="blog__post-vertical">|</span>
-                    <div class="blog__post-time">
-                      <div class="post__time-iconBox">
-                        <img
-                          src="./aboutUs/src/icons/clock.svg"
-                          alt="icon"
-                          class="post__time-img"
-                        />
-                      </div>
-                      <span class="post__time-time">36 min</span>
+                    <span class="blog__content-top__vertical"></span>
+                    <div class="blog__content-top__time">
+                      <img
+                        src="./homepage/src/icons/clock.svg"
+                        alt="icon"
+                        class="blog__time-img"
+                      />
+                      <span class="blog__time-time">36 min</span>
                     </div>
                   </div>
-                  <div class="blog__post-info">
-                    <h4 class="blog__post-title">
+
+                  <div class="blog__post-content__info">
+                    <h4 class="blog__content-info__title">
                       What is traffic arbitrage and does it really make money?
                     </h4>
-                    <p class="blog__post-descr">
+                    <p class="blog__content-info__descr">
                       Pharetra, ullamcorper iaculis viverra parturient sed id
                       sed. Convallis proin dignissim lacus, purus gravida...
                     </p>
-                    <div class="blog__post-btn">
-                      <span class="blog__post-btn__descr">Listen</span>
-                      <div class="blog__post-btn__iconBox">
+                    <div class="blog__content-info__click">
+                      <span class="blog__info-click__text">Listen</span>
+                      <div class="blog__click-img__box">
                         <img
-                          src="./aboutUs/src/icons/arrowOrange.svg"
+                          src="./homepage/src/icons/arrowRightOrange.svg"
                           alt="arrow"
-                          class="blog__post-btn__icon"
+                          class="blog__click-img"
                         />
                       </div>
                     </div>
@@ -980,66 +901,67 @@
                 </div>
               </div>
 
-              <div class="blog__post">
-                <div class="blog__post-imgBox">
+              <div class="blog__body-post">
+                <div class="blog__post-img__box">
                   <img
-                    src="./aboutUs/src/img/centerPost.jpg"
+                    src="./homepage/src/img/centerPost.jpg"
                     alt="image"
-                    class="blog__post-img"
+                    class="blog__body-img"
                   />
-                  <div class="blog__post-imgDescr">
-                    <div class="blog__post-iconBox">
+                  <div class="blog__body-img__descr">
+                    <div class="blog__descr-img__box">
                       <img
-                        src="./aboutUs/src/icons/play.svg"
+                        src="./homepage/src/icons/play.svg"
                         alt="icon"
-                        class="blog__post-icon"
+                        class="blog__descr-img"
                       />
                     </div>
-                    <span class="blog__post-icon__descr">Video</span>
+                    <span class="blog__descr-img__name">Video</span>
                   </div>
                 </div>
                 <div class="blog__post-content">
-                  <div class="blog__post-top">
-                    <span class="blog__post-course">Management</span>
-                    <span class="blog__post-vertical">|</span>
-                    <div class="blog__post-data">
-                      <div class="post__data-iconBox">
-                        <img
-                          src="./aboutUs/src/icons/calendar.svg"
-                          alt="icon"
-                          class="post__data-img"
-                        />
-                      </div>
-                      <span class="post__data-data">August 25, 2020</span>
+                  <div class="blog__post-content__top">
+                    <span class="blog__content-top__course">Management</span>
+
+                    <span class="blog__content-top__vertical"></span>
+
+                    <div class="blog__content-top__data">
+                      <img
+                        src="./homepage/src/icons/calendar.svg"
+                        alt="icon"
+                        class="blog__data-img"
+                      />
+                      <span class="blog__data-date">August 25, 2020</span>
                     </div>
-                    <span class="blog__post-vertical">|</span>
-                    <div class="blog__post-time">
-                      <div class="post__time-iconBox">
-                        <img
-                          src="./aboutUs/src/icons/clock.svg"
-                          alt="icon"
-                          class="post__time-img"
-                        />
-                      </div>
-                      <span class="post__time-time">45 min</span>
+
+                    <span class="blog__content-top__vertical"></span>
+
+                    <div class="blog__content-top__time">
+                      <img
+                        src="./homepage/src/icons/clock.svg"
+                        alt="icon"
+                        class="blog__time-img"
+                      />
+                      <span class="blog__time-time">45 min</span>
                     </div>
                   </div>
-                  <div class="blog__post-info">
-                    <h4 class="blog__post-title">
+
+                  <div class="blog__post-content__info">
+                    <h4 class="blog__content-info__title">
                       What to do and who to talk to if you want to get feedback
                       on the product
                     </h4>
-                    <p class="blog__post-descr">
+                    <p class="blog__content-info__descr">
                       Neque a, senectus consectetur odio in aliquet nec eu.
                       Ultricies ac nibh urna urna sagittis faucibus...
                     </p>
-                    <div class="blog__post-btn">
-                      <span class="blog__post-btn__descr">Watch</span>
-                      <div class="blog__post-btn__iconBox">
+                    <div class="blog__content-info__click">
+                      <span class="blog__info-click__text">Watch</span>
+                      <div class="blog__click-img__box">
                         <img
-                          src="./aboutUs//src/icons/arrowOrange.svg"
+                          src="./homepage/src/icons/arrowRightOrange.svg"
                           alt="arrow"
-                          class="blog__post-btn__icon"
+                          class="blog__click-img"
                         />
                       </div>
                     </div>
@@ -1047,55 +969,53 @@
                 </div>
               </div>
 
-              <div class="blog__post">
-                <div class="blog__post-imgBox">
+              <div class="blog__body-post">
+                <div class="blog__post-img__box">
                   <img
-                    src="./aboutUs/src/img/rightPost.jpg"
+                    src="./homepage/src/img/rightPost.jpg"
                     alt="image"
-                    class="blog__post-img"
+                    class="blog__body-img"
                   />
-                  <div class="blog__post-imgDescr">
-                    <div class="blog__post-iconBox">
+                  <div class="blog__body-img__descr">
+                    <div class="blog__descr-img__box">
                       <img
-                        src="./aboutUs/src/icons/files.svg"
+                        src="./homepage/src/icons/files.svg"
                         alt="icon"
-                        class="blog__post-icon"
+                        class="blog__descr-img"
                       />
                     </div>
-                    <span class="blog__post-icon__descr">Article</span>
+                    <span class="blog__descr-img__name">Article</span>
                   </div>
                 </div>
                 <div class="blog__post-content">
-                  <div class="blog__post-top">
-                    <span class="blog__post-course">Design</span>
-                    <span class="blog__post-vertical">|</span>
-                    <div class="blog__post-data">
-                      <div class="post__data-iconBox">
-                        <img
-                          src="./aboutUs/src/icons/calendar.svg"
-                          alt="icon"
-                          class="post__data-img"
-                        />
-                      </div>
-                      <span class="post__data-data">August 8, 2020</span>
+                  <div class="blog__post-content__top">
+                    <span class="blog__content-top__course">Design</span>
+                    <span class="blog__content-top__vertical"></span>
+                    <div class="blog__content-top__data">
+                      <img
+                        src="./homepage/src/icons/calendar.svg"
+                        alt="icon"
+                        class="blog__data-img"
+                      />
+                      <span class="blog__data-date">August 8, 2020</span>
                     </div>
                   </div>
-                  <div class="blog__post-info">
-                    <h4 class="blog__post-title">
+                  <div class="blog__post-content__info">
+                    <h4 class="blog__content-info__title">
                       Should you choose a creative profession if you are
                       attracted to creativity?
                     </h4>
-                    <p class="blog__post-descr">
+                    <p class="blog__content-info__descr">
                       Curabitur nisl tincidunt eros venenatis vestibulum ac
                       placerat. Tortor, viverra sed vulputate ultrices...
                     </p>
-                    <div class="blog__post-btn">
-                      <span class="blog__post-btn__descr">Read</span>
-                      <div class="blog__post-btn__iconBox">
+                    <div class="blog__content-info__click">
+                      <span class="blog__info-click__text">Read</span>
+                      <div class="blog__click-img__box">
                         <img
-                          src="./aboutUs/src/icons/arrowOrange.svg"
+                          src="./homepage/src/icons/arrowRightOrange.svg"
                           alt="arrow"
-                          class="blog__post-btn__icon"
+                          class="blog__click-img"
                         />
                       </div>
                     </div>
@@ -1108,34 +1028,34 @@
 
         <section class="subscribe">
           <div class="subscribe__uniqcontainer">
-            <div class="subscribe__left">
-              <img
-                src="./aboutUs/src/img/hol.jpg"
-                alt="image"
-                class="subscribe__left-img"
-              />
-            </div>
+            <img
+              src="./homepage/src/img/hol.jpg"
+              alt="image"
+              class="subscribe__img"
+            />
+
             <div class="subscribe__center">
-              <span class="subscribe__prevtext">Don’t miss anything</span>
-              <h2 class="subscribe__title">
+              <span class="subscribe__center-text">Don’t miss anything</span>
+              <h2 class="subscribe__center-title">
                 Subscribe to the Createx School announcements
               </h2>
-              <form class="subscribe__form">
+              <form class="subscribe__center-form">
                 <input
-                  type="text"
+                  type="email"
                   placeholder="Your working email"
-                  class="subscribe__form-mail"
+                  class="subscribe__center-form__input"
                 />
-                <button class="subscribe__form-button">Subscribe</button>
+                <button class="subscribe__center-form__button btn__homepage">
+                  Subscribe
+                </button>
               </form>
             </div>
-            <div class="subscribe__right">
-              <img
-                src="./aboutUs/src/img/hol.jpg"
-                alt="image"
-                class="subscribe__right-img"
-              />
-            </div>
+
+            <img
+              src="./homepage/src/img/hol.jpg"
+              alt="image"
+              class="subscribe__img"
+            />
           </div>
         </section>
       </main>

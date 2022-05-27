@@ -1,4 +1,22 @@
 #main {
+  .btn__homepage {
+    padding: 0px 40px;
+    min-height: 52px;
+    border: 1px solid #ff3f3a;
+    border-radius: 4px;
+    background-color: transparent;
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #ff4242;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    &:hover {
+      background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+      color: #ffffff;
+    }
+  }
   font-family: "Lato";
 
   .heading {
@@ -19,16 +37,6 @@
     }
   }
 
-  .toolbar {
-    margin-bottom: 60px;
-    .toolbar__container {
-      min-width: 1230px;
-      min-height: 44px;
-      border: 3px solid lightgrey;
-      border-radius: 4px;
-    }
-  }
-
   .events {
     margin-bottom: 120px;
     .events__container {
@@ -36,7 +44,7 @@
         margin-bottom: 60px;
         .events__list-item {
           padding: 32px 40px;
-          min-width: 100%;
+          width: 100%;
           min-height: 126px;
           background-color: #fff;
           border: 1px solid #e5e8ed;
@@ -50,6 +58,7 @@
           .events__list-item__info {
             display: flex;
             align-items: flex-start;
+
             .events__item-info__number {
               font-weight: 900;
               font-size: 48px;
@@ -72,13 +81,17 @@
           }
 
           .events__list-item__content {
+            width: 760px;
             color: #1e212c;
+            text-align: left;
             .events__item-content__heading {
               font-weight: 700;
               font-size: 20px;
               margin-bottom: 5px;
+              text-align: left;
             }
             .events__item-content__online {
+              text-align: left;
               font-weight: 400;
               font-size: 16px;
             }
@@ -90,10 +103,10 @@
             border: 1px solid #ff3f3a;
             border-radius: 4px;
             background-color: transparent;
+            text-align: center;
             font-family: "Lato";
             font-weight: 700;
             font-size: 14px;
-            text-align: center;
             letter-spacing: 0.5px;
             color: #ff3f3a;
             cursor: pointer;
@@ -101,6 +114,13 @@
             &:hover {
               background-color: #ff3f3a;
               color: #fff;
+            }
+            .events__item-button__link {
+              width: 100%;
+              color: #ff3f3a;
+              &:hover {
+                color: #fff;
+              }
             }
           }
         }
@@ -138,23 +158,18 @@
 
   .subscribe {
     .subscribe__uniqcontainer {
-      padding: 120px 0px 0px 0px;
+      padding-top: 120px;
       margin: 0 auto;
-      max-width: 1920px;
+      max-width: 1910px;
       min-height: 564px;
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
 
-      .subscribe__left {
-        .subscribe__left-img {
-        }
-      }
-
       .subscribe__center {
         margin: 0px 0px 180px 0px;
         min-width: 810px;
-        .subscribe__prevtext {
+        .subscribe__center-text {
           font-family: "Lato";
           font-weight: 700;
           font-size: 16px;
@@ -164,7 +179,7 @@
           color: #1e212c;
           margin-bottom: 8px;
         }
-        .subscribe__title {
+        .subscribe__center-title {
           max-width: 810px;
           font-family: "Lato";
           font-weight: 900;
@@ -173,11 +188,13 @@
           color: #1e212c;
           margin-bottom: 60px;
         }
-        .subscribe__form {
+        .subscribe__center-form {
           max-width: 606px;
           margin: 0 auto;
-          .subscribe__form-mail {
-            min-width: 422px;
+          display: flex;
+          flex-direction: column;
+          .subscribe__center-form__input {
+            min-width: 100%;
             min-height: 52px;
             padding: 13px 16px;
             margin-right: 24px;
@@ -189,6 +206,7 @@
             border-radius: 4px;
             background-color: #fff;
             outline: none;
+            margin-bottom: 16px;
             &::placeholder {
               font-family: "Lato";
               font-weight: 400;
@@ -197,30 +215,12 @@
             }
           }
 
-          .subscribe__button {
-            padding: 0px 40px;
-            min-height: 52px;
-            border: 1px solid #ff3f3a;
-            border-radius: 4px;
-            background-color: transparent;
-            font-family: "Lato";
-            font-weight: 700;
-            font-size: 16px;
-            text-align: center;
-            color: #ff4242;
-            transition: all 0.2s;
-            cursor: pointer;
-            &:hover {
-              background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
-              color: #ffffff;
-            }
+          .subscribe__center-form__button {
           }
         }
       }
 
-      .subscribe__right {
-        .subscribe__right {
-        }
+      .subscribe__img {
       }
     }
   }

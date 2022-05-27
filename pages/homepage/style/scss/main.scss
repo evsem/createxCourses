@@ -11,7 +11,7 @@
     font-size: 16px;
     text-align: center;
     color: #ff4242;
-    transition: all 0.12s linear;
+    transition: all 0.3s linear;
     cursor: pointer;
     &:hover {
       background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
@@ -29,20 +29,19 @@
       justify-content: space-between;
       flex-wrap: wrap;
       .about__img-box {
+        max-width: 705px;
+        max-height: 560px;
+        overflow: hidden;
+        border: none;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         .about__img {
         }
       }
 
       .about__info {
-        .about__info-text {
-          font-family: "Lato";
-          font-weight: 700;
-          font-size: 16px;
-          letter-spacing: 1px;
-          text-transform: uppercase;
-          color: #1e212c;
-          margin-bottom: 8px;
-        }
         .about__info-title {
           font-family: "Lato";
           font-weight: 900;
@@ -59,7 +58,7 @@
             .about__list-item-img {
               position: relative;
               top: 3px;
-              margin-right: 16px;
+              margin-right: 12px;
             }
 
             .about__list-item-descr {
@@ -117,38 +116,44 @@
         display: flex;
         flex-wrap: wrap;
         .courses__cards-item {
-          margin: 0px 14px 14px 0px;
-          max-width: 600px;
-          min-height: 214px;
+          margin: 0px 0px 14px 0px;
+          width: 600px;
+          max-height: 214px;
           display: flex;
           align-items: center;
+          justify-content: center;
           cursor: pointer;
           .courses__item-img__box {
             max-width: 214px;
-            min-height: 214px;
+            max-height: 214px;
             overflow: hidden;
+            border: none;
+            border-radius: 4px 0px 0px 4px;
             display: flex;
             align-items: center;
             justify-content: center;
             .courses__item-img {
+              width: 300px;
+              height: 300px;
+              position: relative;
+              right: 10px;
             }
           }
 
           .courses__item-content {
-            padding: 32px;
+            padding: 32px 32px 32px 32px;
+            width: 322px;
             min-height: 100%;
             border: 1px solid #e5e8ed;
             border-left: none;
             border-radius: 0px 4px 4px 0px;
             .courses__item-content__direction {
               display: inline-block;
-              padding: 1px 8px;
-              background: #03cea4;
               border: none;
               font-family: "Lato";
               font-weight: 400;
               font-size: 14px;
-              color: #ffffff;
+              color: #1e212c;
               border-radius: 4px;
               margin-bottom: 20px;
             }
@@ -359,6 +364,7 @@
             }
 
             .events__item-content__right {
+              max-width: 710px;
               .events__content-right__descr {
                 font-family: "Lato";
                 font-weight: 700;
@@ -499,14 +505,18 @@
       }
 
       .team__cards {
+        max-width: 1068px;
+        margin: 0 auto;
         display: flex;
         align-items: center;
-        justify-content: space-between;
         overflow: hidden;
         .team__cards-card {
-          max-width: 285px;
+          min-width: 296px;
+          &:not(:last-child) {
+            margin-right: 90px;
+          }
           .team__card-img__box {
-            max-width: 285px;
+            max-width: 296px;
             max-height: 340px;
             display: flex;
             align-items: center;
@@ -543,11 +553,13 @@
 
   .testimonials {
     background: #f4f5f7;
-    .testimonials__container {
-      padding: 180px 0px 100px 0px;
+    .testimonials__uniqcontainer {
+      padding: 80px 5px 180px 5px;
+      margin: 0 auto;
+      width: 1252px;
       .testimonials__header {
         margin-bottom: 60px;
-        .testimonials__prevtext {
+        .testimonials__header-text {
           font-family: "Lato";
           font-weight: 700;
           font-size: 16px;
@@ -557,7 +569,7 @@
           color: #1e212c;
           margin-bottom: 8px;
         }
-        .testimonials__title {
+        .testimonials__header-title {
           font-family: "Lato";
           font-weight: 900;
           font-size: 46px;
@@ -567,77 +579,87 @@
       }
 
       .testimonials__body {
+        overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 60px;
-        .testimonials__body-left {
+        position: relative;
+        min-width: 0;
+        width: 100%;
+        .swiper-button-next,
+        .swiper-button-prev {
+          position: none;
+        }
+        .testimonials__body-leftArrow__box {
           .testimonials__body-leftArrow {
-            cursor: pointer;
           }
         }
-
-        .testimonials__body-center {
-          padding: 64px 105px;
-          background-color: #fff;
-          border: none;
-          border-radius: 4px;
+        .testimonials__box {
           max-width: 1020px;
-          .testimonials__cards {
-            display: flex;
-            align-items: flex-start;
-            .testimonials__cards-left {
-              margin-right: 30px;
+          overflow: hidden;
+          .testimonials__wrapper {
+            max-width: 1020px;
+            .testimonials__item {
+              padding: 64px 105px;
+              max-width: 1020px;
+              background-color: #fff;
               display: flex;
-              align-items: center;
-              .testimonials__cards-leftIcon {
-                &:not(:last-child) {
-                  margin-right: 8px;
-                }
-              }
-            }
-            .testimonials__card {
-              .testimonials__card-descr {
-                font-family: "Lato";
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 150%;
-                color: #424551;
-                margin-bottom: 24px;
-              }
-
-              .testimonials__card-footer {
+              align-items: flex-start;
+              .testimonials__item-left {
                 display: flex;
                 align-items: center;
-                .testimonials__card-avaBox {
-                  width: 72px;
-                  height: 72px;
-                  border: none;
-                  border-radius: 50%;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  overflow: hidden;
-                  margin-right: 20px;
-                  .testimonials__card-ava {
-                    width: 96px;
-                    height: 96px;
+                margin-right: 30px;
+                .testimonials__item-img {
+                  &:not(:last-child) {
+                    margin-right: 8px;
                   }
                 }
+              }
 
-                .testimonials__card-info {
-                  .testimonials__card-name {
-                    font-family: "Lato";
-                    font-weight: 700;
-                    font-size: 16px;
-                    color: #1e212c;
-                    margin-bottom: 4px;
+              .testimonials__item-content {
+                .testimonials__item-content__descr {
+                  font-family: "Lato";
+                  font-weight: 400;
+                  font-size: 20px;
+                  line-height: 150%;
+                  color: #424551;
+                  margin-bottom: 24px;
+                }
+
+                .testimonials__item-content__personal {
+                  display: flex;
+                  align-items: center;
+                  .testimonials__item-ava__box {
+                    width: 72px;
+                    height: 72px;
+                    background-color: #ecec72;
+                    border: none;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 20px;
+                    .testimonials__item-ava {
+                      width: 90px;
+                      height: 90px;
+                    }
                   }
-                  .testimonials__card-positon {
-                    font-family: "Lato";
-                    font-weight: 400;
-                    font-size: 14px;
-                    color: #787a80;
+
+                  .testimonials__item-info {
+                    .testimonials__item-info__name {
+                      font-family: "Lato";
+                      font-weight: 700;
+                      font-size: 16px;
+                      color: #1e212c;
+                      margin-bottom: 4px;
+                    }
+                    .testimonials__item-info__position {
+                      font-family: "Lato";
+                      font-weight: 400;
+                      font-size: 14px;
+                      color: #787a80;
+                    }
                   }
                 }
               }
@@ -645,28 +667,8 @@
           }
         }
 
-        .testimonials__body-right {
+        .testimonials__body-rightArrow__box {
           .testimonials__body-rightArrow {
-            cursor: pointer;
-          }
-        }
-      }
-
-      .testimonials__footer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .testimonials__footer-line {
-          width: 30px;
-          height: 3px;
-          border: none;
-          border-radius: 18px;
-          background-color: #b3b7bc;
-          &:not(:last-child) {
-            margin-right: 12px;
-          }
-          &:first-child {
-            background-color: #424551;
           }
         }
       }
@@ -753,17 +755,17 @@
                 color: #787a80;
               }
               .blog__content-top__vertical {
-                color: #787a80;
+                height: 16px;
+                width: 1px;
+                background-color: #787a80;
                 margin: 0px 12px;
               }
               .blog__content-top__data {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                .blog__data-img__box {
+                .blog__data-img {
                   margin-right: 8px;
-                  .blog__data-img {
-                  }
                 }
                 .blog__data-date {
                   font-family: "Lato";
@@ -778,12 +780,10 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                .blog__time-img__box {
+                .blog__time-img {
                   margin-right: 8px;
-                  .blog__time-img {
-                  }
                 }
-                .post__time-time {
+                .blog__time-time {
                   font-family: "Lato";
                   font-weight: 400;
                   font-size: 14px;

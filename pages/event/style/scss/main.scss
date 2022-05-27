@@ -1,5 +1,27 @@
 #main {
   font-family: "Lato";
+
+  .btn__homepage {
+    padding: 0px 40px;
+    min-height: 52px;
+    border: 1px solid #ff3f3a;
+    border-radius: 4px;
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    transition: all 0.12s linear;
+    cursor: pointer;
+    &:hover {
+      background: transparent;
+      color: #ff4242;
+    }
+  }
+
+  // ---------------------------------------------------------------
+
   .titles {
     padding-bottom: 120px;
     .titles__text {
@@ -124,17 +146,6 @@
         }
         .about__right-button {
           min-width: 100%;
-          min-height: 44px;
-          background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
-          border: none;
-          border-radius: 4px;
-          font-family: "Lato";
-          font-weight: 700;
-          font-size: 14px;
-          text-align: center;
-          letter-spacing: 0.5px;
-          color: #ffffff;
-          cursor: pointer;
         }
       }
     }
@@ -310,17 +321,6 @@
             margin-right: 24px;
           }
           .subscribe__info-form__button {
-            padding: 0px 40px;
-            min-height: 52px;
-            background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
-            border: none;
-            border-radius: 4px;
-            font-family: "Lato";
-            font-weight: 700;
-            font-size: 16px;
-            text-align: center;
-            letter-spacing: 0.5px;
-            color: #ffffff;
           }
         }
 
@@ -422,16 +422,6 @@
           .request__left-form__button {
             min-width: 100%;
             min-height: 52px;
-            background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
-            border: none;
-            border-radius: 4px;
-            font-family: "Lato";
-            font-weight: 700;
-            font-size: 16px;
-            text-align: center;
-            letter-spacing: 0.5px;
-            color: #ffffff;
-            cursor: pointer;
           }
         }
 
@@ -556,19 +546,8 @@
           margin-right: 40px;
         }
         .events__footer-button {
-          padding: 0px 40px;
           min-width: 214px;
           min-height: 52px;
-          background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
-          border: none;
-          border-radius: 4px;
-          font-family: "Lato";
-          font-weight: 700;
-          font-size: 16px;
-          text-align: center;
-          letter-spacing: 0.5px;
-          color: #ffffff;
-          cursor: pointer;
         }
       }
     }

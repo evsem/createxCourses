@@ -12,7 +12,7 @@
       .about__left {
         max-width: 600px;
         .about__left-title {
-          font-family: 'Lato';
+          font-family: "Lato";
           font-weight: 900;
           font-size: 46px;
           color: #1e212c;
@@ -20,7 +20,7 @@
         }
 
         .about__left-descr {
-          font-family: 'Lato';
+          font-family: "Lato";
           font-weight: 400;
           font-size: 16px;
           line-height: 160%;
@@ -28,8 +28,8 @@
           margin-bottom: 48px;
         }
 
-        .about__left-prevtitle {
-          font-family: 'Lato';
+        .about__left-text {
+          font-family: "Lato";
           font-weight: 700;
           font-size: 28px;
           color: #1e212c;
@@ -49,7 +49,7 @@
               }
             }
             .list__item-text {
-              font-family: 'Lato';
+              font-family: "Lato";
               font-style: normal;
               font-weight: 400;
               font-size: 16px;
@@ -76,7 +76,7 @@
             margin-bottom: 0;
           }
           .about__right-item__title {
-            font-family: 'Lato';
+            font-family: "Lato";
             font-weight: 700;
             font-size: 14px;
             letter-spacing: 1px;
@@ -85,14 +85,14 @@
             margin-bottom: 4px;
           }
           .about__right-item__info {
-            font-family: 'Lato';
+            font-family: "Lato";
             font-weight: 700;
             font-size: 24px;
             color: #ff3f3a;
             margin-bottom: 8px;
           }
           .about__right-item__descr {
-            font-family: 'Lato';
+            font-family: "Lato";
             font-weight: 400;
             font-size: 16px;
             line-height: 160%;
@@ -107,7 +107,7 @@
           background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
           border: none;
           border-radius: 4px;
-          font-family: 'Lato';
+          font-family: "Lato";
           font-weight: 700;
           font-size: 14px;
           line-height: 44px;
@@ -139,7 +139,7 @@
 
       .curator__content {
         .curator__content-text {
-          font-family: 'Lato';
+          font-family: "Lato";
           font-weight: 700;
           font-size: 16px;
           letter-spacing: 1px;
@@ -149,15 +149,15 @@
         }
 
         .curator__content-title {
-          font-family: 'Lato';
+          font-family: "Lato";
           font-weight: 900;
           font-size: 46px;
           color: #1e212c;
           margin-bottom: 16px;
         }
 
-        .curator__content-subdescr {
-          font-family: 'Lato';
+        .curator__content-position {
+          font-family: "Lato";
           font-weight: 400;
           font-size: 20px;
           color: #787a80;
@@ -170,13 +170,13 @@
             display: flex;
             align-items: center;
             margin-bottom: 4px;
-            .state__item-img__box {
+            .curator__item-img__box {
               margin-right: 8px;
-              .state__item-img {
+              .curator__item-img {
               }
             }
             .curator__content-state__text {
-              font-family: 'Lato';
+              font-family: "Lato";
               font-weight: 700;
               font-size: 16px;
               align-items: center;
@@ -187,7 +187,7 @@
 
         .curator__content-descr {
           max-width: 600px;
-          font-family: 'Lato';
+          font-family: "Lato";
           font-weight: 400;
           font-size: 16px;
           line-height: 160%;
@@ -196,7 +196,7 @@
           margin-bottom: 40px;
         }
 
-        .curator__content-social__box {
+        .curator__content-social {
           display: flex;
           align-items: center;
           .curator__content-social__item {
@@ -218,7 +218,7 @@
       .steps__header {
         margin-bottom: 60px;
         .steps__header-text {
-          font-family: 'Lato';
+          font-family: "Lato";
           font-weight: 700;
           font-size: 16px;
           text-align: center;
@@ -228,7 +228,7 @@
           margin-bottom: 8px;
         }
         .steps__header-title {
-          font-family: 'Lato';
+          font-family: "Lato";
           font-weight: 900;
           font-size: 46px;
           text-align: center;
@@ -249,7 +249,7 @@
             justify-content: space-between;
             margin-bottom: 16px;
             .steps-item__header-number {
-              font-family: 'Lato';
+              font-family: "Lato";
               font-weight: 900;
               font-size: 46px;
               color: #d7dadd;
@@ -267,14 +267,14 @@
 
           .steps__body-item__body {
             .steps-item__body-title {
-              font-family: 'Lato';
+              font-family: "Lato";
               font-weight: 700;
               font-size: 20px;
               color: #1e212c;
               margin-bottom: 8px;
             }
             .steps-item__body-descr {
-              font-family: 'Lato';
+              font-family: "Lato";
               font-weight: 400;
               font-size: 16px;
               line-height: 160%;
@@ -299,13 +299,13 @@
         flex-wrap: wrap;
         margin-bottom: 26px;
         .cta__header-title {
-          font-family: 'Lato';
+          font-family: "Lato";
           font-weight: 900;
           font-size: 32px;
           text-align: center;
           color: #1e212c;
         }
-        .cta__header-time__box {
+        .cta__header-time__block {
           padding-left: 5px;
           min-width: 190px;
           display: flex;
@@ -313,7 +313,7 @@
           justify-content: space-between;
           .cta__header-time__item {
             .cta__header-time__number {
-              font-family: 'Lato';
+              font-family: "Lato";
               font-weight: 700;
               font-size: 20px;
               color: #1e212c;
@@ -321,7 +321,7 @@
               margin-bottom: 4px;
             }
             .cta__header-time__text {
-              font-family: 'Lato';
+              font-family: "Lato";
               font-weight: 400;
               font-size: 12px;
               text-align: center;
@@ -336,14 +336,14 @@
         align-items: flex-end;
         justify-content: space-between;
         flex-wrap: wrap;
-        .cta__body-inputs__box {
+        .cta__body-inputs__block {
           display: flex;
           align-items: center;
           flex-wrap: wrap;
           .cta__body-input__item {
             margin-right: 24px;
             .cta__body-input__name {
-              font-family: 'Lato';
+              font-family: "Lato";
               font-weight: 400;
               font-size: 14px;
               color: #424551;
@@ -356,13 +356,13 @@
               background: #ffffff;
               border: 1px solid #d7dadd;
               border-radius: 4px;
-              font-family: 'Lato';
+              font-family: "Lato";
               font-weight: 400;
               font-size: 14px;
               color: #9a9ca5;
               outline: none;
               &::placeholder {
-                font-family: 'Lato';
+                font-family: "Lato";
                 font-weight: 400;
                 font-size: 14px;
                 color: #9a9ca5;
@@ -376,7 +376,7 @@
           background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
           border: none;
           border-radius: 4px;
-          font-family: 'Lato';
+          font-family: "Lato";
           font-weight: 700;
           font-size: 14px;
           text-align: center;
@@ -396,7 +396,7 @@
       flex-wrap: wrap;
       .forWhom__left {
         .forWhom__left-text {
-          font-family: 'Lato';
+          font-family: "Lato";
           font-weight: 700;
           font-size: 16px;
           letter-spacing: 1px;
@@ -406,7 +406,7 @@
         }
         .forWhom__left-title {
           max-width: 492px;
-          font-family: 'Lato';
+          font-family: "Lato";
           font-weight: 900;
           font-size: 46px;
           line-height: 130%;
@@ -414,7 +414,7 @@
         }
       }
 
-      .forWhom__right {
+      .forWhom__right-list {
         margin-top: 32px;
         max-width: 600px;
         .forWhom__right-list__item {
@@ -428,7 +428,7 @@
           }
 
           .forWhom__right-text {
-            font-family: 'Lato';
+            font-family: "Lato";
             font-weight: 700;
             font-size: 20px;
             line-height: 150%;
@@ -450,7 +450,7 @@
         .program__left-header {
           margin-bottom: 60px;
           .program__left-header__text {
-            font-family: 'Lato';
+            font-family: "Lato";
             font-weight: 700;
             font-size: 16px;
             letter-spacing: 1px;
@@ -459,7 +459,7 @@
             margin-bottom: 8px;
           }
           .program__left-header__title {
-            font-family: 'Lato';
+            font-family: "Lato";
             font-weight: 900;
             font-size: 46px;
             color: #1e212c;
@@ -483,14 +483,14 @@
               display: flex;
               align-items: center;
               .program__accordion-item__lesson {
-                font-family: 'Lato';
+                font-family: "Lato";
                 font-weight: 400;
                 font-size: 20px;
                 color: #ff3f3a;
                 margin-right: 8px;
               }
               .program__accordion-item__title {
-                font-family: 'Lato';
+                font-family: "Lato";
                 font-weight: 700;
                 font-size: 20px;
                 color: #1e212c;
@@ -499,7 +499,7 @@
 
             .program__accordion-item__body {
               padding-top: 16px;
-              font-family: 'Lato';
+              font-family: "Lato";
               font-weight: 400;
               font-size: 16px;
               line-height: 160%;
@@ -525,7 +525,7 @@
       .testimonials__header {
         margin-bottom: 60px;
         .testimonials__header-text {
-          font-family: 'Lato';
+          font-family: "Lato";
           font-weight: 700;
           font-size: 16px;
           text-align: center;
@@ -535,7 +535,7 @@
           margin-bottom: 8px;
         }
         .testimonials__header-title {
-          font-family: 'Lato';
+          font-family: "Lato";
           font-weight: 900;
           font-size: 46px;
           text-align: center;
@@ -583,7 +583,7 @@
 
               .testimonials__item-content {
                 .testimonials__item-content__descr {
-                  font-family: 'Lato';
+                  font-family: "Lato";
                   font-weight: 400;
                   font-size: 20px;
                   line-height: 150%;
@@ -612,14 +612,14 @@
 
                   .testimonials__item-info {
                     .testimonials__item-info__name {
-                      font-family: 'Lato';
+                      font-family: "Lato";
                       font-weight: 700;
                       font-size: 16px;
                       color: #1e212c;
                       margin-bottom: 4px;
                     }
                     .testimonials__item-info__position {
-                      font-family: 'Lato';
+                      font-family: "Lato";
                       font-weight: 400;
                       font-size: 14px;
                       color: #787a80;
@@ -656,7 +656,7 @@
         .register__info-header {
           margin-bottom: 40px;
           .register__info-header__text {
-            font-family: 'Lato';
+            font-family: "Lato";
             font-weight: 700;
             font-size: 16px;
             letter-spacing: 1px;
@@ -665,7 +665,7 @@
             margin-bottom: 8px;
           }
           .regicter__info-header__title {
-            font-family: 'Lato';
+            font-family: "Lato";
             font-weight: 900;
             font-size: 46px;
             color: #1e212c;
@@ -681,7 +681,7 @@
             }
             margin-bottom: 24px;
             .register__form-item__name {
-              font-family: 'Lato';
+              font-family: "Lato";
               font-weight: 400;
               font-size: 16px;
               color: #424551;
@@ -693,13 +693,13 @@
               background-color: #fff;
               border: 1px solid #d7dadd;
               border-radius: 4px;
-              font-family: 'Lato';
+              font-family: "Lato";
               font-weight: 400;
               font-size: 16px;
               color: #9a9ca5;
               outline: none;
               &::placeholder {
-                font-family: 'Lato';
+                font-family: "Lato";
                 font-weight: 400;
                 font-size: 16px;
                 color: #9a9ca5;
@@ -714,7 +714,7 @@
           background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
           border: none;
           border-radius: 4px;
-          font-family: 'Lato';
+          font-family: "Lato";
           font-weight: 700;
           font-size: 16px;
           text-align: center;
@@ -737,7 +737,7 @@
         justify-content: space-between;
         .relatedCourses__header-titles {
           .relatedCourses__header-titles__text {
-            font-family: 'Lato';
+            font-family: "Lato";
             font-weight: 700;
             font-size: 16px;
             letter-spacing: 1px;
@@ -746,7 +746,7 @@
             margin-bottom: 8px;
           }
           .relatedCourses__header-titles__title {
-            font-family: 'Lato';
+            font-family: "Lato";
             font-weight: 900;
             font-size: 46px;
             color: #1e212c;
@@ -810,7 +810,7 @@
               .relatedCourses__item-info__text {
                 display: inline-block;
                 padding: 1px 8px;
-                font-family: 'Lato';
+                font-family: "Lato";
                 font-weight: 400;
                 font-size: 14px;
                 color: #ffffff;
@@ -818,7 +818,7 @@
                 margin-bottom: 20px;
               }
               .relatedCourses__item-info__title {
-                font-family: 'Lato';
+                font-family: "Lato";
                 font-weight: 700;
                 font-size: 20px;
                 color: #1e212c;
@@ -828,14 +828,14 @@
                 display: flex;
                 align-items: center;
                 .relatedCourses__info-footer__price {
-                  font-family: 'Lato';
+                  font-family: "Lato";
                   font-weight: 700;
                   font-size: 18px;
                   color: #ff4242;
                   margin-right: 8px;
                 }
                 .relatedCourses__info-footer__name {
-                  font-family: 'Lato';
+                  font-family: "Lato";
                   font-weight: 400;
                   font-size: 18px;
                   color: #787a80;
@@ -852,7 +852,7 @@
         justify-content: center;
         flex-wrap: wrap;
         .relatedCourses__footer-text {
-          font-family: 'Lato';
+          font-family: "Lato";
           font-weight: 700;
           font-size: 28px;
           color: #1e212c;
@@ -864,7 +864,7 @@
           background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
           border: none;
           border-radius: 4px;
-          font-family: 'Lato';
+          font-family: "Lato";
           font-weight: 700;
           font-size: 14px;
           text-align: center;
