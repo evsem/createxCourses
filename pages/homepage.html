@@ -22,15 +22,140 @@
   </head>
   <body>
     <div class="wrapper">
-      <section class="modals">
-        <div class="modals__wrapper">
-          <div class="modal" data-modal="login__modal">kassi</div>
-
-          <div class="modal" data-modal="register__modal">soua</div>
-        </div>
-      </section>
-
       <header id="header">
+        <section class="modals">
+          <div class="modals__wrapper">
+            <div class="login__modal modal" data-modal="login__modal">
+              <div class="login__modal-close__icon">
+                <img
+                  src="./homepage/src/icons/close.svg"
+                  alt="icon"
+                  class="login__modal-close"
+                />
+              </div>
+              <h2 class="login__modal-title">Sign in</h2>
+              <p class="login__modal-descr">
+                Sign in to your account using email and password provided during
+                registration.
+              </p>
+              <form action="#" class="login__modal-form">
+                <div class="data__info-form__item">
+                  <span class="data__form-item__text">Email</span>
+                  <input
+                    type="email"
+                    required
+                    placeholder="Your working email"
+                    class="data__form-item__input"
+                  />
+                </div>
+
+                <div class="data__info-form__item">
+                  <span class="data__form-item__text">Password</span>
+                  <input
+                    type="password"
+                    required
+                    placeholder="Your working email"
+                    class="data__form-item__input"
+                  />
+                </div>
+
+                <div class="login__modal-form__footer">
+                  <div class="subscribe__info-checkbox">
+                    <input
+                      type="checkbox"
+                      id="agree"
+                      name="contact"
+                      value="email"
+                      class="subscribe__info-checkbox__input"
+                    />
+
+                    <label for="agree" class="subscribe__info-checkbox__label"
+                      >Keep me signed in</label
+                    >
+                  </div>
+
+                  <span class="login__form-footer__text">Forgot password?</span>
+                </div>
+
+                <button class="modal__button">Sign in</button>
+              </form>
+            </div>
+
+            <div class="register__modal modal" data-modal="register__modal">
+              <div class="login__modal-close__icon">
+                <img
+                  src="./homepage/src/icons/close.svg"
+                  alt="icon"
+                  class="login__modal-close"
+                />
+              </div>
+              <h2 class="login__modal-title">Sign up</h2>
+              <p class="login__modal-descr">
+                Registration takes less than a minute but gives you full control
+                over your studying.
+              </p>
+              <form action="#" class="login__modal-form">
+                <div class="data__info-form__item">
+                  <span class="data__form-item__text">Full name</span>
+                  <input
+                    type="email"
+                    required
+                    placeholder="Your working email"
+                    class="data__form-item__input"
+                  />
+                </div>
+
+                <div class="data__info-form__item">
+                  <span class="data__form-item__text">Email</span>
+                  <input
+                    type="password"
+                    required
+                    placeholder="Your working email"
+                    class="data__form-item__input"
+                  />
+                </div>
+
+                <div class="data__info-form__item">
+                  <span class="data__form-item__text">Password</span>
+                  <input
+                    type="password"
+                    required
+                    placeholder="Your working email"
+                    class="data__form-item__input"
+                  />
+                </div>
+
+                <div class="data__info-form__item">
+                  <span class="data__form-item__text">Confirm password</span>
+                  <input
+                    type="password"
+                    required
+                    placeholder="Your working email"
+                    class="data__form-item__input"
+                  />
+                </div>
+
+                <div class="subscribe__info-checkbox">
+                  <input
+                    type="checkbox"
+                    id="agree"
+                    name="contact"
+                    value="email"
+                    class="subscribe__info-checkbox__input"
+                  />
+
+                  <label for="agree" class="subscribe__info-checkbox__label"
+                    >Remember me</label
+                  >
+                </div>
+
+                <button class="modal__button">Sign up</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <div class="header__mobile"></div>
+
         <div class="header__container">
           <div class="header__top">
             <div class="header__top-left">
@@ -69,6 +194,7 @@
                 </ul>
               </nav>
             </div>
+
             <div class="header__top-right">
               <button class="header__top-right__button btn__homepage">
                 Get consultation
@@ -92,6 +218,14 @@
                     >Register</span
                   >
                 </div>
+              </div>
+            </div>
+
+            <div class="header__hamb">
+              <div class="header__hamb-field">
+                <span class="header__hamb-field__line"></span>
+                <span class="header__hamb-field__line"></span>
+                <span class="header__hamb-field__line"></span>
               </div>
             </div>
           </div>
@@ -263,7 +397,7 @@
               <span class="courses__header-text">Ready to learn?</span>
               <div class="courses__header-bottom">
                 <h2 class="courses__header-bottom__title">Featured Courses</h2>
-                <button class="corses__header-bottom-button btn__homepage">
+                <button class="courses__header-bottom-button btn__homepage">
                   View all courses
                 </button>
               </div>
@@ -541,7 +675,9 @@
                   </div>
                 </div>
 
-                <button class="events__button btn__homepage">Viev more</button>
+                <button class="events__cards-item__button btn__homepage">
+                  Viev more
+                </button>
               </div>
 
               <div class="events__cards-item">
@@ -564,7 +700,9 @@
                   </div>
                 </div>
 
-                <button class="events__button btn__homepage">Viev more</button>
+                <button class="events__cards-item__button btn__homepage">
+                  Viev more
+                </button>
               </div>
             </div>
             <div class="events__footer">
@@ -613,7 +751,7 @@
             </div>
             <div class="sertificate__right-img__box">
               <img
-                src="./homepage/src/img/cretificate.jpg"
+                src="./homepage/src/img/certificate2.jpg"
                 alt="sertificate"
                 class="sertificate__right-img"
               />
@@ -1125,13 +1263,7 @@
         </section>
 
         <section class="subscribe">
-          <div class="subscribe__uniqcontainer">
-            <img
-              src="./homepage/src/img/hol.jpg"
-              alt="image"
-              class="subscribe__img"
-            />
-
+          <div class="subscribe__container">
             <div class="subscribe__center">
               <span class="subscribe__center-text">Don’t miss anything</span>
               <h2 class="subscribe__center-title">
@@ -1143,17 +1275,14 @@
                   placeholder="Your working email"
                   class="subscribe__center-form__input"
                 />
-                <button class="subscribe__center-form__button btn__homepage">
+                <button
+                  class="subscribe__center-form__button btn__homepage"
+                  type="reset"
+                >
                   Subscribe
                 </button>
               </form>
             </div>
-
-            <img
-              src="./homepage/src/img/hol.jpg"
-              alt="image"
-              class="subscribe__img"
-            />
           </div>
         </section>
       </main>

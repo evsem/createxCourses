@@ -157,15 +157,9 @@
   }
 
   .subscribe {
-    .subscribe__uniqcontainer {
+    .subscribe__container {
       padding-top: 120px;
-      margin: 0 auto;
-      max-width: 1910px;
       min-height: 564px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-
       .subscribe__center {
         margin: 0px 0px 180px 0px;
         min-width: 810px;
@@ -180,6 +174,7 @@
           margin-bottom: 8px;
         }
         .subscribe__center-title {
+          margin: 0 auto;
           max-width: 810px;
           font-family: "Lato";
           font-weight: 900;
@@ -218,9 +213,6 @@
           .subscribe__center-form__button {
           }
         }
-      }
-
-      .subscribe__img {
       }
     }
   }

@@ -1,5 +1,6 @@
 #header {
   font-family: "Lato";
+  font-size: 16px;
   :root {
     // colors
     --top-primary-color: #424551;
@@ -14,7 +15,7 @@
     background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
     font-family: "Lato";
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1em;
     text-align: center;
     color: #fff;
     transition: all 0.12s linear;
@@ -57,7 +58,7 @@
               .header__list-item__link {
                 font-family: "Lato";
                 font-weight: 500;
-                font-size: 16px;
+                font-size: 1em;
                 text-align: center;
                 color: var(--top-primary-color);
                 cursor: pointer;
@@ -89,7 +90,7 @@
             display: flex;
             align-items: center;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 1em;
             color: var(--top-primary-color);
             text-align: center;
             .header__login-text__login {
@@ -126,7 +127,7 @@
           max-width: 496px;
           font-family: "Lato";
           font-weight: 900;
-          font-size: 64px;
+          font-size: 4em;
           line-height: 130%;
           letter-spacing: 1px;
           color: var(--primary-color);
@@ -156,14 +157,14 @@
           align-items: center;
           .header__statistics-item__number {
             font-weight: 900;
-            font-size: 46px;
+            font-size: 48px;
             text-align: center;
             color: var(--primary-color);
             margin-right: 12px;
           }
           .header__statisrics-item__text {
             font-weight: 400;
-            font-size: 16px;
+            font-size: 1em;
             text-align: center;
             color: var(--primary-color);
           }

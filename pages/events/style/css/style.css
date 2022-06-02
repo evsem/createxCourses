@@ -45,6 +45,7 @@ body .wrapper {
 }
 body .wrapper #header {
   font-family: "Lato";
+  font-size: 16px;
 }
 body .wrapper #header :root {
   --top-primary-color: #424551;
@@ -58,7 +59,7 @@ body .wrapper #header .btn__homepage {
   background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
   font-family: "Lato";
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1em;
   text-align: center;
   color: #fff;
   -webkit-transition: all 0.12s linear;
@@ -117,7 +118,7 @@ body .wrapper #header .header__container .header__top .header__top-left .header_
 body .wrapper #header .header__container .header__top .header__top-left .header__top-left__menu .header__left-menu__list .header__menu-list__item .header__list-item__link {
   font-family: "Lato";
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1em;
   text-align: center;
   color: var(--top-primary-color);
   cursor: pointer;
@@ -159,7 +160,7 @@ body .wrapper #header .header__container .header__top .header__top-right .header
       -ms-flex-align: center;
           align-items: center;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   color: var(--top-primary-color);
   text-align: center;
 }
@@ -203,7 +204,7 @@ body .wrapper #header .header__container .header__center .header__center-left .h
   max-width: 496px;
   font-family: "Lato";
   font-weight: 900;
-  font-size: 64px;
+  font-size: 4em;
   line-height: 130%;
   letter-spacing: 1px;
   color: var(--primary-color);
@@ -231,14 +232,14 @@ body .wrapper #header .header__container .header__bottom .header__bottom-statist
 }
 body .wrapper #header .header__container .header__bottom .header__bottom-statistics .header__bottom-statistics__item .header__statistics-item__number {
   font-weight: 900;
-  font-size: 46px;
+  font-size: 48px;
   text-align: center;
   color: var(--primary-color);
   margin-right: 12px;
 }
 body .wrapper #header .header__container .header__bottom .header__bottom-statistics .header__bottom-statistics__item .header__statisrics-item__text {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   text-align: center;
   color: var(--primary-color);
 }
@@ -422,26 +423,15 @@ body .wrapper #main .events .events__container .events__pagination .events__pagi
 body .wrapper #main .events .events__container .events__pagination .events__pagination-arrow {
   cursor: pointer;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer {
+body .wrapper #main .subscribe .subscribe__container {
   padding-top: 120px;
-  margin: 0 auto;
-  max-width: 1910px;
   min-height: 564px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center {
+body .wrapper #main .subscribe .subscribe__container .subscribe__center {
   margin: 0px 0px 180px 0px;
   min-width: 810px;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-text {
+body .wrapper #main .subscribe .subscribe__container .subscribe__center .subscribe__center-text {
   font-family: "Lato";
   font-weight: 700;
   font-size: 16px;
@@ -451,7 +441,8 @@ body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .sub
   color: #1e212c;
   margin-bottom: 8px;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-title {
+body .wrapper #main .subscribe .subscribe__container .subscribe__center .subscribe__center-title {
+  margin: 0 auto;
   max-width: 810px;
   font-family: "Lato";
   font-weight: 900;
@@ -460,7 +451,7 @@ body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .sub
   color: #1e212c;
   margin-bottom: 60px;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form {
+body .wrapper #main .subscribe .subscribe__container .subscribe__center .subscribe__center-form {
   max-width: 606px;
   margin: 0 auto;
   display: -webkit-box;
@@ -471,7 +462,7 @@ body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .sub
       -ms-flex-direction: column;
           flex-direction: column;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input {
+body .wrapper #main .subscribe .subscribe__container .subscribe__center .subscribe__center-form .subscribe__center-form__input {
   min-width: 100%;
   min-height: 52px;
   padding: 13px 16px;
@@ -486,38 +477,37 @@ body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .sub
   outline: none;
   margin-bottom: 16px;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input::-webkit-input-placeholder {
+body .wrapper #main .subscribe .subscribe__container .subscribe__center .subscribe__center-form .subscribe__center-form__input::-webkit-input-placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   color: #9a9ca5;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input::-moz-placeholder {
+body .wrapper #main .subscribe .subscribe__container .subscribe__center .subscribe__center-form .subscribe__center-form__input::-moz-placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   color: #9a9ca5;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input:-ms-input-placeholder {
+body .wrapper #main .subscribe .subscribe__container .subscribe__center .subscribe__center-form .subscribe__center-form__input:-ms-input-placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   color: #9a9ca5;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input::-ms-input-placeholder {
+body .wrapper #main .subscribe .subscribe__container .subscribe__center .subscribe__center-form .subscribe__center-form__input::-ms-input-placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   color: #9a9ca5;
 }
-body .wrapper #main .subscribe .subscribe__uniqcontainer .subscribe__center .subscribe__center-form .subscribe__center-form__input::placeholder {
+body .wrapper #main .subscribe .subscribe__container .subscribe__center .subscribe__center-form .subscribe__center-form__input::placeholder {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   color: #9a9ca5;
 }
 body .wrapper #footer {
-  padding-top: 60px;
   font-family: "Lato";
 }
 body .wrapper #footer .footer__body {
