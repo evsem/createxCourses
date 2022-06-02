@@ -626,53 +626,9 @@
     }
   }
 
-  .companies {
-    background: #f4f5f7;
-    padding-bottom: 100px;
-    .companies__container {
-      .companies__header {
-        margin-bottom: 60px;
-        .companies__header-text {
-          font-family: "Lato";
-          font-weight: 700;
-          font-size: 16px;
-          text-align: center;
-          letter-spacing: 1px;
-          text-transform: uppercase;
-          color: #1e212c;
-          margin-bottom: 8px;
-        }
-        .companies__header-title {
-          font-family: "Lato";
-          font-weight: 900;
-          font-size: 46px;
-          text-align: center;
-          color: #1e212c;
-        }
-      }
-
-      .companies__body {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        .companies__body-img__box {
-          height: calc(100% / 2);
-          width: calc(100% / 5 - 102px);
-          margin: 0px 102px 40px 0px;
-          overflow: hidden;
-          .companies__body-img {
-          }
-        }
-      }
-    }
-  }
-
   .blog {
     .blog__container {
-      padding: 120px 0px 180px 0px;
+      padding: 120px 0px 110px 0px;
       .blog__header {
         display: flex;
         align-items: center;

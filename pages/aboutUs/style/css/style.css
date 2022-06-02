@@ -851,53 +851,8 @@ body .wrapper #main .testimonials .testimonials__uniqcontainer .testimonials__bo
   font-size: 14px;
   color: #787a80;
 }
-body .wrapper #main .companies {
-  background: #f4f5f7;
-  padding-bottom: 100px;
-}
-body .wrapper #main .companies .companies__container .companies__header {
-  margin-bottom: 60px;
-}
-body .wrapper #main .companies .companies__container .companies__header .companies__header-text {
-  font-family: "Lato";
-  font-weight: 700;
-  font-size: 16px;
-  text-align: center;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #1e212c;
-  margin-bottom: 8px;
-}
-body .wrapper #main .companies .companies__container .companies__header .companies__header-title {
-  font-family: "Lato";
-  font-weight: 900;
-  font-size: 46px;
-  text-align: center;
-  color: #1e212c;
-}
-body .wrapper #main .companies .companies__container .companies__body {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-body .wrapper #main .companies .companies__container .companies__body .companies__body-img__box {
-  height: 50%;
-  width: calc(20% - 102px);
-  margin: 0px 102px 40px 0px;
-  overflow: hidden;
-}
 body .wrapper #main .blog .blog__container {
-  padding: 120px 0px 180px 0px;
+  padding: 120px 0px 110px 0px;
 }
 body .wrapper #main .blog .blog__container .blog__header {
   display: -webkit-box;

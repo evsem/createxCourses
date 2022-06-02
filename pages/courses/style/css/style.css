@@ -390,9 +390,6 @@ body .wrapper #main .sertificate .sertificate__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -401,7 +398,6 @@ body .wrapper #main .sertificate .sertificate__container {
 }
 body .wrapper #main .sertificate .sertificate__container .sertificate__content {
   max-width: 397px;
-  position: relative;
   bottom: 60px;
 }
 body .wrapper #main .sertificate .sertificate__container .sertificate__content .sertificate__content-text {
@@ -418,24 +414,6 @@ body .wrapper #main .sertificate .sertificate__container .sertificate__content .
   line-height: 130%;
   color: #1e212c;
   margin-bottom: 48px;
-}
-body .wrapper #main .sertificate .sertificate__container .sertificate__content .sertificate__content-descr {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-  color: #424551;
-  margin-bottom: 32px;
-}
-body .wrapper #main .sertificate .sertificate__container .sertificate__content .sertificate__content-images {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-body .wrapper #main .sertificate .sertificate__container .sertificate__content .sertificate__content-images .sertificate__content-images__img:not(:last-child) {
-  margin-right: 40px;
 }
 body .wrapper #main .sertificate .sertificate__container .sertificate__img-box {
   max-width: 733px;

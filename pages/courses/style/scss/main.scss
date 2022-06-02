@@ -190,12 +190,10 @@
     margin-bottom: 80px;
     .sertificate__container {
       display: flex;
-      align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
       .sertificate__content {
         max-width: 397px;
-        position: relative;
         bottom: 60px;
         .sertificate__content-text {
           font-weight: 700;
@@ -211,23 +209,6 @@
           line-height: 130%;
           color: #1e212c;
           margin-bottom: 48px;
-        }
-        .sertificate__content-descr {
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 160%;
-          color: #424551;
-
-          margin-bottom: 32px;
-        }
-        .sertificate__content-images {
-          display: flex;
-          align-items: center;
-          .sertificate__content-images__img {
-            &:not(:last-child) {
-              margin-right: 40px;
-            }
-          }
         }
       }
 

@@ -336,7 +336,7 @@ body .wrapper #main .about .about__container .about__left .about__left-accordion
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
   color: #1e212c;
 }
@@ -421,12 +421,25 @@ body .wrapper #main .speaker .speaker__container {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-body .wrapper #main .speaker .speaker__container .speaker__left {
-  min-height: 600px;
-  min-width: 495px;
-  background-color: #ffcf2d;
+body .wrapper #main .speaker .speaker__container .speaker__left-img__box {
+  max-height: 600px;
+  max-width: 495px;
+  overflow: hidden;
   border: none;
   border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .wrapper #main .speaker .speaker__container .speaker__left-img__box .speaker__left-img {
+  width: 100%;
+  height: 100%;
 }
 body .wrapper #main .speaker .speaker__container .speaker__right {
   max-width: 600px;
@@ -458,18 +471,6 @@ body .wrapper #main .speaker .speaker__container .speaker__right .speaker__right
   line-height: 160%;
   color: #424551;
   margin-bottom: 40px;
-}
-body .wrapper #main .speaker .speaker__container .speaker__right .speaker__right-company {
-  margin-bottom: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-body .wrapper #main .speaker .speaker__container .speaker__right .speaker__right-company .speaker__company-img__box:not(:last-child) {
-  margin-right: 40px;
 }
 body .wrapper #main .speaker .speaker__container .speaker__right .speaker__right-share {
   display: -webkit-box;
@@ -547,6 +548,7 @@ body .wrapper #main .forWhom .forWhom__container .forWhom__list .forWhom__list-i
   left: -34px;
 }
 body .wrapper #main .subscribe {
+  background-color: rgb(238, 238, 238);
   margin-bottom: 120px;
 }
 body .wrapper #main .subscribe .subscribe__container {
@@ -562,7 +564,6 @@ body .wrapper #main .subscribe .subscribe__container {
           justify-content: space-between;
   border: none;
   border-radius: 4px;
-  background-color: #eeeeee;
 }
 body .wrapper #main .subscribe .subscribe__container .subscribe__info {
   max-width: 600px;

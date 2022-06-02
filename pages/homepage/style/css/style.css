@@ -88,7 +88,6 @@ body .wrapper #header .modals .modals__wrapper .modal {
           justify-content: center;
   font-size: 32px;
   font-weight: 500;
-  letter-spacing: 2px;
   border: none;
   border-radius: 3px;
   display: none;
@@ -98,41 +97,28 @@ body .wrapper #header .modals .modals__wrapper .modal {
 }
 body .wrapper #header .modals .modals__wrapper .login__modal,
 body .wrapper #header .modals .modals__wrapper .register__modal {
+  padding: 20px 0px 30px 0px;
   min-width: 486px;
   font-family: "Lato";
 }
-body .wrapper #header .modals .modals__wrapper .login__modal .login__modal-close__icon,
-body .wrapper #header .modals .modals__wrapper .register__modal .login__modal-close__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin: 24px 24px 0px 0px;
-}
-body .wrapper #header .modals .modals__wrapper .login__modal .login__modal-close__icon .login__modal-close,
-body .wrapper #header .modals .modals__wrapper .register__modal .login__modal-close__icon .login__modal-close {
-  cursor: pointer;
-}
 body .wrapper #header .modals .modals__wrapper .login__modal .login__modal-title,
 body .wrapper #header .modals .modals__wrapper .register__modal .login__modal-title {
-  margin: 4px 0px 26px 0px;
+  margin: 0px 0px 26px 0px;
 }
 body .wrapper #header .modals .modals__wrapper .login__modal .login__modal-descr,
 body .wrapper #header .modals .modals__wrapper .register__modal .login__modal-descr {
   width: 484px;
   margin: 0px 48px 24px;
-  font-family: "Lato";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
+  letter-spacing: 0.7px;
   line-height: 150%;
   text-align: center;
   color: #787a80;
 }
 body .wrapper #header .modals .modals__wrapper .login__modal .login__modal-form,
 body .wrapper #header .modals .modals__wrapper .register__modal .login__modal-form {
-  margin: 0px 48px 48px;
+  margin: 0px 32px;
 }
 body .wrapper #header .modals .modals__wrapper .login__modal .login__modal-form .data__info-form__item:not(:last-child),
 body .wrapper #header .modals .modals__wrapper .register__modal .login__modal-form .data__info-form__item:not(:last-child) {
@@ -191,7 +177,6 @@ body .wrapper #header .modals .modals__wrapper .register__modal .login__modal-fo
   max-width: 287px;
   padding-left: 28px;
   line-height: 160%;
-  font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
   color: #424551;
@@ -223,6 +208,7 @@ body .wrapper #header .modals .modals__wrapper .register__modal .login__modal-fo
   font-family: "Lato";
   font-weight: 400;
   font-size: 14px;
+  letter-spacing: 0.7px;
   line-height: 150%;
   text-align: right;
   color: #424551;
@@ -744,7 +730,7 @@ body .wrapper #main .about .about__container {
   }
 }
 body .wrapper #main .about .about__container .about__img-box {
-  max-width: 705px;
+  max-width: 656px;
   max-height: 560px;
   overflow: hidden;
   border: none;
@@ -1338,6 +1324,9 @@ body .wrapper .events .events__container .events__footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (max-width: 375px) {
   body .wrapper .events .events__container .events__footer {
@@ -1416,49 +1405,21 @@ body .wrapper .sertificate .sertificate__container .sertificate__left .sertifica
     margin-bottom: 20px;
   }
 }
-body .wrapper .sertificate .sertificate__container .sertificate__left .sertificate__left-descr {
-  font-family: "Lato";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-  color: #424551;
-  margin-bottom: 32px;
-}
-@media (max-width: 375px) {
-  body .wrapper .sertificate .sertificate__container .sertificate__left .sertificate__left-descr {
-    font-size: 18px;
-    text-align: center;
-  }
-}
-body .wrapper .sertificate .sertificate__container .sertificate__left .sertificate__left-images {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-@media (max-width: 375px) {
-  body .wrapper .sertificate .sertificate__container .sertificate__left .sertificate__left-images {
-    display: none;
-  }
-}
-body .wrapper .sertificate .sertificate__container .sertificate__left .sertificate__left-images .sertificate__images-img__box:not(:last-child) {
-  margin-right: 40px;
-}
 body .wrapper .sertificate .sertificate__container .sertificate__right-img__box {
   max-width: 733px;
   max-height: 511px;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border: none;
+  border-radius: 4px;
 }
 body .wrapper .sertificate .sertificate__container .sertificate__right-img__box .sertificate__right-img {
   width: 100%;
@@ -1746,7 +1707,7 @@ body .wrapper .testimonials .testimonials__uniqcontainer .testimonials__body .te
   color: #787a80;
 }
 body .wrapper .blog .blog__container {
-  padding: 120px 0px 180px 0px;
+  padding: 120px 0px 100px 0px;
 }
 @media (max-width: 375px) {
   body .wrapper .blog .blog__container {
